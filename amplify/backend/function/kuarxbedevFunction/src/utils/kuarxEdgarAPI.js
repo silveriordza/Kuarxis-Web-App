@@ -168,15 +168,22 @@ const edgarBulkCompanyFactsUpdate = async configs => {
       )
 
       let cikTickerMapDataFinal = []
+
       switch (configs.updatetype) {
          case 'some':
             {
-               const tickersToUse = configs.companies
-               cikTickerMapDataFinal = tickersToUse.map(ticker =>
-                  cikTickerMapData.find(
+               const tickersToUse = configs.tickers
+
+               for (const ticker of tickersToUse) {
+                  const tickerFound = cikTickerMapData.find(
                      cikTicker => cikTicker.ticker === ticker,
-                  ),
-               )
+                  )
+                  if (tickerFound) {
+                     cikTickerMapDataFinal.push(tickerFound)
+                  } else {
+                     LogThis(log, `ticker not found in map: ${ticker}`)
+                  }
+               }
             }
             break
          case 'all':
@@ -187,6 +194,7 @@ const edgarBulkCompanyFactsUpdate = async configs => {
       }
 
       LogThis(log, `Total tickers ${cikTickerMapDataFinal.length}`, L0)
+      //TIP: Do not deleteMany here, do it one by one first get it from Edgar, then if ok, delete and then insert.
       await EdgarCompaniesFacts.deleteMany({
          ticker: { $in: cikTickerMapDataFinal.map(id => id.ticker) },
       })

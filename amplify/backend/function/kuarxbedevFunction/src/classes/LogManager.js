@@ -4,6 +4,7 @@ const L1 = 1
 const L2 = 2
 const L3 = 3
 
+const {ValueMinerDataSourceStatus} = require('../models/valueMinerModel')
         
 class LogManager {
     constructor(fileName = '', functionName = ''){
@@ -191,6 +192,19 @@ validateVars (logLevel, varNamesIn, vars)  {
 
  SetDebugSection(debugSectionNumber = process.env.LOG_LEVEL)  {
    process.env.LOG_LEVEL = debugSectionNumber
+}
+
+ async updateErrorStatus (inputs) {
+   const status = new ValueMinerDataSourceStatus()
+   status.ticker = inputs.symbol
+   status.sourceVendor = inputs.sourceVendor
+   status.status = false
+   status.functionName = inputs.function
+   status.message = `${inputs.symbol}: message: ${inputs.message}`
+   
+   this.LogThis(status.message)
+
+   await status.save()
 }
 }
 

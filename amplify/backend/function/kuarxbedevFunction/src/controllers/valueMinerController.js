@@ -13,7 +13,10 @@ let asyncHandler = require('express-async-handler')
 //    applyStringCriteriaToValue,
 //    formatDate,
 // } = require('../utils/Functions.js')
-const { getBalanceSheets } = require('../utils/alphaVantageAPI.js')
+const {
+   getBalanceSheets,
+   updateAlphaVantage,
+} = require('../utils/alphaVantageAPI.js')
 
 const {
    secEdgarBulkUpdate,
@@ -25,6 +28,8 @@ let {
    BalanceSheetAnnual,
    BalanceSheetQuarterly,
 } = require('../models/valueMinerModel.js')
+
+const ValueMinerMetricsGenerator = require('../classes/ValueMinerClasses/ValueMinerMetricsGenerator.js')
 
 let {
    LoggerSettings,
@@ -64,6 +69,24 @@ const postBalanceSheets = asyncHandler(async (req, res) => {
 
    res.status(201).json({
       letBalanceSheets: letBalanceSheets,
+   })
+})
+
+// @desc    Creates a new Super Survey configuration
+// @route   POST /api/updatealphavantage/
+// @access  Private/Admin
+const postupdateAlphaVantageController = asyncHandler(async (req, res) => {
+   const functionName = 'postBalanceSheets'
+   const log = new LoggerSettings(srcFileName, functionName)
+
+   const { inputs } = req.body
+
+   const letBalanceSheets = await updateAlphaVantage(inputs)
+
+   //let ownerId = req.user._id
+
+   res.status(201).json({
+      letBalanceSheets: letBalanceSheets ? 'Success' : 'Failed',
    })
 })
 
@@ -116,9 +139,30 @@ const postEdgarBulkCompanyFactsUpdateController = asyncHandler(
    },
 )
 
+const postUpdateCompaniesMetrics = asyncHandler(async (req, res) => {
+   const functionName = 'postEdgarBulkCompanyFactsUpdateController'
+   const log = new LoggerSettings(srcFileName, functionName)
+
+   const { inputs } = req.body
+   let valueMinerMetricsGenerator = new ValueMinerMetricsGenerator()
+   const result = await valueMinerMetricsGenerator.Update10YCashFlowGrowthRate(
+      inputs,
+   )
+
+   //const status = await postUpdateCompaniesMetrics(inputs)
+
+   let ownerId = req.user._id
+
+   res.status(201).json({
+      status: result ? 'success' : 'failure',
+   })
+})
+
 module.exports = {
    postBalanceSheets,
+   postupdateAlphaVantageController,
    postSecEdgarBulkController,
    postSecEdgarBulkUpdateQuarterController,
    postEdgarBulkCompanyFactsUpdateController,
+   postUpdateCompaniesMetrics,
 }

@@ -176,6 +176,31 @@ function insertValueInObjectPath(pathWithDots, nestedObject, valueToInsert) {
    insertValueInNestedObjectPath(paths, nestedObject, valueToInsert)
 }
 
+function sortListObjects(listObjects, property, ascending = true) {
+   if (ascending) {
+      listObjects.sort((current, next) => current[property] - next[property])
+   } else {
+      listObjects.sort((current, next) => next[property] - current[property])
+   }
+}
+
+function medianFromArray(numbersArray) {
+   // Sort the array in ascending order
+   numbersArray.sort((a, b) => a - b)
+
+   const mid = Math.floor(numbersArray.length / 2) // Middle index
+
+   // If the array length is odd, return the middle element
+   if (numbersArray.length % 2 !== 0) {
+      return numbersArray[mid]
+   }
+
+   // If the array length is even, return the average of the two middle elements
+   return (numbersArray[mid - 1] + numbersArray[mid]) / 2
+}
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+
 module.exports = {
    formatDate,
    addDecimals,
@@ -187,4 +212,7 @@ module.exports = {
    getCloneObjectExceptionFieldsList,
    insertValueInNestedObjectPath,
    insertValueInObjectPath,
+   sortListObjects,
+   medianFromArray,
+   sleep,
 }

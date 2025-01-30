@@ -17,17 +17,21 @@ let {
    LogVarsFilter,
    HasData,
    j,
+   updateErrorStatus,
 } = require('../utils/Logger.js')
-const { validateHasData } = require('./Functions.js')
+
+const { sleep } = require('../utils/Functions.js')
 
 const {
-   applyStringCriteriaToValue,
-   formatDate,
-} = require('../utils/Functions.js')
-
-const {
-   BalanceSheetAnnual,
-   BalanceSheetQuarterly,
+   AlphaVantageBalanceSheetAnnual,
+   AlphaVantageBalanceSheetQuarterly,
+   AlphaVantageCashFlowAnnual,
+   AlphaVantageCashFlowQuarterly,
+   AlphaVantageIncomeStatementAnnual,
+   AlphaVantageIncomeStatementQuarterly,
+   CompanyValueMetrics,
+   ValueMinerDataSourceStatus,
+   AlphaVantageCache,
 } = require('../models/valueMinerModel.js')
 
 const srcFileName = 'alphaVantageAPI.js'
@@ -40,17 +44,9 @@ const getBalanceSheets = async symbols => {
       throw new Error(`Alpha Vantage apikey is empty.`)
    }
 
-   // const apiConfig = {
-   //    //responseType: "arraybuffer",
-   //    headers: {
-   //       //"Content-Type": "multipart/form-data",
-   //       Authorization: `Bearer ${monkeyToken}`,
-   //       Accept: 'application/json',
-   //    },
-   // }
    const params = {
       function: 'BALANCE_SHEET',
-      symbol: 'HPAI',
+      symbol: null,
       apikey: 'UC397SSPO5KK4FT3',
    }
    let apiResponses = null
@@ -66,8 +62,8 @@ const getBalanceSheets = async symbols => {
             params,
          })
       } catch (ex) {
-         LogThis(log, ex.message)
-         break
+         LogThis(log, `ticker: ${symbol} not found.  Exception: ${ex.message}`)
+         continue
       }
 
       annualReports = apiResponses?.data?.annualReports
@@ -93,6 +89,399 @@ const getBalanceSheets = async symbols => {
    return { annualReports: annualReports, quarterlyReports: quarterlyReports }
 }
 
+const updateAlphaVantage = async inputs => {
+   const log = new LoggerSettings(srcFileName, 'getBalanceSheets')
+   const apiKey = process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY
+   const symbols = inputs.symbols
+   const configs = inputs.configs
+   const { refreshcache } = configs
+
+   if (!apiKey || apiKey == '') {
+      throw new Error(`Alpha Vantage apikey is empty.`)
+   }
+
+   const dateToQuartersMap = new Map()
+   dateToQuartersMap.set('03-31', 1)
+   dateToQuartersMap.set('06-30', 2)
+   dateToQuartersMap.set('09-30', 3)
+   dateToQuartersMap.set('12-31', 4)
+
+   const params = {
+      function: null,
+      symbol: null,
+      apikey: apiKey,
+   }
+
+   const functionToCollectionsMap = new Map()
+   functionToCollectionsMap.set('BALANCE_SHEET', {
+      annual: AlphaVantageBalanceSheetAnnual,
+      quarterly: AlphaVantageBalanceSheetQuarterly,
+   })
+   functionToCollectionsMap.set('INCOME_STATEMENT', {
+      annual: AlphaVantageIncomeStatementAnnual,
+      quarterly: AlphaVantageIncomeStatementQuarterly,
+   })
+   functionToCollectionsMap.set('CASH_FLOW', {
+      annual: AlphaVantageCashFlowAnnual,
+      quarterly: AlphaVantageCashFlowQuarterly,
+   })
+
+   let annualReports = null
+   let quarterlyReports = null
+   let apiResponses = null
+   let foundInApi = null
+   let firstTimeApiCall = true
+   // let millisecondsStart = 0
+   // let millisecondsEnd = 0
+   const symbolsTotalCount = symbols?.length
+   let symbolsProcessed = 0
+   LogThis(log, `Started processing ${symbolsTotalCount} symbols`)
+   for (const symbol of symbols) {
+      params.symbol = symbol
+      LogThis(log, `${symbol} Started updating function: ${params.function}`)
+      LogThis(log, `${symbol} Started updating function: ${params.function}`)
+
+      for (const [avFunction, collections] of functionToCollectionsMap) {
+         params.function = avFunction
+         annualReports = null
+         quarterlyReports = null
+         LogThis(
+            log,
+            `${symbol} Started updating function: ${params.function}`,
+            L1,
+         )
+         try {
+            if (refreshcache) {
+               await AlphaVantageCache.deleteMany({
+                  symbol: symbol,
+                  functionName: avFunction,
+               })
+               apiResponses = null
+            } else {
+               apiResponses = await AlphaVantageCache.findOne({
+                  symbol: symbol,
+                  functionName: avFunction,
+               }).lean()
+            }
+
+            if (!apiResponses) {
+               if (firstTimeApiCall) {
+                  firstTimeApiCall = false
+                  //millisecondsStart = Date.now()
+               } else {
+                  await sleep(
+                     process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT,
+                  )
+               }
+
+               // millisecondsEnd = Date.now()
+               // let millisecondsElapsed = millisecondsEnd - millisecondsStart
+               // LogThis(log, `millisecondsElapsed: ${millisecondsElapsed}`)
+               // millisecondsStart = Date.now()
+
+               apiResponses = await axios.get(
+                  `https://www.alphavantage.co/query`,
+                  {
+                     params,
+                  },
+               )
+               if (
+                  apiResponses &&
+                  apiResponses?.data &&
+                  apiResponses.data?.annualReports &&
+                  apiResponses.data?.quarterlyReports
+               ) {
+                  foundInApi = true
+                  LogThis(
+                     log,
+                     `${symbol} function ${params.function} data found by API`,
+                  )
+               } else {
+                  const messageFromAPI = apiResponses?.data?.Information
+                     ? `with message ${apiResponses?.data?.Information}`
+                     : ''
+
+                  await updateErrorStatus({
+                     symbol: symbol,
+                     sourceVendor: 'AlphaVantage',
+                     function: params.function,
+                     message: `symbol not found or error from API ${messageFromAPI}`,
+                  })
+                  break
+               }
+            } else {
+               foundInApi = false
+               LogThis(
+                  log,
+                  `${symbol} function ${params.function} data found in cache`,
+               )
+            }
+         } catch (ex) {
+            LogThis(
+               log,
+               `${symbol} not found in cache nor in API.  Exception: ${ex.message}`,
+               L0,
+            )
+            const status = new ValueMinerDataSourceStatus()
+            status.ticker = symbol
+            status.sourceVendor = 'AlphaVantage'
+            status.status = false
+            status.functionName = params.function
+            status.message = `Exception thrown by API for ticker not found in function ${params.function}`
+            await status.save()
+            continue
+         }
+
+         if (!apiResponses?.data) {
+            LogThis(
+               log,
+               `${symbol} data returned by API function ${params.function} is empty.`,
+               L0,
+            )
+            const status = new ValueMinerDataSourceStatus()
+            status.ticker = symbol
+            status.sourceVendor = 'AlphaVantage'
+            status.status = false
+            status.functionName = params.function
+            status.message = `ticker: ${symbol} data returned by API function ${params.function} is empty.`
+            await status.save()
+            continue
+         }
+
+         if (foundInApi) {
+            const alphaVantageCache = new AlphaVantageCache()
+            alphaVantageCache.functionName = params.function
+            alphaVantageCache.symbol = symbol
+            alphaVantageCache.data = apiResponses.data
+            await alphaVantageCache.save()
+         }
+
+         annualReports = apiResponses?.data?.annualReports
+         quarterlyReports = apiResponses?.data?.quarterlyReports
+         await collections.annual.deleteMany({ symbol: symbol })
+         await collections.quarterly.deleteMany({ symbol: symbol })
+
+         if (annualReports) {
+            let sequence = null
+            let keyTemp = null
+            let keyFinal = null
+            const keysStoredMap = new Map()
+            annualReports.forEach(x => {
+               x.symbol = params.symbol
+               let fiscalDateEndingDate = new Date(x.fiscalDateEnding)
+               let year = fiscalDateEndingDate.getFullYear()
+               let month = fiscalDateEndingDate.getMonth() + 1
+               if (month >= 1 && month <= 3) {
+                  year--
+               }
+
+               //x.year = parseInt(x.fiscalDateEnding.substring(0, 4), 10)
+               x.year = year
+               keyTemp = `${x.symbol}-${x.year}`
+               sequence = keysStoredMap.get(keyTemp)
+               if (sequence ?? false) {
+                  sequence++
+               } else {
+                  sequence = 1
+               }
+
+               keyFinal = `${x.symbol}-${x.year}-${sequence}`
+               keysStoredMap.set(keyTemp, sequence)
+               x.sequence = sequence
+               x.key = keyFinal
+            })
+
+            await collections.annual.insertMany(annualReports)
+         }
+
+         if (quarterlyReports) {
+            let sequence = null
+            let keyTemp = null
+            let keyFinal = null
+            const keysStoredMap = new Map()
+            for (const x of quarterlyReports) {
+               x.symbol = params.symbol
+               x.year = parseInt(x.fiscalDateEnding.substring(0, 4), 10)
+               x.quarter =
+                  dateToQuartersMap.get(x.fiscalDateEnding.substring(5, 10)) ??
+                  0
+               if (x.quarter === 0) {
+                  // await updateErrorStatus({
+                  //    symbol: symbol,
+                  //    sourceVendor: 'AlphaVantage',
+                  //    function: params.function,
+                  //    message: `fiscalDateEnding ${x.fiscalDateEnding} does not match a quarter end date. Calculating approximate quarter.`,
+                  // })
+
+                  const monthQ = parseInt(
+                     x.fiscalDateEnding.substring(5, 7),
+                     10,
+                  )
+
+                  if (monthQ >= 3 && monthQ <= 5) {
+                     x.quarter = 1
+                  } else if (monthQ >= 6 && monthQ <= 8) {
+                     x.quarter = 2
+                  } else if (monthQ >= 9 && monthQ <= 11) {
+                     x.quarter = 3
+                  } else if (monthQ === 12 || monthQ <= 2) {
+                     x.quarter = 4
+                  }
+                  // else {
+                  //    await updateErrorStatus({
+                  //       symbol: symbol,
+                  //       sourceVendor: 'AlphaVantage',
+                  //       function: params.function,
+                  //       message: `Couldn't determine an approximate quarter for fiscalDateEnding ${x.fiscalDateEnding} setting quarter to zero 0`,
+                  //    })
+                  //    x.quarter = 0
+                  // }
+               }
+
+               keyTemp = `${x.symbol}-${x.year}-${x.quarter}`
+               sequence = keysStoredMap.get(keyTemp)
+               if (sequence ?? false) {
+                  sequence++
+               } else {
+                  sequence = 1
+               }
+
+               keyFinal = `${x.symbol}-${x.year}-${x.quarter}-${sequence}`
+               keysStoredMap.set(keyTemp, sequence)
+               x.sequence = sequence
+               x.key = keyFinal
+            }
+            await collections.quarterly.insertMany(quarterlyReports)
+         }
+         LogThis(
+            log,
+            `${symbol} Completed updating function: ${params.function}`,
+            L0,
+         )
+      }
+      try {
+         params.function = 'OVERVIEW'
+         LogThis(log, `${symbol} Started Updating Company Overview`)
+         if (refreshcache) {
+            await AlphaVantageCache.deleteMany({
+               symbol: symbol,
+               functionName: params.function,
+            })
+            apiResponses = null
+         } else {
+            apiResponses = await AlphaVantageCache.findOne({
+               symbol: symbol,
+               functionName: params.function,
+            }).lean()
+         }
+
+         if (!apiResponses) {
+            if (firstTimeApiCall) {
+               firstTimeApiCall = false
+               //millisecondsStart = Date.now()
+            } else {
+               await sleep(process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT)
+            }
+
+            // millisecondsEnd = Date.now()
+            // let millisecondsElapsed = millisecondsEnd - millisecondsStart
+            // LogThis(log, `millisecondsElapsed: ${millisecondsElapsed}`)
+            // millisecondsStart = Date.now()
+
+            apiResponses = await axios.get(
+               `https://www.alphavantage.co/query`,
+               {
+                  params,
+               },
+            )
+            if (
+               apiResponses &&
+               apiResponses?.data &&
+               Object.keys(apiResponses.data).length > 0
+            ) {
+               foundInApi = true
+               LogThis(
+                  log,
+                  `${symbol} function ${params.function} data found by API`,
+               )
+            } else {
+               const messageFromAPI = apiResponses?.data?.Information
+                  ? `with message ${apiResponses?.data?.Information}`
+                  : ''
+
+               await updateErrorStatus({
+                  symbol: symbol,
+                  sourceVendor: 'AlphaVantage',
+                  function: params.function,
+                  message: `symbol not found or error from API ${messageFromAPI}`,
+               })
+               continue
+            }
+         } else {
+            foundInApi = false
+            LogThis(
+               log,
+               `${symbol} function ${params.function} data found in cache`,
+            )
+         }
+      } catch (ex) {
+         LogThis(
+            log,
+            `${symbol} Company Overview not found in cache nor in API.  Exception: ${ex.message}`,
+            L0,
+         )
+         const status = new ValueMinerDataSourceStatus()
+         status.ticker = symbol
+         status.sourceVendor = 'AlphaVantage'
+         status.status = false
+         status.functionName = params.function
+         status.message = `Exception thrown by API for ticker not found in function ${params.function}`
+         await status.save()
+         continue
+      }
+
+      if (!apiResponses?.data) {
+         LogThis(
+            log,
+            `${symbol} data returned by API function ${params.function} is empty.`,
+            L0,
+         )
+         const status = new ValueMinerDataSourceStatus()
+         status.ticker = symbol
+         status.sourceVendor = 'AlphaVantage'
+         status.status = false
+         status.functionName = params.function
+         status.message = `ticker: ${symbol} data returned by API function ${params.function} is empty.`
+         await status.save()
+         continue
+      }
+
+      if (foundInApi) {
+         const alphaVantageCache = new AlphaVantageCache()
+         alphaVantageCache.functionName = params.function
+         alphaVantageCache.symbol = symbol
+         alphaVantageCache.data = apiResponses.data
+         await alphaVantageCache.save()
+      }
+      LogThis(log, `${symbol} Completed Updating Company Overview`)
+      symbolsProcessed++
+      LogThis(
+         log,
+         `Completed ${symbolsProcessed} symbols out off ${symbolsTotalCount} remaining ${
+            symbolsTotalCount - symbolsProcessed
+         }`,
+      )
+   }
+   LogThis(
+      log,
+      `Update Completed ${symbolsProcessed} out off ${symbolsTotalCount} remaining ${
+         symbolsTotalCount - symbolsProcessed
+      }`,
+   )
+   return true
+}
+
 module.exports = {
    getBalanceSheets,
+   updateAlphaVantage,
 }

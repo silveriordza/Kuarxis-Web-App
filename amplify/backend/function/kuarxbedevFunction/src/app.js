@@ -5,6 +5,34 @@ const aws = require('aws-sdk');
 
 const { Parameters } = await (new aws.SSM())
   .getParameters({
+    Names: ["MONGO_URI","JWT_SECRET","PAYPAL_CLIENT_ID","KUARSIS_AWS_PRODUCTS_S3_ACCESS_KEY","KUARSIS_AWS_PRODUCTS_S3_SECRET_KEY","KUARSIS_SURVEY_MONKEY_TOKEN","KUARSIS_SURVEY_MONKEY_WEBHOOKS_TOKEN","KUARSIS_SURVEY_MONKEY_APIKEY","KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY"].map(secretName => process.env[secretName]),
+    WithDecryption: true,
+  })
+  .promise();
+
+Parameters will be of the form { Name: 'secretName', Value: 'secretValue', ... }[]
+*/
+/*
+Use the following code to retrieve configured secrets from SSM:
+
+const aws = require('aws-sdk');
+
+const { Parameters } = await (new aws.SSM())
+  .getParameters({
+    Names: ["MONGO_URI","JWT_SECRET","PAYPAL_CLIENT_ID","KUARSIS_AWS_PRODUCTS_S3_ACCESS_KEY","KUARSIS_AWS_PRODUCTS_S3_SECRET_KEY","KUARSIS_SURVEY_MONKEY_TOKEN","KUARSIS_SURVEY_MONKEY_WEBHOOKS_TOKEN","KUARSIS_SURVEY_MONKEY_APIKEY","KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY"].map(secretName => process.env[secretName]),
+    WithDecryption: true,
+  })
+  .promise();
+
+Parameters will be of the form { Name: 'secretName', Value: 'secretValue', ... }[]
+*/
+/*
+Use the following code to retrieve configured secrets from SSM:
+
+const aws = require('aws-sdk');
+
+const { Parameters } = await (new aws.SSM())
+  .getParameters({
     Names: ["MONGO_URI","JWT_SECRET","PAYPAL_CLIENT_ID","KUARSIS_AWS_PRODUCTS_S3_ACCESS_KEY","KUARSIS_AWS_PRODUCTS_S3_SECRET_KEY","KUARSIS_SURVEY_MONKEY_TOKEN","KUARSIS_SURVEY_MONKEY_WEBHOOKS_TOKEN","KUARSIS_SURVEY_MONKEY_APIKEY"].map(secretName => process.env[secretName]),
     WithDecryption: true,
   })
@@ -170,8 +198,17 @@ Amplify Params - DO NOT EDIT */
 
 //Environment Variables from .env file or AWS lambda environment
 const { loadDynamicModelsFromDB } = require('./utils/mongoDbHelper.js')
+
 let dotenv = require('dotenv')
-let myEnv = dotenv.config()
+
+const env = process.env.AMPLIFY_ENV || 'prod';
+
+if(env==="dev"){
+   dotenv.config({ path: `.env.dev` })
+} else {
+   dotenv.config()
+}
+
 let { LogThis, LoggerSettings, L0, L1, L2, L3 } = require('./utils/Logger.js')
 
 const getSecretParamNameFromEnv = varName => {
@@ -186,7 +223,7 @@ const getSecretParamNameFromEnv = varName => {
       varName
    return parameterName
 }
-const mongoUriParam = getSecretParamNameFromEnv(process.env.MONGO_URI_VAR)
+const mongoUriParam = getSecretParamNameFromEnv(process.env.MONGO_URI_VAR) 
 const jwtSecretParam = getSecretParamNameFromEnv(process.env.JWT_SECRET_VAR)
 const paypalClientIdParam = getSecretParamNameFromEnv(
    process.env.PAYPAL_CLIENT_ID_VAR,
@@ -209,6 +246,12 @@ const monkeyWebhooksTokenParam = getSecretParamNameFromEnv(
 const monkeyApiKeyParam = getSecretParamNameFromEnv(
    process.env.KUARSIS_SURVEY_MONKEY_APIKEY_VAR,
 )
+
+const alphaVantageApiKeyParam = getSecretParamNameFromEnv(
+   process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY_VAR,
+)
+
+
 
 //Added the dotenv expand feature, to expand the variables in the .env file that have references to other variables using the ${variablename} format. Look into the .env file for more information.
 //let newExpandedEnv = dotenvExpand.expand(myEnv)
@@ -259,6 +302,10 @@ const loadParameters = data => {
             process.env[process.env.KUARSIS_SURVEY_MONKEY_APIKEY_VAR] =
                param.Value
             break
+         case alphaVantageApiKeyParam:
+            process.env[process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY_VAR] =
+               param.Value
+            break
          default:
             break
       }
@@ -280,6 +327,7 @@ const params = {
       monkeyTokenParam,
       monkeyWebhooksTokenParam,
       monkeyApiKeyParam,
+      alphaVantageApiKeyParam,
    ],
    WithDecryption: true,
 }

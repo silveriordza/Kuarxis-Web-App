@@ -11,15 +11,20 @@ const { LogThis, LoggerSettings, L0 } = require('../utils/Logger.js')
 const router = express.Router()
 let {
    postBalanceSheets,
+   postupdateAlphaVantageController,
    postSecEdgarBulkController,
    postSecEdgarBulkUpdateQuarterController,
    postEdgarBulkCompanyFactsUpdateController,
+   postUpdateCompaniesMetrics,
 } = require('../controllers/valueMinerController.js')
 
 let { protect, admin, hasAccess } = require('../middleware/authMiddleware.js')
 //const { LoggerSettings } = require("../utils/Logger.js");
 
-router.route('/AlphaVantageBulk').post(protect, admin, postBalanceSheets)
+router
+   .route('/updatealphavantage')
+   .post(protect, admin, postupdateAlphaVantageController)
+
 router
    .route('/edgar/bulkupdateannual')
    .post(protect, admin, postSecEdgarBulkController)
@@ -31,5 +36,9 @@ router
 router
    .route('/edgar/edgarbulkcompanyfactsupdate')
    .post(protect, admin, postEdgarBulkCompanyFactsUpdateController)
+
+router
+   .route('/updatecompaniesmetrics')
+   .post(protect, admin, postUpdateCompaniesMetrics)
 
 module.exports = router

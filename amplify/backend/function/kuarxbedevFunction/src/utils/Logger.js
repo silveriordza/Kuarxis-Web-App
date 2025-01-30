@@ -1,7 +1,7 @@
 /** @format */
 
 //const { j } = require('./Functions')
-
+const { ValueMinerDataSourceStatus } = require('../models/valueMinerModel')
 const OFF = -1
 const L0 = 0
 const L1 = 1
@@ -212,6 +212,19 @@ const LogDebugSection = (debugSectionNumber = process.env.LOG_LEVEL) => {
    process.env.LOG_LEVEL = debugSectionNumber
 }
 
+const updateErrorStatus = async arguments => {
+   const status = new ValueMinerDataSourceStatus()
+   status.ticker = arguments.symbol
+   status.sourceVendor = arguments.sourceVendor
+   status.status = false
+   status.functionName = arguments.function
+   status.message = `${arguments.symbol} data returned by API function ${arguments.function}: message: ${arguments.message}`
+   const log = new LoggerSettings(srcFileName, arguments.function)
+   LogThis(log, status.message)
+
+   await status.save()
+}
+
 module.exports = {
    LogThis,
    LogThisFilter,
@@ -225,6 +238,7 @@ module.exports = {
    LoggerSettings,
    LogDebugSection,
    j,
+   updateErrorStatus,
    OFF,
    L0,
    L1,
