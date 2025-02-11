@@ -29,9 +29,9 @@ const {
    AlphaVantageCashFlowQuarterly,
    AlphaVantageIncomeStatementAnnual,
    AlphaVantageIncomeStatementQuarterly,
-   CompanyValueMetrics,
    ValueMinerDataSourceStatus,
    AlphaVantageCache,
+   AlphaVantageHistoricalDailyPrices,
 } = require('../models/valueMinerModel.js')
 
 const srcFileName = 'alphaVantageAPI.js'
@@ -481,7 +481,135 @@ const updateAlphaVantage = async inputs => {
    return true
 }
 
+const updateAlphaVantageDailyPrices = async inputs => {
+   const log = new LoggerSettings(srcFileName, 'updateAlphaVantageDailyPrices')
+   const apiKey = process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY
+   const symbols = inputs.symbols
+   const configs = inputs.configs
+   const { refreshcache } = configs
+
+   if (!apiKey || apiKey == '') {
+      throw new Error(`Alpha Vantage apikey is empty.`)
+   }
+
+   const params = {
+      function: 'TIME_SERIES_DAILY_ADJUSTED',
+      symbol: null,
+      outputsize: 'full',
+      apikey: apiKey,
+   }
+
+   const symbolsTotalCount = symbols?.length
+   let symbolsProcessed = 0
+   let firstTimeApiCall = true
+   LogThis(log, `Started processing ${symbolsTotalCount} symbols`)
+   for (const symbol of symbols) {
+      params.symbol = symbol
+      LogThis(log, `${symbol} Started updating function: ${params.function}`)
+
+      LogThis(
+         log,
+         `${symbol} Started updating function: ${params.function}`,
+         L1,
+      )
+      try {
+         if (firstTimeApiCall) {
+            firstTimeApiCall = false
+            //millisecondsStart = Date.now()
+         } else {
+            await sleep(process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT)
+         }
+
+         apiResponses = await axios.get(`https://www.alphavantage.co/query`, {
+            params,
+         })
+         if (
+            apiResponses &&
+            apiResponses?.data &&
+            apiResponses.data['Time Series (Daily)'] &&
+            Object.keys(apiResponses.data['Time Series (Daily)'])?.length > 0
+         ) {
+            LogThis(
+               log,
+               `${symbol} function ${params.function} data found by API`,
+            )
+         } else {
+            const messageFromAPI = apiResponses?.data?.Information
+               ? `with message ${apiResponses?.data?.Information}`
+               : ''
+
+            await updateErrorStatus({
+               symbol: symbol,
+               sourceVendor: 'AlphaVantage',
+               function: params.function,
+               message: `symbol not found or error from API ${messageFromAPI}`,
+            })
+            break
+         }
+      } catch (ex) {
+         LogThis(
+            log,
+            `${symbol} not found in cache nor in API.  Exception: ${ex.message}`,
+            L0,
+         )
+         const status = new ValueMinerDataSourceStatus()
+         status.ticker = symbol
+         status.sourceVendor = 'AlphaVantage'
+         status.status = false
+         status.functionName = params.function
+         status.message = `Exception thrown by API for ticker not found in function ${params.function}`
+         await status.save()
+         continue
+      }
+
+      try {
+         let alphaVantageData = apiResponses.data['Time Series (Daily)']
+
+         await AlphaVantageHistoricalDailyPrices.deleteMany({ symbol: symbol })
+
+         for (const priceDateKey of Object.keys(alphaVantageData)) {
+            const record = new AlphaVantageHistoricalDailyPrices()
+            record.symbol = symbol
+            record.priceDate = new Date(priceDateKey)
+            record.open = alphaVantageData[priceDateKey]['1. open']
+            record.high = alphaVantageData[priceDateKey]['2. high']
+            record.low = alphaVantageData[priceDateKey]['3. low']
+            record.close = alphaVantageData[priceDateKey]['4. close']
+            record.adjustedClose =
+               alphaVantageData[priceDateKey]['5. adjusted close']
+            record.volume = alphaVantageData[priceDateKey]['6. volume']
+            record.dividendAmount =
+               alphaVantageData[priceDateKey]['7. dividend amount']
+            record.splitCoefficient =
+               alphaVantageData[priceDateKey]['8. split coefficient']
+            await record.save()
+         }
+      } catch (ex) {
+         LogThis(
+            log,
+            `${symbol} Error while saving AlphaVantageHistoricalDailyPrices Exception: ${ex.message}`,
+            L0,
+         )
+         await updateErrorStatus({
+            symbol: symbol,
+            sourceVendor: 'AlphaVantage',
+            function: params.function,
+            message: `Error while saving to AlphaVantageHistoricalDailyPrices ${ex.message}`,
+         })
+      }
+   }
+
+   LogThis(
+      log,
+      `Update Completed ${symbolsProcessed} out off ${symbolsTotalCount} remaining ${
+         symbolsTotalCount - symbolsProcessed
+      }`,
+   )
+   return true
+}
+
 module.exports = {
    getBalanceSheets,
    updateAlphaVantage,
+   updateAlphaVantageDailyPrices,
 }

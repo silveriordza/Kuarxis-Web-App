@@ -16,6 +16,7 @@ let asyncHandler = require('express-async-handler')
 const {
    getBalanceSheets,
    updateAlphaVantage,
+   updateAlphaVantageDailyPrices,
 } = require('../utils/alphaVantageAPI.js')
 
 const {
@@ -140,7 +141,7 @@ const postEdgarBulkCompanyFactsUpdateController = asyncHandler(
 )
 
 const postUpdateCompaniesMetrics = asyncHandler(async (req, res) => {
-   const functionName = 'postEdgarBulkCompanyFactsUpdateController'
+   const functionName = 'postUpdateCompaniesMetrics'
    const log = new LoggerSettings(srcFileName, functionName)
 
    const { inputs } = req.body
@@ -149,12 +150,28 @@ const postUpdateCompaniesMetrics = asyncHandler(async (req, res) => {
       inputs,
    )
 
-   //const status = await postUpdateCompaniesMetrics(inputs)
-
    let ownerId = req.user._id
 
    res.status(201).json({
       status: result ? 'success' : 'failure',
+   })
+})
+
+// @desc    Creates a new Super Survey configuration
+// @route   POST /api/updatealphavantagedailyprices/
+// @access  Private/Admin
+const postUpdateAlphaVantageDailyPrices = asyncHandler(async (req, res) => {
+   const functionName = 'postUpdateAlphaVantageDailyPrices'
+   const log = new LoggerSettings(srcFileName, functionName)
+
+   const { inputs } = req.body
+
+   const letBalanceSheets = await updateAlphaVantageDailyPrices(inputs)
+
+   //let ownerId = req.user._id
+
+   res.status(201).json({
+      letBalanceSheets: letBalanceSheets ? 'Success' : 'Failed',
    })
 })
 
@@ -165,4 +182,5 @@ module.exports = {
    postSecEdgarBulkUpdateQuarterController,
    postEdgarBulkCompanyFactsUpdateController,
    postUpdateCompaniesMetrics,
+   postUpdateAlphaVantageDailyPrices,
 }

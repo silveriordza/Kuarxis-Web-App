@@ -537,59 +537,6 @@ const AlphaVantageIncomeStatementQuarterly = mongoose.model(
 )
 //Income Statement quarterly end.
 
-// const AlphaVantageCompanyOverviewModel = mongoose.Schema(
-//    {
-//       key: { type: String, required: true, unique: true },
-//       symbol: { type: String, required: true, unique: false },
-//       CIK: { type: Number, required: false, unique: false },
-//       AssetType: { type: String, required: false, unique: false },
-//       Description: { type: String, required: false, unique: false },
-//       Exchange: { type: String, required: false, unique: false },
-//       OfficialSite: { type: String, required: false, unique: false },
-//       DilutedEPSTTM: { type: Number, required: false, unique: false },
-//       QuarterlyEarningsGrowthYOY: {
-//          type: Number,
-//          required: false,
-//          unique: false,
-//       },
-//       QuarterlyRevenueGrowthYOY: {
-//          type: Number,
-//          required: false,
-//          unique: false,
-//       },
-//       AnalystTargetPrice: { type: Number, required: false, unique: false },
-//       AnalystRatingStrongBuy: { type: Number, required: false, unique: false },
-//       AnalystRatingBuy: { type: Number, required: false, unique: false },
-//       AnalystRatingHold: { type: Number, required: false, unique: false },
-//       AnalystRatingSell: { type: Number, required: false, unique: false },
-//       AnalystRatingStrongSell: { type: Number, required: false, unique: false },
-//       TrailingPE: { type: Number, required: false, unique: false },
-//       ForwardPE: { type: Number, required: false, unique: false },
-//       Beta: { type: Number, required: false, unique: false },
-//       SharesOutstanding: { type: Number, required: false, unique: false },
-//    },
-//    {
-//       timestamps: true,
-//    },
-// )
-
-// AlphaVantageCompanyOverviewModel.pre('insertMany', function (next, docs) {
-//    // 'docs' is an array of documents being inserted
-//    docs.forEach(doc => {
-//       for (let key in doc) {
-//          if (doc[key] === 'None') {
-//             doc[key] = null // Replace "None" with an empty string
-//          }
-//       }
-//    })
-//    next() // Proceed with the insertion
-// })
-// const AlphaVantageCompanyOverview = mongoose.model(
-//    'AlphaVantageCompanyOverview',
-//    AlphaVantageCompanyOverviewModel,
-// )
-
-//----
 const AlphaVantageCacheModel = mongoose.Schema(
    {
       functionName: { type: String, required: true, unique: false },
@@ -857,6 +804,42 @@ const CompanyAnnualMetrics = mongoose.model(
    CompanyAnnualMetricsModel,
 )
 
+//START DAILY PRICES
+const AlphaVantageHistoricalDailyPricesModel = mongoose.Schema(
+   {
+      symbol: { type: String, required: true, unique: false },
+      priceDate: { type: Date, required: true, unique: false },
+      open: { type: Number, required: false, unique: false },
+      high: { type: Number, required: false, unique: false },
+      low: { type: Number, required: false, unique: false },
+      close: { type: Number, required: false, unique: false },
+      adjustedClose: { type: Number, required: false, unique: false },
+      volume: { type: Number, required: false, unique: false },
+      dividendAmount: { type: Number, required: false, unique: false },
+      splitCoefficient: { type: Number, required: false, unique: false },
+   },
+   {
+      timestamps: true,
+   },
+)
+AlphaVantageHistoricalDailyPricesModel.pre('insertMany', function (next, docs) {
+   // 'docs' is an array of documents being inserted
+   docs.forEach(doc => {
+      for (let key in doc) {
+         if (doc[key] === 'None') {
+            doc[key] = null // Replace "None" with an empty string
+         }
+      }
+   })
+   next() // Proceed with the insertion
+})
+
+const AlphaVantageHistoricalDailyPrices = mongoose.model(
+   'AlphaVantageHistoricalDailyPrices',
+   AlphaVantageHistoricalDailyPricesModel,
+)
+//END DAILY PRICES
+
 module.exports = {
    AlphaVantageBalanceSheetAnnual,
    AlphaVantageBalanceSheetQuarterly,
@@ -871,4 +854,5 @@ module.exports = {
    EgarCompanyFactsQuarter,
    EdgarCompaniesFacts,
    ValueMinerDataSourceStatus,
+   AlphaVantageHistoricalDailyPrices,
 }
