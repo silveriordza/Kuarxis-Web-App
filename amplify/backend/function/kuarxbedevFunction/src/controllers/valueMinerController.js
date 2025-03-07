@@ -175,6 +175,24 @@ const postUpdateAlphaVantageDailyPrices = asyncHandler(async (req, res) => {
    })
 })
 
+// @desc    Updates the company metrics for values that have daily frequency.
+// @route   POST /api/updatecompanydailymetrics/
+// @access  Private/Admin
+const postUpdateCompanyDailyMetrics = asyncHandler(async (req, res) => {
+   const functionName = 'postUpdateCompanyDailyMetrics'
+   const log = new LoggerSettings(srcFileName, functionName)
+
+   const { inputs } = req.body
+   let valueMinerMetricsGenerator = new ValueMinerMetricsGenerator()
+   const result = await valueMinerMetricsGenerator.updateCompanyDailyMetrics(
+      inputs,
+   )
+
+   res.status(201).json({
+      status: result ? 'success' : 'failure',
+   })
+})
+
 module.exports = {
    postBalanceSheets,
    postupdateAlphaVantageController,
@@ -183,4 +201,5 @@ module.exports = {
    postEdgarBulkCompanyFactsUpdateController,
    postUpdateCompaniesMetrics,
    postUpdateAlphaVantageDailyPrices,
+   postUpdateCompanyDailyMetrics,
 }

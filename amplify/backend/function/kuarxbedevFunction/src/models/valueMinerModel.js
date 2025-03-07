@@ -65,6 +65,8 @@ AlphaVantageBalanceSheetAnnualModel.pre('insertMany', function (next, docs) {
    next() // Proceed with the insertion
 })
 
+AlphaVantageBalanceSheetAnnualModel.index({ symbol: 1 })
+
 const AlphaVantageBalanceSheetAnnual = mongoose.model(
    'AlphaVantageBalanceSheetAnnual',
    AlphaVantageBalanceSheetAnnualModel,
@@ -120,6 +122,8 @@ const AlphaVantageBalanceSheetQuarterlyModel = mongoose.Schema(
       timestamps: true,
    },
 )
+
+AlphaVantageBalanceSheetQuarterlyModel.index({ symbol: 1 })
 
 AlphaVantageBalanceSheetQuarterlyModel.pre('insertMany', function (next, docs) {
    // 'docs' is an array of documents being inserted
@@ -243,6 +247,8 @@ const AlphaVantageCashFlowAnnualModel = mongoose.Schema(
    },
 )
 
+AlphaVantageCashFlowAnnualModel.index({ symbol: 1 })
+
 AlphaVantageCashFlowAnnualModel.pre('insertMany', function (next, docs) {
    // 'docs' is an array of documents being inserted
    docs.forEach(doc => {
@@ -365,6 +371,8 @@ const AlphaVantageCashFlowQuarterlyModel = mongoose.Schema(
    },
 )
 
+AlphaVantageCashFlowQuarterlyModel.index({ symbol: 1 })
+
 AlphaVantageCashFlowQuarterlyModel.pre('insertMany', function (next, docs) {
    // 'docs' is an array of documents being inserted
    docs.forEach(doc => {
@@ -440,6 +448,7 @@ const AlphaVantageIncomeStatementAnnualModel = mongoose.Schema(
       timestamps: true,
    },
 )
+AlphaVantageIncomeStatementAnnualModel.index({ symbol: 1 })
 
 AlphaVantageIncomeStatementAnnualModel.pre('insertMany', function (next, docs) {
    // 'docs' is an array of documents being inserted
@@ -517,6 +526,8 @@ const AlphaVantageIncomeStatementQuarterlyModel = mongoose.Schema(
    },
 )
 
+AlphaVantageIncomeStatementQuarterlyModel.index({ symbol: 1 })
+
 AlphaVantageIncomeStatementQuarterlyModel.pre(
    'insertMany',
    function (next, docs) {
@@ -551,6 +562,8 @@ const AlphaVantageCacheModel = mongoose.Schema(
       timestamps: true,
    },
 )
+
+AlphaVantageCacheModel.index({ symbol: 1, functionName: 1 })
 
 const AlphaVantageCache = mongoose.model(
    'AlphaVantageCache',
@@ -793,11 +806,94 @@ const CompanyAnnualMetricsModel = mongoose.Schema(
          unique: false,
          set: value => (value === 'None' || value === '-' ? null : value),
       },
+
+      //HERE ONWARD
+      VaR_1_percent: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      VaR_1_value: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      VaR_2_percent: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      VaR_2_value: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      VaR_3_percent: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      VaR_3_value: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      CVaR_1_percent: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      CVaR_1_value: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      CVaR_2_percent: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      CVaR_2_value: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      CVaR_3_percent: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+      CVaR_3_value: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
+
+      VaR_CVaR_dataPointsFound: {
+         type: Number,
+         required: false,
+         unique: false,
+         set: value => (value === 'None' || value === '-' ? null : value),
+      },
    },
    {
       timestamps: true,
    },
 )
+
+CompanyAnnualMetricsModel.index({ symbol: 1 })
 
 const CompanyAnnualMetrics = mongoose.model(
    'CompanyAnnualMetrics',
@@ -807,6 +903,7 @@ const CompanyAnnualMetrics = mongoose.model(
 //START DAILY PRICES
 const AlphaVantageHistoricalDailyPricesModel = mongoose.Schema(
    {
+      dailyPriceKey: { type: String, required: true, unique: true },
       symbol: { type: String, required: true, unique: false },
       priceDate: { type: Date, required: true, unique: false },
       open: { type: Number, required: false, unique: false },
@@ -822,6 +919,7 @@ const AlphaVantageHistoricalDailyPricesModel = mongoose.Schema(
       timestamps: true,
    },
 )
+
 AlphaVantageHistoricalDailyPricesModel.pre('insertMany', function (next, docs) {
    // 'docs' is an array of documents being inserted
    docs.forEach(doc => {
@@ -833,6 +931,8 @@ AlphaVantageHistoricalDailyPricesModel.pre('insertMany', function (next, docs) {
    })
    next() // Proceed with the insertion
 })
+
+AlphaVantageHistoricalDailyPricesModel.index({ symbol: 1 })
 
 const AlphaVantageHistoricalDailyPrices = mongoose.model(
    'AlphaVantageHistoricalDailyPrices',

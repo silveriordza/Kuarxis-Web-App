@@ -10,13 +10,13 @@ const { LogThis, LoggerSettings, L0 } = require('../utils/Logger.js')
 
 const router = express.Router()
 let {
-   postBalanceSheets,
    postupdateAlphaVantageController,
    postSecEdgarBulkController,
    postSecEdgarBulkUpdateQuarterController,
    postEdgarBulkCompanyFactsUpdateController,
    postUpdateCompaniesMetrics,
    postUpdateAlphaVantageDailyPrices,
+   postUpdateCompanyDailyMetrics,
 } = require('../controllers/valueMinerController.js')
 
 let { protect, admin, hasAccess } = require('../middleware/authMiddleware.js')
@@ -45,5 +45,9 @@ router
 router
    .route('/updatealphavantagedailyprices')
    .post(protect, admin, postUpdateAlphaVantageDailyPrices)
+
+router
+   .route('/updatecompanydailymetrics')
+   .post(protect, admin, postUpdateCompanyDailyMetrics)
 
 module.exports = router

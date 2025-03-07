@@ -13,6 +13,7 @@ const {
    AlphaVantageCache,
    AlphaVantageIncomeStatementAnnual,
    AlphaVantageBalanceSheetAnnual,
+   AlphaVantageHistoricalDailyPrices,
 } = require('../../models/valueMinerModel')
 
 const collectionEntity = 'CompanyAnnualMetrics'
@@ -245,6 +246,160 @@ class ValueMinerMetricsGenerator {
          this.log.LogThis(`Unexpected Exception: ${ex.message}`)
          this.log.LogThis('END')
          return false
+      }
+   }
+
+   async updateCompanyDailyMetrics(inputs) {
+      this.log.setFunctionName('updateCompanyDailyMetrics')
+      this.log.LogThis('START')
+      try {
+         const { configs, symbols } = inputs
+         const VaR_1_percent = configs.VaR_1_percent
+         const VaR_2_percent = configs.VaR_2_percent
+         const VaR_3_percent = configs.VaR_3_percent
+         const CVaR_1_percent = configs.CVaR_1_percent
+         const CVaR_2_percent = configs.CVaR_2_percent
+         const CVaR_3_percent = configs.CVaR_3_percent
+
+         const totalSymbols = symbols?.length ?? 0
+         this.log.LogThis(`Total symbols to be updated: ${totalSymbols ?? 0}`)
+
+         let symbolProcessedCount = 0
+         for (const symbol of symbols) {
+            symbolProcessedCount++
+            this.log.LogThis(
+               `Updating symbol: ${symbol}. Symbols remaining ${
+                  totalSymbols - symbolProcessedCount
+               } of ${totalSymbols}`,
+            )
+            // this.log.LogThis(
+            //    `Symbol ${symbol}: finding Daily Prices in database`,
+            // )
+            const dailyPrices = await AlphaVantageHistoricalDailyPrices.find(
+               { symbol: symbol },
+               'symbol priceDate adjustedClose',
+            )
+               .sort({ priceDate: -1 })
+               .lean()
+
+            if (!dailyPrices || dailyPrices?.length === 0) {
+               this.log.updateErrorStatus({
+                  symbol: symbol,
+                  function: 'updateCompanyDailyMetrics',
+                  sourceVendor: 'Alpha Vantage',
+                  message:
+                     'Alpha Vantage historical daily price not found in table.',
+               })
+               continue
+            }
+            // this.log.LogThis(
+            //    `Symbol ${symbol}: Found ${dailyPrices.length} daily prices, starting VaR and CVaR calculations`,
+            // )
+            const returnsArray = []
+            for (let i = 0; i < dailyPrices.length - 1; i++) {
+               const dailyPrice1 = dailyPrices[i]
+               const dailyPrice2 = dailyPrices[i + 1]
+               const adjustedClose1 = dailyPrice1.adjustedClose
+               const adjustedClose2 = dailyPrice2.adjustedClose
+               let returnRate = null
+               if (adjustedClose2 == 0) {
+                  returnRate = 0
+               } else {
+                  returnRate =
+                     (adjustedClose1 - adjustedClose2) / adjustedClose2
+               }
+               returnsArray.push(returnRate)
+            }
+
+            const returnsArraySorted = returnsArray.sort((a, b) => a - b)
+
+            //returnsArraySorted.forEach((x, i) => (x.sequence = i + 1))
+            const returnRatesCount = returnsArraySorted.length
+            let VaR_1_index = Math.round(returnRatesCount * (1 - VaR_1_percent))
+            let VaR_2_index = Math.round(returnRatesCount * (1 - VaR_2_percent))
+            let VaR_3_index = Math.round(returnRatesCount * (1 - VaR_3_percent))
+
+            VaR_1_index = VaR_1_index == 0 ? 0 : VaR_1_index - 1
+            VaR_2_index = VaR_2_index == 0 ? 0 : VaR_2_index - 1
+            VaR_3_index = VaR_3_index == 0 ? 0 : VaR_3_index - 1
+
+            const VaR_1_value = returnsArraySorted[VaR_1_index]
+            const VaR_2_value = returnsArraySorted[VaR_2_index]
+            const VaR_3_value = returnsArraySorted[VaR_3_index]
+
+            // this.log.LogThis(
+            //    `Symbol ${symbol}: VaR and CVaR calculation completed. Finding Company metrics in Database`,
+            // )
+            let companyMetric = await CompanyAnnualMetrics.findOne({
+               symbol: symbol,
+            })
+            if (!companyMetric) {
+               // this.log.LogThis(
+               //    `Symbol: ${symbol} not found in CompanyMetrics, creating a new entry for it`,
+               // )
+               this.log.updateErrorStatus({
+                  symbol: symbol,
+                  function: 'updateCompanyDailyMetrics',
+                  sourceVendor: 'Alpha Vantage',
+                  message:
+                     'Symbol not found in company metrics, creating a new entry for it',
+               })
+               companyMetric = new CompanyAnnualMetrics()
+               companyMetric.symbol = symbol
+               companyMetric.yearStart =
+                  dailyPrices[returnRatesCount - 1].priceDate.getFullYear()
+               companyMetric.yearEnd = dailyPrices[0].priceDate.getFullYear()
+            }
+            // else {
+            //    this.log.LogThis(
+            //       `Symbol ${symbol}: found a record in Company Metrics database`,
+            //    )
+            // }
+
+            companyMetric.VaR_1_percent = VaR_1_percent
+            companyMetric.VaR_1_value = VaR_1_value
+            companyMetric.VaR_2_percent = VaR_2_percent
+            companyMetric.VaR_2_value = VaR_2_value
+            companyMetric.VaR_3_percent = VaR_3_percent
+            companyMetric.VaR_3_value = VaR_3_value
+
+            let CVaR_1_value = 0
+            let CVaR_2_value = 0
+            let CVaR_3_value = 0
+
+            for (let i = 0; i <= VaR_1_index; i++) {
+               if (i <= VaR_1_index) {
+                  CVaR_1_value = CVaR_1_value + returnsArraySorted[i]
+               }
+
+               if (i <= VaR_2_index) {
+                  CVaR_2_value = CVaR_2_value + returnsArraySorted[i]
+               }
+
+               if (i <= VaR_3_index) {
+                  CVaR_3_value = CVaR_3_value + returnsArraySorted[i]
+               }
+            }
+
+            companyMetric.CVaR_1_percent = CVaR_1_percent
+            companyMetric.CVaR_1_value = (1 / (VaR_1_index + 1)) * CVaR_1_value
+            companyMetric.CVaR_2_percent = CVaR_2_percent
+            companyMetric.CVaR_2_value = (1 / (VaR_2_index + 1)) * CVaR_2_value
+            companyMetric.CVaR_3_percent = CVaR_3_percent
+            companyMetric.CVaR_3_value = (1 / (VaR_3_index + 1)) * CVaR_3_value
+
+            companyMetric.VaR_CVaR_dataPointsFound = returnRatesCount
+            // this.log.LogThis(
+            //    `Symbol ${symbol}: Saving VaR and CVaR in Company Metrics database.`,
+            // )
+            await companyMetric.save()
+            // this.log.LogThis(
+            //    `Symbol ${symbol}: Saved VaR and CVaR in Company Metrics database.`,
+            // )
+         }
+         return true
+      } catch (ex) {
+         this.log.LogThis(`Exception message: ${ex.message}`)
       }
    }
 }

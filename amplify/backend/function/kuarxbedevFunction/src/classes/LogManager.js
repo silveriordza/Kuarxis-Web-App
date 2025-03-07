@@ -29,7 +29,7 @@ setFunctionName(functionName = '') {
     this.logSettings.functionName = functionName
  }
 
-LogThis  (logMessage, level = L3)  {
+LogThis  (logMessage, level = L1)  {
    if (level != OFF && process.env.LOG_LEVEL != OFF) {
       const LOG_LEVEL = process.env.LOG_LEVEL
 

@@ -26,7 +26,7 @@ function LoggerSettings(fileName = '', functionName = '') {
    this.functionName = functionName || ''
 }
 
-const LogThis = (logSettings, logMessage, level = L3) => {
+const LogThis = (logSettings, logMessage, level = L1) => {
    if (level != OFF && process.env.LOG_LEVEL != OFF) {
       const LOG_LEVEL = process.env.LOG_LEVEL
 
