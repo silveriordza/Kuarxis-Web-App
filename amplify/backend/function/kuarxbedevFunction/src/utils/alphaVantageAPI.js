@@ -90,7 +90,7 @@ const getBalanceSheets = async symbols => {
 }
 
 const updateAlphaVantage = async inputs => {
-   const log = new LoggerSettings(srcFileName, 'getBalanceSheets')
+   const log = new LoggerSettings(srcFileName, 'updateAlphaVantage')
    const apiKey = process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_APIKEY
    const symbols = inputs.symbols
    const configs = inputs.configs
@@ -184,6 +184,7 @@ const updateAlphaVantage = async inputs => {
                      params,
                   },
                )
+
                if (
                   apiResponses &&
                   apiResponses?.data &&
@@ -488,7 +489,7 @@ const updateAlphaVantageDailyPrices = async inputs => {
    )
    const symbols = inputs.symbols
    const configs = inputs.configs
-   const { refreshcache } = configs
+   const { refreshcache, refreshType, alphaVantageOutputSize } = configs
 
    if (!apiKey || apiKey == '') {
       throw new Error(`Alpha Vantage apikey is empty.`)
@@ -497,7 +498,7 @@ const updateAlphaVantageDailyPrices = async inputs => {
    const params = {
       function: 'TIME_SERIES_DAILY_ADJUSTED',
       symbol: null,
-      outputsize: 'full',
+      outputsize: alphaVantageOutputSize, //full or compact
       apikey: apiKey,
    }
 
@@ -510,7 +511,7 @@ const updateAlphaVantageDailyPrices = async inputs => {
       params.symbol = symbol
       LogThis(log, `Updating symbol ${symbol}. Function ${params.function}`)
       symbolsProcessed++
-
+      let listOfDates = null
       try {
          if (firstTimeApiCall) {
             firstTimeApiCall = false
@@ -529,6 +530,7 @@ const updateAlphaVantageDailyPrices = async inputs => {
          apiResponses = await axios.get(`https://www.alphavantage.co/query`, {
             params,
          })
+
          if (
             apiResponses &&
             apiResponses?.data &&
@@ -570,20 +572,71 @@ const updateAlphaVantageDailyPrices = async inputs => {
 
       try {
          let alphaVantageData = apiResponses.data['Time Series (Daily)']
+         listOfDates = Object.keys(alphaVantageData)
 
          //await AlphaVantageHistoricalDailyPrices.deleteMany({ symbol: symbol })
          const historicalPricesDocsArray = []
          LogThis(log, `${symbol} started reading daily prices results`)
          let timerStart = Date.now()
-         for (const priceDateKey of Object.keys(alphaVantageData)) {
-            const dailyPriceKey = `${symbol}_${priceDateKey}`
-            let record = await AlphaVantageHistoricalDailyPrices.findOne({
-               dailyPriceKey: dailyPriceKey,
-            })
+         let latestDateIndex = 0
+         switch (refreshType) {
+            case 'latestDates': {
+               let latestDailyDate =
+                  await AlphaVantageHistoricalDailyPrices.aggregate([
+                     {
+                        $match: { symbol: symbol },
+                     },
+                     {
+                        $group: {
+                           _id: null,
+                           maxDate: { $max: '$priceDate' },
+                        },
+                     },
+                  ])
+               let latestDate = null
+               if (latestDailyDate && latestDailyDate?.length > 0) {
+                  latestDate = latestDailyDate[0].maxDate
+               }
 
-            if (!record) {
-               record = new AlphaVantageHistoricalDailyPrices()
+               if (latestDate) {
+                  latestDateIndex = listOfDates.indexOf(
+                     latestDate.toISOString().slice(0, 10),
+                  )
+                  if (latestDateIndex > 0) {
+                     latestDateIndex--
+                  } else {
+                     continue
+                  }
+               } else {
+                  latestDateIndex = listOfDates.length - 1
+               }
+               break
             }
+            case 'allDates': {
+               latestDateIndex = listOfDates.length - 1
+               await AlphaVantageHistoricalDailyPrices.deleteMany({
+                  symbol: symbol,
+               })
+               break
+            }
+            default: {
+               throw Error(
+                  'invalid refreshType selected, only allDates or latestDates allowed',
+               )
+            }
+         }
+
+         //for (const priceDateKey of Object.keys(alphaVantageData)) {
+         for (let i = latestDateIndex; i >= 0; i--) {
+            let priceDateKey = listOfDates[i]
+            //const dailyPriceKey = `${symbol}_${priceDateKey}`
+            // let record = await AlphaVantageHistoricalDailyPrices.findOne({
+            //    dailyPriceKey: dailyPriceKey,
+            // })
+
+            //if (!record) {
+            let record = new AlphaVantageHistoricalDailyPrices()
+            //}
 
             //const record = new AlphaVantageHistoricalDailyPrices()
             record.symbol = symbol
