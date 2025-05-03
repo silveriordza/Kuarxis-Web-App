@@ -95,6 +95,9 @@ const updateAlphaVantage = async inputs => {
    const symbols = inputs.symbols
    const configs = inputs.configs
    const { refreshcache } = configs
+   const ALPHAVANTAGE_CALLWAIT = parseInt(
+      process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT,
+   )
 
    if (!apiKey || apiKey == '') {
       throw new Error(`Alpha Vantage apikey is empty.`)
@@ -108,6 +111,12 @@ const updateAlphaVantage = async inputs => {
 
    const params = {
       function: null,
+      symbol: null,
+      apikey: apiKey,
+   }
+
+   const paramsEarningsReported = {
+      function: 'EARNINGS',
       symbol: null,
       apikey: apiKey,
    }
@@ -138,7 +147,29 @@ const updateAlphaVantage = async inputs => {
    LogThis(log, `Started processing ${symbolsTotalCount} symbols`)
    for (const symbol of symbols) {
       params.symbol = symbol
-      LogThis(log, `${symbol} Started updating function: ${params.function}`)
+      // params.function = 'EARNINGS'
+      // //paramsEarningsReported.symbol = symbol
+      // LogThis(log, `${symbol} Started updating function: ${params.function}`)
+      // let responseEarningsReported = await axios.get(
+      //    `https://www.alphavantage.co/query`,
+      //    {
+      //       params,
+      //    },
+      // )
+
+      // if (
+      //    responseEarningsReported &&
+      //    responseEarningsReported?.data &&
+      //    responseEarningsReported.data?.annualEarnings &&
+      //    responseEarningsReported.data?.quarterlyEarnings
+      // ) {
+      // } else {
+      //    LogThis(
+      //       log,
+      //       `${symbol} function ${responseEarningsReported.function} data not found in API`,
+      //    )
+      //    // continue
+      // }
 
       for (const [avFunction, collections] of functionToCollectionsMap) {
          params.function = avFunction
@@ -150,76 +181,96 @@ const updateAlphaVantage = async inputs => {
             L1,
          )
          try {
-            if (refreshcache) {
-               await AlphaVantageCache.deleteMany({
-                  symbol: symbol,
-                  functionName: avFunction,
-               })
-               apiResponses = null
+            // if (refreshcache) {
+            //    await AlphaVantageCache.deleteMany({
+            //       symbol: symbol,
+            //       functionName: avFunction,
+            //    })
+            //    apiResponses = null
+            // } else {
+            //    apiResponses = await AlphaVantageCache.findOne({
+            //       symbol: symbol,
+            //       functionName: avFunction,
+            //    }).lean()
+            // }
+
+            // //if (!apiResponses) {
+            // if (firstTimeApiCall) {
+            //    firstTimeApiCall = false
+            //    //millisecondsStart = Date.now()
+            // } else {
+            //    await sleep(process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT)
+            // }
+
+            if (firstTimeApiCall) {
+               firstTimeApiCall = false
+               millisecondsStart = Date.now()
             } else {
-               apiResponses = await AlphaVantageCache.findOne({
-                  symbol: symbol,
-                  functionName: avFunction,
-               }).lean()
+               const millisecondsNow = Date.now()
+               const millisencondsElapsed = millisecondsNow - millisecondsStart
+               // LogThis(
+               //    log,
+               //    `${symbol} function ${params.function}, millisecondsNow=${millisecondsNow}, millisecondsStart=${millisecondsStart}, millisencondsElapsed=${millisencondsElapsed}, ALPHAVANTAGE_CALLWAIT=${ALPHAVANTAGE_CALLWAIT}`,
+               // )
+               if (millisencondsElapsed < ALPHAVANTAGE_CALLWAIT) {
+                  const waitMilliseconds =
+                     ALPHAVANTAGE_CALLWAIT - millisencondsElapsed
+                  // LogThis(
+                  //    log,
+                  //    `${symbol} function ${params.function}, waitMilliseconds=${waitMilliseconds}`,
+                  // )
+                  await sleep(waitMilliseconds)
+               }
+               millisecondsStart = Date.now()
             }
 
-            if (!apiResponses) {
-               if (firstTimeApiCall) {
-                  firstTimeApiCall = false
-                  //millisecondsStart = Date.now()
-               } else {
-                  await sleep(
-                     process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT,
-                  )
-               }
+            // millisecondsEnd = Date.now()
+            // let millisecondsElapsed = millisecondsEnd - millisecondsStart
+            // LogThis(log, `millisecondsElapsed: ${millisecondsElapsed}`)
+            // millisecondsStart = Date.now()
 
-               // millisecondsEnd = Date.now()
-               // let millisecondsElapsed = millisecondsEnd - millisecondsStart
-               // LogThis(log, `millisecondsElapsed: ${millisecondsElapsed}`)
-               // millisecondsStart = Date.now()
+            apiResponses = await axios.get(
+               `https://www.alphavantage.co/query`,
+               {
+                  params,
+               },
+            )
 
-               apiResponses = await axios.get(
-                  `https://www.alphavantage.co/query`,
-                  {
-                     params,
-                  },
-               )
-
-               if (
-                  apiResponses &&
-                  apiResponses?.data &&
-                  apiResponses.data?.annualReports &&
-                  apiResponses.data?.quarterlyReports
-               ) {
-                  foundInApi = true
-                  LogThis(
-                     log,
-                     `${symbol} function ${params.function} data found by API`,
-                  )
-               } else {
-                  const messageFromAPI = apiResponses?.data?.Information
-                     ? `with message ${apiResponses?.data?.Information}`
-                     : ''
-
-                  await updateErrorStatus({
-                     symbol: symbol,
-                     sourceVendor: 'AlphaVantage',
-                     function: params.function,
-                     message: `symbol not found or error from API ${messageFromAPI}`,
-                  })
-                  break
-               }
-            } else {
-               foundInApi = false
+            if (
+               apiResponses &&
+               apiResponses?.data &&
+               apiResponses.data?.annualReports &&
+               apiResponses.data?.quarterlyReports
+            ) {
+               foundInApi = true
                LogThis(
                   log,
-                  `${symbol} function ${params.function} data found in cache`,
+                  `${symbol} function ${params.function} data found by API`,
                )
+            } else {
+               const messageFromAPI = apiResponses?.data?.Information
+                  ? `with message ${apiResponses?.data?.Information}`
+                  : ''
+
+               await updateErrorStatus({
+                  symbol: symbol,
+                  sourceVendor: 'AlphaVantage',
+                  function: params.function,
+                  message: `symbol not found or error from API ${messageFromAPI}`,
+               })
+               continue
             }
+            // } else {
+            //    foundInApi = false
+            //    LogThis(
+            //       log,
+            //       `${symbol} function ${params.function} data found in cache`,
+            //    )
+            // }
          } catch (ex) {
             LogThis(
                log,
-               `${symbol} not found in cache nor in API.  Exception: ${ex.message}`,
+               `${symbol} not found in API.  Exception: ${ex.message}`,
                L0,
             )
             const status = new ValueMinerDataSourceStatus()
@@ -248,27 +299,48 @@ const updateAlphaVantage = async inputs => {
             continue
          }
 
-         if (foundInApi) {
-            const alphaVantageCache = new AlphaVantageCache()
-            alphaVantageCache.functionName = params.function
-            alphaVantageCache.symbol = symbol
-            alphaVantageCache.data = apiResponses.data
-            await alphaVantageCache.save()
-         }
+         // if (foundInApi) {
+         //    const alphaVantageCache = new AlphaVantageCache()
+         //    alphaVantageCache.functionName = params.function
+         //    alphaVantageCache.symbol = symbol
+         //    alphaVantageCache.data = apiResponses.data
+         //    await alphaVantageCache.save()
+         // }
 
          annualReports = apiResponses?.data?.annualReports
          quarterlyReports = apiResponses?.data?.quarterlyReports
-         await collections.annual.deleteMany({ symbol: symbol })
-         await collections.quarterly.deleteMany({ symbol: symbol })
+
+         // await collections.annual.deleteMany({ symbol: symbol })
+         // await collections.quarterly.deleteMany({ symbol: symbol })
 
          if (annualReports) {
+            const maxAnnualDateAlreadyProcessed =
+               await collections.annual.aggregate([
+                  {
+                     $match: { symbol: symbol },
+                  },
+                  {
+                     $group: {
+                        _id: null,
+                        maxDate: { $max: '$fiscalDateEnding' },
+                     },
+                  },
+               ])
             let sequence = null
             let keyTemp = null
             let keyFinal = null
             const keysStoredMap = new Map()
-            annualReports.forEach(x => {
+            const annualReportsToInsert = []
+            for (const x of annualReports) {
                x.symbol = params.symbol
                let fiscalDateEndingDate = new Date(x.fiscalDateEnding)
+               if (
+                  fiscalDateEndingDate.toISOString() ==
+                  maxAnnualDateAlreadyProcessed[0].maxDate.toISOString()
+               ) {
+                  break
+               }
+
                let year = fiscalDateEndingDate.getFullYear()
                let month = fiscalDateEndingDate.getMonth() + 1
                if (month >= 1 && month <= 3) {
@@ -289,17 +361,51 @@ const updateAlphaVantage = async inputs => {
                keysStoredMap.set(keyTemp, sequence)
                x.sequence = sequence
                x.key = keyFinal
-            })
-
-            await collections.annual.insertMany(annualReports)
+               annualReportsToInsert.push(x)
+            }
+            if (annualReportsToInsert.length > 0) {
+               await collections.annual.insertMany(annualReportsToInsert)
+               LogThis(
+                  log,
+                  `Symbol: ${symbol} function: ${params.function} inserted ${annualReportsToInsert.length} new annual records.`,
+               )
+            } else {
+               LogThis(
+                  log,
+                  `Symbol: ${symbol} function: ${params.function} is up to date and no annual new records have been inserted.`,
+               )
+               break
+            }
          }
-
+         const quarterlyReportsToInsert = []
          if (quarterlyReports) {
             let sequence = null
             let keyTemp = null
             let keyFinal = null
             const keysStoredMap = new Map()
+
+            const maxQuarterlyDateAlreadyProcessed =
+               await collections.quarterly.aggregate([
+                  {
+                     $match: { symbol: symbol },
+                  },
+                  {
+                     $group: {
+                        _id: null,
+                        maxDate: { $max: '$fiscalDateEnding' },
+                     },
+                  },
+               ])
+
             for (const x of quarterlyReports) {
+               let fiscalDateEndingDate = new Date(x.fiscalDateEnding)
+               if (
+                  fiscalDateEndingDate.toISOString() ===
+                  maxQuarterlyDateAlreadyProcessed[0].maxDate.toISOString()
+               ) {
+                  break
+               }
+
                x.symbol = params.symbol
                x.year = parseInt(x.fiscalDateEnding.substring(0, 4), 10)
                x.quarter =
@@ -350,8 +456,21 @@ const updateAlphaVantage = async inputs => {
                keysStoredMap.set(keyTemp, sequence)
                x.sequence = sequence
                x.key = keyFinal
+               quarterlyReportsToInsert.push(x)
             }
-            await collections.quarterly.insertMany(quarterlyReports)
+
+            if (quarterlyReportsToInsert.length > 0) {
+               await collections.quarterly.insertMany(quarterlyReportsToInsert)
+               LogThis(
+                  log,
+                  `Symbol: ${symbol} function: ${params.function} inserted ${quarterlyReportsToInsert.length} new quarterly records.`,
+               )
+            } else {
+               LogThis(
+                  log,
+                  `Symbol: ${symbol} function: ${params.function} is up to date and no quarterly new records have been inserted.`,
+               )
+            }
          }
          LogThis(
             log,
@@ -359,111 +478,111 @@ const updateAlphaVantage = async inputs => {
             L0,
          )
       }
-      try {
-         params.function = 'OVERVIEW'
-         LogThis(log, `${symbol} Started Updating Company Overview`)
-         if (refreshcache) {
-            await AlphaVantageCache.deleteMany({
-               symbol: symbol,
-               functionName: params.function,
-            })
-            apiResponses = null
-         } else {
-            apiResponses = await AlphaVantageCache.findOne({
-               symbol: symbol,
-               functionName: params.function,
-            }).lean()
-         }
+      // try {
+      //    params.function = 'OVERVIEW'
+      //    LogThis(log, `${symbol} Started Updating Company Overview`)
+      //    // if (refreshcache) {
+      //    //    await AlphaVantageCache.deleteMany({
+      //    //       symbol: symbol,
+      //    //       functionName: params.function,
+      //    //    })
+      //    //    apiResponses = null
+      //    // } else {
+      //    //    apiResponses = await AlphaVantageCache.findOne({
+      //    //       symbol: symbol,
+      //    //       functionName: params.function,
+      //    //    }).lean()
+      //    // }
 
-         if (!apiResponses) {
-            if (firstTimeApiCall) {
-               firstTimeApiCall = false
-               //millisecondsStart = Date.now()
-            } else {
-               await sleep(process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT)
-            }
+      //    //if (!apiResponses) {
+      //       if (firstTimeApiCall) {
+      //          firstTimeApiCall = false
+      //          //millisecondsStart = Date.now()
+      //       } else {
+      //          await sleep(process.env.KUARSIS_VALUEMINER_ALPHAVANTAGE_CALLWAIT)
+      //       }
 
-            // millisecondsEnd = Date.now()
-            // let millisecondsElapsed = millisecondsEnd - millisecondsStart
-            // LogThis(log, `millisecondsElapsed: ${millisecondsElapsed}`)
-            // millisecondsStart = Date.now()
+      //       // millisecondsEnd = Date.now()
+      //       // let millisecondsElapsed = millisecondsEnd - millisecondsStart
+      //       // LogThis(log, `millisecondsElapsed: ${millisecondsElapsed}`)
+      //       // millisecondsStart = Date.now()
 
-            apiResponses = await axios.get(
-               `https://www.alphavantage.co/query`,
-               {
-                  params,
-               },
-            )
-            if (
-               apiResponses &&
-               apiResponses?.data &&
-               Object.keys(apiResponses.data).length > 0
-            ) {
-               foundInApi = true
-               LogThis(
-                  log,
-                  `${symbol} function ${params.function} data found by API`,
-               )
-            } else {
-               const messageFromAPI = apiResponses?.data?.Information
-                  ? `with message ${apiResponses?.data?.Information}`
-                  : ''
+      //       apiResponses = await axios.get(
+      //          `https://www.alphavantage.co/query`,
+      //          {
+      //             params,
+      //          },
+      //       )
+      //       if (
+      //          apiResponses &&
+      //          apiResponses?.data &&
+      //          Object.keys(apiResponses.data).length > 0
+      //       ) {
+      //          foundInApi = true
+      //          LogThis(
+      //             log,
+      //             `${symbol} function ${params.function} data found by API`,
+      //          )
+      //       } else {
+      //          const messageFromAPI = apiResponses?.data?.Information
+      //             ? `with message ${apiResponses?.data?.Information}`
+      //             : ''
 
-               await updateErrorStatus({
-                  symbol: symbol,
-                  sourceVendor: 'AlphaVantage',
-                  function: params.function,
-                  message: `symbol not found or error from API ${messageFromAPI}`,
-               })
-               continue
-            }
-         } else {
-            foundInApi = false
-            LogThis(
-               log,
-               `${symbol} function ${params.function} data found in cache`,
-            )
-         }
-      } catch (ex) {
-         LogThis(
-            log,
-            `${symbol} Company Overview not found in cache nor in API.  Exception: ${ex.message}`,
-            L0,
-         )
-         const status = new ValueMinerDataSourceStatus()
-         status.ticker = symbol
-         status.sourceVendor = 'AlphaVantage'
-         status.status = false
-         status.functionName = params.function
-         status.message = `Exception thrown by API for ticker not found in function ${params.function}`
-         await status.save()
-         continue
-      }
+      //          await updateErrorStatus({
+      //             symbol: symbol,
+      //             sourceVendor: 'AlphaVantage',
+      //             function: params.function,
+      //             message: `symbol not found or error from API ${messageFromAPI}`,
+      //          })
+      //          continue
+      //       }
+      //    // } else {
+      //    //    foundInApi = false
+      //    //    LogThis(
+      //    //       log,
+      //    //       `${symbol} function ${params.function} data found in cache`,
+      //    //    )
+      //    // }
+      // } catch (ex) {
+      //    LogThis(
+      //       log,
+      //       `${symbol} Company Overview not found in cache nor in API.  Exception: ${ex.message}`,
+      //       L0,
+      //    )
+      //    const status = new ValueMinerDataSourceStatus()
+      //    status.ticker = symbol
+      //    status.sourceVendor = 'AlphaVantage'
+      //    status.status = false
+      //    status.functionName = params.function
+      //    status.message = `Exception thrown by API for ticker not found in function ${params.function}`
+      //    await status.save()
+      //    continue
+      // }
 
-      if (!apiResponses?.data) {
-         LogThis(
-            log,
-            `${symbol} data returned by API function ${params.function} is empty.`,
-            L0,
-         )
-         const status = new ValueMinerDataSourceStatus()
-         status.ticker = symbol
-         status.sourceVendor = 'AlphaVantage'
-         status.status = false
-         status.functionName = params.function
-         status.message = `ticker: ${symbol} data returned by API function ${params.function} is empty.`
-         await status.save()
-         continue
-      }
+      // if (!apiResponses?.data) {
+      //    LogThis(
+      //       log,
+      //       `${symbol} data returned by API function ${params.function} is empty.`,
+      //       L0,
+      //    )
+      //    const status = new ValueMinerDataSourceStatus()
+      //    status.ticker = symbol
+      //    status.sourceVendor = 'AlphaVantage'
+      //    status.status = false
+      //    status.functionName = params.function
+      //    status.message = `ticker: ${symbol} data returned by API function ${params.function} is empty.`
+      //    await status.save()
+      //    continue
+      // }
 
-      if (foundInApi) {
-         const alphaVantageCache = new AlphaVantageCache()
-         alphaVantageCache.functionName = params.function
-         alphaVantageCache.symbol = symbol
-         alphaVantageCache.data = apiResponses.data
-         await alphaVantageCache.save()
-      }
-      LogThis(log, `${symbol} Completed Updating Company Overview`)
+      // if (foundInApi) {
+      //    const alphaVantageCache = new AlphaVantageCache()
+      //    alphaVantageCache.functionName = params.function
+      //    alphaVantageCache.symbol = symbol
+      //    alphaVantageCache.data = apiResponses.data
+      //    await alphaVantageCache.save()
+      // }
+      // LogThis(log, `${symbol} Completed Updating Company Overview`)
       symbolsProcessed++
       LogThis(
          log,
@@ -517,14 +636,30 @@ const updateAlphaVantageDailyPrices = async inputs => {
             firstTimeApiCall = false
             millisecondsStart = Date.now()
          } else {
-            const millisencondsElapsed = Date.now() - millisecondsStart
-
+            const millisecondsNow = Date.now()
+            const millisencondsElapsed = millisecondsNow - millisecondsStart
+            // LogThis(
+            //    log,
+            //    `${symbol} function ${params.function}, millisecondsNow=${millisecondsNow}, millisecondsStart=${millisecondsStart}, millisencondsElapsed=${millisencondsElapsed}, ALPHAVANTAGE_CALLWAIT=${ALPHAVANTAGE_CALLWAIT}`,
+            // )
             if (millisencondsElapsed < ALPHAVANTAGE_CALLWAIT) {
                const waitMilliseconds =
                   ALPHAVANTAGE_CALLWAIT - millisencondsElapsed
+               // LogThis(
+               //    log,
+               //    `${symbol} function ${params.function}, waitMilliseconds=${waitMilliseconds}`,
+               // )
                await sleep(waitMilliseconds)
-               millisecondsStart = Date.now()
+               // LogThis(
+               //    log,
+               //    `${symbol} function ${params.function} waited waitMilliseconds=${waitMilliseconds}, new millisecondsStart=${millisecondsStart}`,
+               // )
             }
+            millisecondsStart = Date.now()
+            // LogThis(
+            //    log,
+            //    `${symbol} function ${params.function} waited waitMilliseconds=${waitMilliseconds}, new millisecondsStart=${millisecondsStart}`,
+            // )
          }
 
          apiResponses = await axios.get(`https://www.alphavantage.co/query`, {
