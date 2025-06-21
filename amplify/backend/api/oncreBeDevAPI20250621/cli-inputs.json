@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "paths": {
+    "/users": {
+      "name": "/users",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/products": {
+      "name": "/products",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/surveys": {
+      "name": "/surveys",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/orders": {
+      "name": "/orders",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/scheduler": {
+      "name": "/scheduler",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/upload": {
+      "name": "/upload",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/configs": {
+      "name": "/configs",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/config/paypal": {
+      "name": "/config/paypal",
+      "lambdaFunction": "oncrebedevFunction20250621",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

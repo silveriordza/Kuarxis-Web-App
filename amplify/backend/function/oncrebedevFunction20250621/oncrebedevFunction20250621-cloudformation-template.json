@@ -1,0 +1,540 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"Amplify\",\"createdWith\":\"13.0.1\",\"stackType\":\"function-Lambda\",\"metadata\":{\"whyContinueWithGen1\":\"\"}}",
+  "Parameters": {
+    "CloudWatchRule": {
+      "Type": "String",
+      "Default": "NONE",
+      "Description": " Schedule Expression"
+    },
+    "deploymentBucketName": {
+      "Type": "String"
+    },
+    "s3Key": {
+      "Type": "String"
+    },
+    "secretsPathAmplifyAppId": {
+      "Type": "String"
+    },
+    "jwtSecretVar": {
+      "Type": "String"
+    },
+    "port": {
+      "Type": "String"
+    },
+    "kuarsisAwsKuarsisMainRegion": {
+      "Type": "String"
+    },
+    "kuarsisPublicBucketName": {
+      "Type": "String"
+    },
+    "kuarsisPrivateBucketName": {
+      "Type": "String"
+    },
+    "mongoUriVar": {
+      "Type": "String"
+    },
+    "paypalClientIdVar": {
+      "Type": "String"
+    },
+    "kuarsisAwsProductsS3AccessKeyVar": {
+      "Type": "String"
+    },
+    "kuarsisAwsProductsS3SecretKeyVar": {
+      "Type": "String"
+    },
+    "kuarsisAmplifyFunctionName": {
+      "Type": "String"
+    },
+    "logLevel": {
+      "Type": "String"
+    },
+    "kuarsisAmplifyEnvironmentName": {
+      "Type": "String"
+    },
+    "kuarsisSurveyMonkeyTokenVar": {
+      "Type": "String"
+    },
+    "kuarsisSurveyMonkeyWebhooksTokenVar": {
+      "Type": "String"
+    },
+    "kuarsisDbSurveyAnswersBatchSize": {
+      "Type": "String"
+    },
+    "kuarsisSurveyMonkeyApikeyVar": {
+      "Type": "String"
+    },
+    "kuarsisAmplifyAppid": {
+      "Type": "String"
+    },
+    "env": {
+      "Type": "String"
+    }
+  },
+  "Conditions": {
+    "ShouldNotCreateEnvResources": {
+      "Fn::Equals": [
+        {
+          "Ref": "env"
+        },
+        "NONE"
+      ]
+    }
+  },
+  "Resources": {
+    "LambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Metadata": {
+        "aws:asset:path": "./src",
+        "aws:asset:property": "Code"
+      },
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "deploymentBucketName"
+          },
+          "S3Key": {
+            "Ref": "s3Key"
+          }
+        },
+        "Handler": "index.handler",
+        "FunctionName": {
+          "Fn::If": [
+            "ShouldNotCreateEnvResources",
+            "oncrebedevFunction20250621",
+            {
+              "Fn::Join": [
+                "",
+                [
+                  "oncrebedevFunction20250621",
+                  "-",
+                  {
+                    "Ref": "env"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "REGION": {
+              "Ref": "AWS::Region"
+            },
+            "MONGO_URI": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "MONGO_URI"
+                ]
+              ]
+            },
+            "JWT_SECRET": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "JWT_SECRET"
+                ]
+              ]
+            },
+            "PAYPAL_CLIENT_ID": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "PAYPAL_CLIENT_ID"
+                ]
+              ]
+            },
+            "KUARSIS_AWS_PRODUCTS_S3_ACCESS_KEY": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "KUARSIS_AWS_PRODUCTS_S3_ACCESS_KEY"
+                ]
+              ]
+            },
+            "KUARSIS_AWS_PRODUCTS_S3_SECRET_KEY": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "KUARSIS_AWS_PRODUCTS_S3_SECRET_KEY"
+                ]
+              ]
+            },
+            "KUARSIS_SURVEY_MONKEY_TOKEN": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "KUARSIS_SURVEY_MONKEY_TOKEN"
+                ]
+              ]
+            },
+            "KUARSIS_SURVEY_MONKEY_WEBHOOKS_TOKEN": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "KUARSIS_SURVEY_MONKEY_WEBHOOKS_TOKEN"
+                ]
+              ]
+            },
+            "KUARSIS_SURVEY_MONKEY_APIKEY": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "oncrebedevFunction20250621"
+                      }
+                    ]
+                  },
+                  "KUARSIS_SURVEY_MONKEY_APIKEY"
+                ]
+              ]
+            },
+            "JWT_SECRET_VAR": {
+              "Ref": "jwtSecretVar"
+            },
+            "PORT": {
+              "Ref": "port"
+            },
+            "KUARSIS_AWS_KUARSIS_MAIN_REGION": {
+              "Ref": "kuarsisAwsKuarsisMainRegion"
+            },
+            "KUARSIS_PUBLIC_BUCKET_NAME": {
+              "Ref": "kuarsisPublicBucketName"
+            },
+            "KUARSIS_PRIVATE_BUCKET_NAME": {
+              "Ref": "kuarsisPrivateBucketName"
+            },
+            "MONGO_URI_VAR": {
+              "Ref": "mongoUriVar"
+            },
+            "PAYPAL_CLIENT_ID_VAR": {
+              "Ref": "paypalClientIdVar"
+            },
+            "KUARSIS_AWS_PRODUCTS_S3_ACCESS_KEY_VAR": {
+              "Ref": "kuarsisAwsProductsS3AccessKeyVar"
+            },
+            "KUARSIS_AWS_PRODUCTS_S3_SECRET_KEY_VAR": {
+              "Ref": "kuarsisAwsProductsS3SecretKeyVar"
+            },
+            "KUARSIS_AMPLIFY_FUNCTION_NAME": {
+              "Ref": "kuarsisAmplifyFunctionName"
+            },
+            "LOG_LEVEL": {
+              "Ref": "logLevel"
+            },
+            "KUARSIS_AMPLIFY_ENVIRONMENT_NAME": {
+              "Ref": "kuarsisAmplifyEnvironmentName"
+            },
+            "KUARSIS_SURVEY_MONKEY_TOKEN_VAR": {
+              "Ref": "kuarsisSurveyMonkeyTokenVar"
+            },
+            "KUARSIS_SURVEY_MONKEY_WEBHOOKS_TOKEN_VAR": {
+              "Ref": "kuarsisSurveyMonkeyWebhooksTokenVar"
+            },
+            "KUARSIS_DB_SURVEY_ANSWERS_BATCH_SIZE": {
+              "Ref": "kuarsisDbSurveyAnswersBatchSize"
+            },
+            "KUARSIS_SURVEY_MONKEY_APIKEY_VAR": {
+              "Ref": "kuarsisSurveyMonkeyApikeyVar"
+            },
+            "KUARSIS_AMPLIFY_APPID": {
+              "Ref": "kuarsisAmplifyAppid"
+            },
+            "ENV": {
+              "Ref": "env"
+            }
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "LambdaExecutionRole",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs22.x",
+        "Layers": [],
+        "Timeout": 25
+      }
+    },
+    "LambdaExecutionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "RoleName": {
+          "Fn::If": [
+            "ShouldNotCreateEnvResources",
+            "kuarxiswebappLambdaRoleece6a289",
+            {
+              "Fn::Join": [
+                "",
+                [
+                  "kuarxiswebappLambdaRoleece6a289",
+                  "-",
+                  {
+                    "Ref": "env"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": [
+                  "lambda.amazonaws.com"
+                ]
+              },
+              "Action": [
+                "sts:AssumeRole"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "lambdaexecutionpolicy": {
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "lambda-execution-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Resource": {
+                "Fn::Sub": [
+                  "arn:aws:logs:${region}:${account}:log-group:/aws/lambda/${lambda}:log-stream:*",
+                  {
+                    "region": {
+                      "Ref": "AWS::Region"
+                    },
+                    "account": {
+                      "Ref": "AWS::AccountId"
+                    },
+                    "lambda": {
+                      "Ref": "LambdaFunction"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "AmplifyFunctionSecretsPolicy": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "amplify-function-secrets-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "ssm:GetParameter",
+                "ssm:GetParameters"
+              ],
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:aws:ssm:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":parameter",
+                    {
+                      "Fn::Sub": [
+                        "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                        {
+                          "appId": {
+                            "Ref": "secretsPathAmplifyAppId"
+                          },
+                          "env": {
+                            "Ref": "env"
+                          },
+                          "functionName": "oncrebedevFunction20250621"
+                        }
+                      ]
+                    },
+                    "*"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ]
+    }
+  },
+  "Outputs": {
+    "Name": {
+      "Value": {
+        "Ref": "LambdaFunction"
+      }
+    },
+    "Arn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "LambdaFunction",
+          "Arn"
+        ]
+      }
+    },
+    "Region": {
+      "Value": {
+        "Ref": "AWS::Region"
+      }
+    },
+    "LambdaExecutionRole": {
+      "Value": {
+        "Ref": "LambdaExecutionRole"
+      }
+    },
+    "LambdaExecutionRoleArn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "LambdaExecutionRole",
+          "Arn"
+        ]
+      }
+    }
+  }
+}

@@ -4,9 +4,9 @@
   "description": "Kuarxis Survey System Web App",
   "main": "app.js",
   "scripts": {
-    "start": "node --trace-deprecation --trace-warnings ./amplify/backend/function/kuarxbedevFunction/src/app.js",
-    "startwithtrace": "node --trace-warnings ./amplify/backend/function/kuarxbedevFunction/src/app.js",
-    "server": "nodemon ./amplify/backend/function/kuarxbedevFunction/src/app.js"
+    "start": "node --trace-deprecation --trace-warnings ./amplify/backend/function/oncrebedevFunction20250621/src/app.js",
+    "startwithtrace": "node --trace-warnings ./amplify/backend/function/oncrebedevFunction20250621/src/app.js",
+    "server": "nodemon ./amplify/backend/function/oncrebedevFunction20250621/src/app.js"
   },
   "repository": {
     "type": "git",
