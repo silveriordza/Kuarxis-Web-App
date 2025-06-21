@@ -17,6 +17,7 @@
     "start": "node ../../backend/Kuarxis-Web-App/amplify/backend/function/kuarxbedevFunction/src/app.js",
     "server": "nodemon ../../backend/Kuarxis-Web-App/amplify/backend/function/kuarxbedevFunction/src/app.js",
     "client": "npm start --prefix frontend",
+    "build": "npm run build --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [

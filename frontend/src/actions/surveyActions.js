@@ -1716,6 +1716,12 @@ export const surveyExportHtml2WordAction =
    }) =>
    async (dispatch, getState) => {
       try {
+         const log = new LoggerSettings(
+            srcFileName,
+            'surveyExportHtml2WordAction',
+         )
+         LogThis(log, 'Entering', L3)
+
          dispatch({
             type: SURVEY_OUTPUT_SINGLE_EXPORTWORD_REQUEST,
          })
@@ -1725,9 +1731,16 @@ export const surveyExportHtml2WordAction =
             surveyOutputSingleInfo.outputValues &&
             surveyOutputSingleInfo.outputLayouts
          ) {
+            LogThis(
+               log,
+               'Inside condition checking outputValues and OutputLayouts had data',
+               L3,
+            )
             const outputValue = surveyOutputSingleInfo.outputValues.find(
                output => output.INFO_1 === respondentId,
             )
+
+            LogThis(log, `outputValue=${JSON.stringify(outputValue)}`, L3)
             var preHtml = `<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
             <head>
             <meta charset='utf-8'>
@@ -1746,7 +1759,22 @@ export const surveyExportHtml2WordAction =
                '<table id="customers"><tr><th>Tipo de resultado</th><th>Datos/Resultados</th></tr>'
 
             for (const outputField of surveyOutputSingleInfo.outputLayouts) {
+               LogThis(log, `outputField=${JSON.stringify(outputField)}`, L3)
                if (outputField.showInSurveyOutputScreen) {
+                  LogThis(
+                     log,
+                     `outputField.showInSurveyOutputScreen=${JSON.stringify(
+                        outputField.showInSurveyOutputScreen,
+                     )}`,
+                     L3,
+                  )
+                  LogThis(
+                     log,
+                     `outputField.displayType.type=${JSON.stringify(
+                        outputField.displayType.type,
+                     )}`,
+                     L3,
+                  )
                   switch (outputField.displayType.type) {
                      case 'percentBarWithCriterias':
                         {
@@ -1771,12 +1799,19 @@ export const surveyExportHtml2WordAction =
                      case 'rangesSemaphore':
                         {
                            //GET THE IMAGE FROM THE REFERENCE
+                           LogThis(log, `into rangesSemaphore case`, L3)
                            let keyFieldRef = null
                            keyFieldRef = `${outputField.fieldName}_rangeSemaphore`
+                           LogThis(
+                              log,
+                              `keyFieldRef=${JSON.stringify(keyFieldRef)}`,
+                              L3,
+                           )
 
                            const img = await convertHtmlElementToImage(
                               keyFieldRef,
                            )
+                           LogThis(log, `after convertHtmlElementToImage`, L3)
                            //img.src = dataUrl
                            if (img === null) {
                               throw Error(

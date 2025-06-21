@@ -18,11 +18,11 @@ const L2 = 2
 const L3 = 3
 
 const local_debug_level = L3
-const dev_debug_level = L0
+const dev_debug_level = L3
 const red_debug_level = L0
 const qa_debug_level = L0
 const artpixanprod_debug_level = OFF
-const LOCAL_CURRENT_VERSION = `v1.0.8.2-2025-01-02-22:32`
+const LOCAL_CURRENT_VERSION = `v1.0.8.3-2025-06-21-15:03`
 
 let V_LOG_LEVEL = null
 let V_CURRENT_VERSION = null
@@ -62,7 +62,7 @@ switch (ENVIRONMENT) {
       V_LOG_LEVEL = dev_debug_level
       V_CURRENT_VERSION = LOCAL_CURRENT_VERSION
       V_BACKEND_ENDPOINT =
-         'https://liklebz726.execute-api.us-east-1.amazonaws.com/oncrebedev'
+         'https://mosr0biyrb.execute-api.us-east-1.amazonaws.com/oncbedev'
       V_KUARSIS_PUBLIC_STATIC_FOLDER = 'https://oncaredev.kuarxis.com/images'
       V_KUARSIS_BANNER_MAIN_LOGO = 'OnCareLogo256px.png'
       V_KUARSIS_PUBLIC_BUCKET_URL =

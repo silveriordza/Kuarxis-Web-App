@@ -1,4 +1,7 @@
 import html2Canvas from 'html2canvas'
+import { LogThis, LoggerSettings, L0, L1, L2, L3, OFF } from '../libs/Logger'
+
+const srcFileName = 'imageLib.js'
 
 export const convert = ({ file, width, height, type, watermarkText }) => {
   console.log(3)
@@ -55,16 +58,25 @@ export const convert = ({ file, width, height, type, watermarkText }) => {
 }
 
 export const convertHtmlElementToImage = async (elementId) => {
+ 
+ const log = new LoggerSettings(srcFileName, 'convertHtmlElementToImage')
+
+ LogThis(log, `Entering`, L3)
+LogThis(log, `elementId=${elementId}`, L3)
   let reference = document.getElementById(elementId)
   if (!reference) {
+    LogThis(log, `elementId not found`, L3)
      return null
   }
-
+LogThis(log, `elementId Found`, L3)
   const canvas = await html2Canvas(reference)
+  LogThis(log, `canvas convertion done`, L3)
   
   const dataUrl = canvas.toDataURL()
+  LogThis(log, `dataURL extracted from Canvas`, L3)
   const img = new Image()
   img.src = dataUrl
+  LogThis(log, `img.src updated with new Image with URL`, L3)
   return img
   
 }

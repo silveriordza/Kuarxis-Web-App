@@ -26,26 +26,6 @@
   border-radius: 200px;
 }
 
-/* .kuarxisSemaphoreContainer {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.kuarxisRangeSemaphore {
-  position: relative;
-  width: 20px;
-  height: 20px;
-   background-color: #f10f0f; 
-  display: inline-block; 
-  border-radius: 5px; 
-} */
-
 .kuarxisSemaphoreContainer {
    position: relative;
    top: 0;
