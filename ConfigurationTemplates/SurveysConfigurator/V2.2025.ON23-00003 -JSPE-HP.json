@@ -1726,7 +1726,7 @@
          "question": "No disfruto leer literatura no médica o de arte.",
          "questionShort": "No disfruto leer literatura no",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7 },
+         "weights": { "1": 7, "2": 6, "3": 5, "4": 4, "5": 3, "6": 2, "7": 1 },
          "monkeyInfo": {
             "position": 19,
             "subPosition": 1,
@@ -2116,7 +2116,7 @@
          "question": "Tengo bastante con mis cosas como para preocuparme por los de otra gente",
          "questionShort": "Tengo bastante con mis cosas c",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "5": 1, "4": 2, "3": 3, "2": 4, "1": 5 },
+         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5 },
          "monkeyInfo": {
             "position": 5,
             "subPosition": 1,
@@ -2161,7 +2161,7 @@
          "question": "Con facilidad me meto en las cosas que me interesan y me olvido de los demás",
          "questionShort": "Con facilidad me meto en las c",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "5": 1, "4": 2, "3": 3, "2": 4, "1": 5 },
+         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5 },
          "monkeyInfo": {
             "position": 8,
             "subPosition": 1,
@@ -2191,7 +2191,7 @@
          "question": "En el fondo me fastidia que la gente me venga con sus problemas, pidiéndome mi tiempo y mi comprensión",
          "questionShort": "En el fondo me fastidia que la",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "5": 1, "4": 2, "3": 3, "2": 4, "1": 5 },
+         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5 },
          "monkeyInfo": {
             "position": 10,
             "subPosition": 1,
@@ -2251,7 +2251,7 @@
          "question": "Tengo facilidad para comprender como se sienten mis pacientes.",
          "questionShort": "Tengo facilidad para comprende",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 4,
             "subPosition": 1,
@@ -2262,7 +2262,7 @@
          "surveyShortName": "CM_ON23-2025",
          "position": 5,
          "fieldName": "CM_ON23-2025_5_Creoqueestoytratandoaalgunospa",
-         "subScale": "BURN_LOGROS",
+         "subScale": "BURN_DESPERS",
          "question": "Creo que estoy tratando a algunos pacientes como si fueran objetos impersonales.",
          "questionShort": "Creo que estoy tratando a algu",
          "weightType": "WEIGHTED_PAIRS",
@@ -2296,7 +2296,7 @@
          "question": "Creo que trato con mucha eficacia los problemas de mis pacientes.",
          "questionShort": "Creo que trato con mucha efica",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 7,
             "subPosition": 1,
@@ -2326,7 +2326,7 @@
          "question": "Creo que con mi trabajo estoy influyendo positivamente en la vida de mis pacientes.",
          "questionShort": "Creo que con mi trabajo estoy ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 9,
             "subPosition": 1,
@@ -2371,7 +2371,7 @@
          "question": "Me siento con mucha energía en mi trabajo.",
          "questionShort": "Me siento con mucha energía en",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 12,
             "subPosition": 1,
@@ -2446,7 +2446,7 @@
          "question": "Siento que puedo crear con facilidad un clima agradable con mis pacientes.",
          "questionShort": "Siento que puedo crear con fac",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 17,
             "subPosition": 1,
@@ -2461,7 +2461,7 @@
          "question": "Me siento motivado después de trabajar en contacto con pacientes .",
          "questionShort": "Me siento motivado después de ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 18,
             "subPosition": 1,
@@ -2476,7 +2476,7 @@
          "question": "Creo que consigo muchas cosas valiosas en este trabajo.",
          "questionShort": "Creo que consigo muchas cosas ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 19,
             "subPosition": 1,
@@ -2506,7 +2506,7 @@
          "question": "En mi trabajo trato los problemas emocionalmente con mucha calma.",
          "questionShort": "En mi trabajo trato los proble",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 21,
             "subPosition": 1,
