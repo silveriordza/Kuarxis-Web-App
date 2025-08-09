@@ -317,8 +317,8 @@
             "position": 331
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_1_Losprofesionalesdelasaluddeben",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_1_Losprofesionalesdelasaluddeben",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -326,8 +326,8 @@
             "position": 341
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_2_Durantesueducaciontodoslosestu",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_2_Durantesueducaciontodoslosestu",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -335,8 +335,8 @@
             "position": 351
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_3_Losprofesionalesdelasaludpuede",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_3_Losprofesionalesdelasaludpuede",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -344,8 +344,8 @@
             "position": 361
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_4_Losprofesionalesdelasaludnopue",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_4_Losprofesionalesdelasaludnopue",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -353,8 +353,8 @@
             "position": 371
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_5_Debidoaladiferenciacionderoles",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_5_Debidoaladiferenciacionderoles",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -362,8 +362,8 @@
             "position": 381
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_6_Losprofesionalesdelasaludnopue",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_6_Losprofesionalesdelasaludnopue",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -371,8 +371,8 @@
             "position": 391
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_7_Todoslosprofesionalesdelasalud",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_7_Todoslosprofesionalesdelasalud",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -380,8 +380,8 @@
             "position": 401
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_8_Lafuncionprimariadeotrosprofes",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_8_Lafuncionprimariadeotrosprofes",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -389,8 +389,8 @@
             "position": 411
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_9_Losprofesionalesdelasaluddeben",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_9_Losprofesionalesdelasaluddeben",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -398,8 +398,8 @@
             "position": 421
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_10_Todoslosprofesionalesdelasalud",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_10_Todoslosprofesionalesdelasalud",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -407,8 +407,8 @@
             "position": 431
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_11_Losprofesionalesdelasaludnodeb",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_11_Losprofesionalesdelasaludnodeb",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -416,8 +416,8 @@
             "position": 441
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_12_Loscentrosmedicosacademicosdeb",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_12_Loscentrosmedicosacademicosdeb",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -425,8 +425,8 @@
             "position": 451
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_13_Paracontribuiralmejorinteresde",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_13_Paracontribuiralmejorinteresde",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -434,8 +434,8 @@
             "position": 461
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_14_Losprofesionalesdelasaluddeben",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_14_Losprofesionalesdelasaluddeben",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -443,8 +443,8 @@
             "position": 471
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_15_Laeducacioninterprofesionalyla",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_15_Laeducacioninterprofesionalyla",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -452,8 +452,8 @@
             "position": 481
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_16_Eltrabajoenequipointegradoenel",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_16_Eltrabajoenequipointegradoenel",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -461,8 +461,8 @@
             "position": 491
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_17_Lapracticacolaborativafunciona",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_17_Lapracticacolaborativafunciona",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -470,8 +470,8 @@
             "position": 501
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_18_Loserroresmedicosseminimizaran",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_18_Loserroresmedicosseminimizaran",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -479,8 +479,8 @@
             "position": 511
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_19_Lacolaboracioninterprofesional",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_19_Lacolaboracioninterprofesional",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -488,8 +488,8 @@
             "position": 521
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_V2_20_Lasatisfaccionconeltrabajonoes",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_V2_20_Lasatisfaccionconeltrabajonoes",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -814,21 +814,12 @@
          },
          {
             "surveyShortName": "JSPE-HP-ON23003",
-            "fieldName": "JSPE-HP-ON23003_OTROS",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 891
-         },
-         {
-            "surveyShortName": "JSPE-HP-ON23003",
             "fieldName": "JSPE-HP-ON23003_TOTAL_MAX140",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 901
+            "position": 891
          },
          {
             "surveyShortName": "JSPE-HP-ON23003",
@@ -842,30 +833,30 @@
                "type": "percentBarWithCriterias",
                "styleCriterias": [{ "min": 0, "max": 100, "style": "green" }]
             },
-            "position": 911
+            "position": 901
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_COLAB_TOTAL_MAX_140",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_COLAB_TOTAL_MAX_140",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 921
+            "position": 911
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
-            "fieldName": "JEFF_STATIC_ON23_COLAB_PERCENT_OF_MAX",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
+            "fieldName": "JEFF_SATIC_ON23_COLAB_PERCENT_OF_MAX",
             "dataType": "Float",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": {
                "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
-               "header": "JEFFSTATIC%",
+               "header": "JEFFSATIC%",
                "type": "percentBarWithCriterias",
                "styleCriterias": [{ "min": 0, "max": 100, "style": "green" }]
             },
-            "position": 931
+            "position": 921
          },
          {
             "surveyShortName": "HSNS_ON23_V2",
@@ -874,7 +865,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 941
+            "position": 931
          },
          {
             "surveyShortName": "HSNS_ON23_V2",
@@ -888,47 +879,20 @@
                "type": "percentBarWithCriterias",
                "styleCriterias": [{ "min": 0, "max": 100, "style": "green" }]
             },
+            "position": 941
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_EMOCIONAL_MAX_54",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
             "position": 951
          },
          {
             "surveyShortName": "CM_V2",
-            "fieldName": "CM_V2_EMOCIONAL_MAX_42",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 961
-         },
-         {
-            "surveyShortName": "CM_V2",
-            "fieldName": "CM_V2_DESPERS_MAX_36",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 971
-         },
-         {
-            "surveyShortName": "CM_V2",
-            "fieldName": "CM_V2_LOGROS_MAX_48",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 981
-         },
-         {
-            "surveyShortName": "CM_V2",
-            "fieldName": "CM_V2_TOTAL_MAX_126",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 991
-         },
-         {
-            "surveyShortName": "CM_V2",
-            "fieldName": "CM_V2_RESULTADO",
+            "fieldName": "CM_V2_EMOCIONAL_MAX_54_RESULTADO",
             "dataType": "String",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
@@ -937,34 +901,123 @@
                "displayAsPieChart": {
                   "calculationType": "countSeries",
                   "seriesStyles": {
-                     "Nivel Bajo": "#0cc50c",
-                     "Moderado": "#008000",
-                     "Alto": "#ffa500",
-                     "Muy Alto": "#ff0000"
+                     "Bajo": "#0cc50c",
+                     "Moderado": "#ffa500",
+                     "Alto": "#ff0000"
                   }
                }
             },
-            "position": 1001
+            "position": 961
          },
-
          {
             "surveyShortName": "CM_V2",
-            "fieldName": "CM_V2_SEMAPHORE",
+            "fieldName": "CM_V2_EMOCIONAL_MAX_54_SEMAFORO",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": {
                "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
-               "header": "BURN",
+               "header": "M_BURN_EMOCIONAL_SEMAFORO",
+               "type": "rangesSemaphore",
+               "styleCriterias": [
+                  { "min": 0, "max": 16, "style": "green" },
+                  { "min": 17, "max": 26, "style": "yellow" },
+                  { "min": 27, "max": 100, "style": "red" }
+               ]
+            },
+            "position": 971
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_DESPERS_MAX_30",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 981
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_DESPERS_MAX_30_RESULTADO",
+            "dataType": "String",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "type": "asIs",
+               "displayAsPieChart": {
+                  "calculationType": "countSeries",
+                  "seriesStyles": {
+                     "Bajo": "#0cc50c",
+                     "Moderado": "#ffa500",
+                     "Alto": "#ff0000"
+                  }
+               }
+            },
+            "position": 991
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_DESPERS_MAX_30_SEMAFORO",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
+               "header": "M_BURN_DESPERSONALIZACION_SEMAFORO",
+               "type": "rangesSemaphore",
+               "styleCriterias": [
+                  { "min": 0, "max": 6, "style": "green" },
+                  { "min": 7, "max": 12, "style": "yellow" },
+                  { "min": 13, "max": 100, "style": "red" }
+               ]
+            },
+            "position": 1001
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_LOGROS_MAX_48",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 1011
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_LOGROS_MAX_48_RESULTADO",
+            "dataType": "String",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "type": "asIs",
+               "displayAsPieChart": {
+                  "calculationType": "countSeries",
+                  "seriesStyles": {
+                     "Alto": "#0cc50c",
+                     "Moderado": "#ffa500",
+                     "Bajo": "#ff0000"
+                  }
+               }
+            },
+            "position": 1021
+         },
+         {
+            "surveyShortName": "CM_V2",
+            "fieldName": "CM_V2_LOGROS_MAX_48_SEMAFORO",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
+               "header": "M_BURN_REALIZACION_SEMAFORO",
                "type": "rangesSemaphore",
                "styleCriterias": [
                   { "min": 0, "max": 20, "style": "green" },
-                  { "min": 21, "max": 40, "style": "orange" },
-                  { "min": 41, "max": 60, "style": "yellow" },
-                  { "min": 61, "max": 127, "style": "red" }
+                  { "min": 21, "max": 36, "style": "yellow" },
+                  { "min": 37, "max": 100, "style": "red" }
                ]
             },
-            "position": 1011
+            "position": 1031
          }
       ],
       "multiSurveys": [
@@ -988,7 +1041,7 @@
          },
          {
             "superSurveyShortName": "ON23-00003-EmpatiaTrabajoJSPEHP",
-            "surveyShortName": "JEFF_STATIC_ON23_V2",
+            "surveyShortName": "JEFF_SATIC_ON23_V2",
             "position": 40,
             "monkeyPosition": 3
          },
@@ -1020,9 +1073,9 @@
          "instructions": ""
       },
       {
-         "surveyName": "JEFF_STATIC_ON23_V2",
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
-         "description": "JEFF_STATIC_ON23_V2",
+         "surveyName": "JEFF_SATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
+         "description": "JEFF_SATIC_ON23_V2",
          "instructions": ""
       },
       {
@@ -1313,7 +1366,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 1,
          "fieldName": "JSPE-HP-ON23003_1_Elentendimientodelmedicodelessentimiento",
-         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "El entendimiento del médico de les sentimientos del paciente y sus familiares es un factor que no influye en el tratamiento médico o quirúrgico.",
          "questionShort": "El entendimiento del médico de les senti",
          "weightType": "WEIGHTED_PAIRS",
@@ -1328,7 +1381,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 2,
          "fieldName": "JSPE-HP-ON23003_2_Lospacientessesientenmejorcuandosusmedic",
-         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "Los pacientes se sienten mejor cuando sus médicos comprenden sus sentimientos.",
          "questionShort": "Los pacientes se sienten mejor cuando su",
          "weightType": "WEIGHTED_PAIRS",
@@ -1343,7 +1396,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 3,
          "fieldName": "JSPE-HP-ON23003_3_Entenderellenguajecorporalestanimportant",
-         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "Entender el lenguaje corporal es tan importantes como la comunicación verbal en la relación médico- paciente.",
          "questionShort": "Entender el lenguaje corporal es tan imp",
          "weightType": "WEIGHTED_PAIRS",
@@ -1358,7 +1411,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 4,
          "fieldName": "JSPE-HP-ON23003_4_Entenderellenguajecorporalesta",
-         "subScale": "JSPE-HP-ON23003_OTROS",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "Entender el lenguaje corporal es tan importante como la comunicación verbal en la relación médico- paciente.",
          "questionShort": "Entender el lenguaje corporal ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1373,7 +1426,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 5,
          "fieldName": "JSPE-HP-ON23003_5_Elsentidodelhumordelmedicocont",
-         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "El sentido del humor del médico contribuye a un mejor resultado clínico.",
          "questionShort": "El sentido del humor del médic",
          "weightType": "WEIGHTED_PAIRS",
@@ -1388,7 +1441,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 6,
          "fieldName": "JSPE-HP-ON23003_6_Porquelagenteesdiferenteesdifi",
-         "subScale": "JSPE-HP-ON23003_OTROS",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "Porque la gente es diferente, es difícil ver las cosas desde la perspectiva del paciente",
          "questionShort": "Porque la gente es diferente, ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1403,7 +1456,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 7,
          "fieldName": "JSPE-HP-ON23003_7_Poneratencionalasemocionesdelp",
-         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "Poner atención a las emociones del paciente no es importante al tomar su historia.",
          "questionShort": "Poner atención a las emociones",
          "weightType": "WEIGHTED_PAIRS",
@@ -1418,7 +1471,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 8,
          "fieldName": "JSPE-HP-ON23003_8_Atenderconcuidadolasexperienci",
-         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "Atender con cuidado las experiencias personales del paciente no influye en los resultados del tratamiento",
          "questionShort": "Atender con cuidado las experi",
          "weightType": "WEIGHTED_PAIRS",
@@ -1448,7 +1501,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 10,
          "fieldName": "JSPE-HP-ON23003_10_Elpacientevaloraalmedicoqueent",
-         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "El paciente valora al médico que entiende sus sentimientos lo cual es terapéutico por sí mismo.",
          "questionShort": "El paciente valora al médico q",
          "weightType": "WEIGHTED_PAIRS",
@@ -1463,7 +1516,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 11,
          "fieldName": "JSPE-HP-ON23003_11_Laenfermedaddelpacientepuedese",
-         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "La enfermedad del paciente puede ser curada solamente por el tratamiento médico o quirúrgico; por lo tanto, lazos emocionales del médico con su paciente no tienen influencia significativa en el tratamiento médico o quirúrgico",
          "questionShort": "La enfermedad del paciente pue",
          "weightType": "WEIGHTED_PAIRS",
@@ -1478,7 +1531,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 12,
          "fieldName": "JSPE-HP-ON23003_12_Preguntaralpacientequeesloquee",
-         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "Preguntar al paciente que es lo que está pasando en su vida personal no es útil en el entendimiento de sus quejas físicas.",
          "questionShort": "Preguntar al paciente que es l",
          "weightType": "WEIGHTED_PAIRS",
@@ -1508,7 +1561,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 14,
          "fieldName": "JSPE-HP-ON23003_14_Losmedicosdeberiandetratardeen",
-         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
          "question": "Los médicos deberían de tratar de entender que está pasando en la mente de los pacientes poniendo atención a su comunicación no verbal y lenguaje corporal",
          "questionShort": "Los médicos deberían de tratar",
          "weightType": "WEIGHTED_PAIRS",
@@ -1523,7 +1576,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 15,
          "fieldName": "JSPE-HP-ON23003_15_Laempatiaesunahabilidadterapeu",
-         "subScale": "JSPE-HP-ON23003_OTROS",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "La empatía es una habilidad terapéutica sin la cual el éxito como médico puede estar limitada.",
          "questionShort": "La empatía es una habilidad te",
          "weightType": "WEIGHTED_PAIRS",
@@ -1538,7 +1591,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 16,
          "fieldName": "JSPE-HP-ON23003_16_Elentendimientodelmedicodelest",
-         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "El entendimiento del médico del estado emocional de los pacientes tanto como el de sus miliares, es un importante componente de la relación médico- paciente.",
          "questionShort": "El entendimiento del médico de",
          "weightType": "WEIGHTED_PAIRS",
@@ -1583,7 +1636,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 19,
          "fieldName": "JSPE-HP-ON23003_19_Nodisfrutoleerliteraturanomedi",
-         "subScale": "JSPE-HP-ON23003_OTROS",
+         "subScale": "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
          "question": "No disfruto leer literatura no médica o de arte.",
          "questionShort": "No disfruto leer literatura no",
          "weightType": "WEIGHTED_PAIRS",
@@ -1598,7 +1651,7 @@
          "surveyShortName": "JSPE-HP-ON23003",
          "position": 20,
          "fieldName": "JSPE-HP-ON23003_20_Creoquelaempatiaesunfactortera",
-         "subScale": "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA",
          "question": "Creo que la empatía es un factor terapéutico importante en el tratamiento médico.",
          "questionShort": "Creo que la empatía es un fact",
          "weightType": "WEIGHTED_PAIRS",
@@ -1610,10 +1663,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 1,
-         "fieldName": "JEFF_STATIC_ON23_V2_1_Losprofesionalesdelasaluddeben",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_1_Losprofesionalesdelasaluddeben",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los profesionales de la salud deben ser considerados como colegas y colaboradores en lugar de como superiores y subordinados.",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1625,10 +1678,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 2,
-         "fieldName": "JEFF_STATIC_ON23_V2_2_Durantesueducaciontodoslosestu",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_2_Durantesueducaciontodoslosestu",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Durante su educación, todos los estudiantes de profesiones de la salud deben estar involucrados en trabajo en equipo interprofesional con el fin de entender su papel respectivo",
          "questionShort": "Durante su educación, todos lo",
          "weightType": "WEIGHTED_PAIRS",
@@ -1640,10 +1693,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 3,
-         "fieldName": "JEFF_STATIC_ON23_V2_3_Losprofesionalesdelasaludpuede",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_3_Losprofesionalesdelasaludpuede",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los profesionales de la salud pueden contribuir a las decisiones respecto al bienestar de los pacientes",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1655,10 +1708,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 4,
-         "fieldName": "JEFF_STATIC_ON23_V2_4_Losprofesionalesdelasaludnopue",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_4_Losprofesionalesdelasaludnopue",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los profesionales de la salud no pueden ser responsables ante sus pacientes por el cuidado/servicio que proveen",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1670,10 +1723,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 5,
-         "fieldName": "JEFF_STATIC_ON23_V2_5_Debidoaladiferenciacionderoles",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_5_Debidoaladiferenciacionderoles",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Debido a la diferenciación de roles, no existen muchas áreas comunes de responsabilidad entre los profesionales de la salud al proveer cuidados de calidad a sus pacientes.",
          "questionShort": "Debido a la diferenciación de ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1685,10 +1738,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 6,
-         "fieldName": "JEFF_STATIC_ON23_V2_6_Losprofesionalesdelasaludnopue",
-         "subScale": "JEFF_STATIC_ON23_V2_OTRO",
+         "fieldName": "JEFF_SATIC_ON23_V2_6_Losprofesionalesdelasaludnopue",
+         "subScale": "JEFF_SATIC_ON23_V2_OTRO",
          "question": "Los profesionales de la salud no pueden ser responsables ante sus pacientes por el cuidado/servicio que proveen",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1700,10 +1753,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 7,
-         "fieldName": "JEFF_STATIC_ON23_V2_7_Todoslosprofesionalesdelasalud",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_7_Todoslosprofesionalesdelasalud",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Todos los profesionales de la salud tienen su propia experiencia y conocimientos especiales para proveer cuidados de calidad a sus pacientes.",
          "questionShort": "Todos los profesionales de la ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1715,10 +1768,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 8,
-         "fieldName": "JEFF_STATIC_ON23_V2_8_Lafuncionprimariadeotrosprofes",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_8_Lafuncionprimariadeotrosprofes",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "La función primaria de otros profesionales de la salud es seguir sin cuestionar las órdenes del médico que está tratando a los pacientes.",
          "questionShort": "La función primaria de otros p",
          "weightType": "WEIGHTED_PAIRS",
@@ -1730,10 +1783,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 9,
-         "fieldName": "JEFF_STATIC_ON23_V2_9_Losprofesionalesdelasaluddeben",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_9_Losprofesionalesdelasaluddeben",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los profesionales de la salud deben estar involucrados en las decisiones sobre elaboración de políticas concernientes a su trabajo.",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1745,10 +1798,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 10,
-         "fieldName": "JEFF_STATIC_ON23_V2_10_Todoslosprofesionalesdelasalud",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_10_Todoslosprofesionalesdelasalud",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Todos los profesionales de la salud deben tener la responsabilidad de monitorear los efectos de las intervenciones en sus pacientes.",
          "questionShort": "Todos los profesionales de la ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1760,10 +1813,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 11,
-         "fieldName": "JEFF_STATIC_ON23_V2_11_Losprofesionalesdelasaludnodeb",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_11_Losprofesionalesdelasaludnodeb",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los profesionales de la salud no deben cuestionar las decisiones hechas por sus colegas interprofesionales cuando creen que pudieran tener efectos perjudiciales sobre el paciente.",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1775,10 +1828,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 12,
-         "fieldName": "JEFF_STATIC_ON23_V2_12_Loscentrosmedicosacademicosdeb",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_12_Loscentrosmedicosacademicosdeb",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los centros médicos académicos deben desarrollar programas educativos interprofesionales para mejorar la práctica colaborativa.",
          "questionShort": "Los centros médicos académicos",
          "weightType": "WEIGHTED_PAIRS",
@@ -1790,10 +1843,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 13,
-         "fieldName": "JEFF_STATIC_ON23_V2_13_Paracontribuiralmejorinteresde",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_13_Paracontribuiralmejorinteresde",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Para contribuir al mejor interés del paciente, los profesionales de la salud deben usar su propio juicio en lugar de consultar con sus colegas interprofesionales.",
          "questionShort": "Para contribuir al mejor inter",
          "weightType": "WEIGHTED_PAIRS",
@@ -1805,10 +1858,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 14,
-         "fieldName": "JEFF_STATIC_ON23_V2_14_Losprofesionalesdelasaluddeben",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_14_Losprofesionalesdelasaluddeben",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los profesionales de la salud deben hacerse conscientes de que sus colegas interprofesionales pueden contribuir a una atención de alta calidad.",
          "questionShort": "Los profesionales de la salud ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1820,10 +1873,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 15,
-         "fieldName": "JEFF_STATIC_ON23_V2_15_Laeducacioninterprofesionalyla",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_15_Laeducacioninterprofesionalyla",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "La educación interprofesional y la colaboración interprofesional en la práctica no están vinculadas entre sí.",
          "questionShort": "La educación interprofesional ",
          "weightType": "WEIGHTED_PAIRS",
@@ -1835,10 +1888,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 16,
-         "fieldName": "JEFF_STATIC_ON23_V2_16_Eltrabajoenequipointegradoenel",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_16_Eltrabajoenequipointegradoenel",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "El trabajo en equipo integrado en el cuidado a la salud no requiere educación interprofesional integrada.",
          "questionShort": "El trabajo en equipo integrado",
          "weightType": "WEIGHTED_PAIRS",
@@ -1850,10 +1903,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 17,
-         "fieldName": "JEFF_STATIC_ON23_V2_17_Lapracticacolaborativafunciona",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_17_Lapracticacolaborativafunciona",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "La práctica colaborativa funciona mejor cuando los profesionales de la salud desarrollan relaciones funcionales para implementar metas mutuamente acordadas.",
          "questionShort": "La práctica colaborativa funci",
          "weightType": "WEIGHTED_PAIRS",
@@ -1865,10 +1918,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 18,
-         "fieldName": "JEFF_STATIC_ON23_V2_18_Loserroresmedicosseminimizaran",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_18_Loserroresmedicosseminimizaran",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "Los errores médicos se minimizarán cuando exista colaboración entre los profesionales de la salud.",
          "questionShort": "Los errores médicos se minimiz",
          "weightType": "WEIGHTED_PAIRS",
@@ -1880,10 +1933,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 19,
-         "fieldName": "JEFF_STATIC_ON23_V2_19_Lacolaboracioninterprofesional",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_19_Lacolaboracioninterprofesional",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "La colaboración interprofesional que incluye respeto mutuo y comunicación mejora el ambiente de trabajo.",
          "questionShort": "La colaboración interprofesion",
          "weightType": "WEIGHTED_PAIRS",
@@ -1895,10 +1948,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
          "position": 20,
-         "fieldName": "JEFF_STATIC_ON23_V2_20_Lasatisfaccionconeltrabajonoes",
-         "subScale": "JEFF_STATIC_ON23_V2",
+         "fieldName": "JEFF_SATIC_ON23_V2_20_Lasatisfaccionconeltrabajonoes",
+         "subScale": "JEFF_SATIC_ON23_V2",
          "question": "La satisfacción con el trabajo no está relacionada con las prácticas colaborativas interprofesionales.",
          "questionShort": "La satisfacción con el trabajo",
          "weightType": "WEIGHTED_PAIRS",
@@ -1977,7 +2030,7 @@
          "question": "Tengo bastante con mis cosas como para preocuparme por los de otra gente",
          "questionShort": "Tengo bastante con mis cosas c",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "5": 1, "4": 2, "3": 3, "2": 4, "1": 5 },
+         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5 },
          "monkeyInfo": {
             "position": 5,
             "subPosition": 1,
@@ -2022,7 +2075,7 @@
          "question": "Con facilidad me meto en las cosas que me interesan y me olvido de los demás",
          "questionShort": "Con facilidad me meto en las c",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "5": 1, "4": 2, "3": 3, "2": 4, "1": 5 },
+         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5 },
          "monkeyInfo": {
             "position": 8,
             "subPosition": 1,
@@ -2052,7 +2105,7 @@
          "question": "En el fondo me fastidia que la gente me venga con sus problemas, pidiéndome mi tiempo y mi comprensión",
          "questionShort": "En el fondo me fastidia que la",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "5": 1, "4": 2, "3": 3, "2": 4, "1": 5 },
+         "weights": { "1": 1, "2": 2, "3": 3, "4": 4, "5": 5 },
          "monkeyInfo": {
             "position": 10,
             "subPosition": 1,
@@ -2112,7 +2165,7 @@
          "question": "Tengo facilidad para comprender como se sienten mis pacientes.",
          "questionShort": "Tengo facilidad para comprende",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 4,
             "subPosition": 1,
@@ -2157,7 +2210,7 @@
          "question": "Creo que trato con mucha eficacia los problemas de mis pacientes.",
          "questionShort": "Creo que trato con mucha efica",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 7,
             "subPosition": 1,
@@ -2187,7 +2240,7 @@
          "question": "Creo que con mi trabajo estoy influyendo positivamente en la vida de mis pacientes.",
          "questionShort": "Creo que con mi trabajo estoy ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 9,
             "subPosition": 1,
@@ -2232,7 +2285,7 @@
          "question": "Me siento con mucha energía en mi trabajo.",
          "questionShort": "Me siento con mucha energía en",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 12,
             "subPosition": 1,
@@ -2258,7 +2311,7 @@
          "surveyShortName": "CM_V2",
          "position": 14,
          "fieldName": "CM_V2_14_Creoquetrabajodemasiado",
-         "subScale": "BURN_DESPERS",
+         "subScale": "BURN_EMOCIONAL",
          "question": "Creo que trabajo demasiado.",
          "questionShort": "Creo que trabajo demasiado.",
          "weightType": "WEIGHTED_PAIRS",
@@ -2288,7 +2341,7 @@
          "surveyShortName": "CM_V2",
          "position": 16,
          "fieldName": "CM_V2_16_Trabajardirectamenteconpacient",
-         "subScale": "BURN_DESPERS",
+         "subScale": "BURN_EMOCIONAL",
          "question": "Trabajar directamente con pacientes me produce estrés.",
          "questionShort": "Trabajar directamente con paci",
          "weightType": "WEIGHTED_PAIRS",
@@ -2307,7 +2360,7 @@
          "question": "Siento que puedo crear con facilidad un clima agradable con mis pacientes.",
          "questionShort": "Siento que puedo crear con fac",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 17,
             "subPosition": 1,
@@ -2322,7 +2375,7 @@
          "question": "Me siento motivado después de trabajar en contacto con pacientes .",
          "questionShort": "Me siento motivado después de ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 18,
             "subPosition": 1,
@@ -2337,7 +2390,7 @@
          "question": "Creo que consigo muchas cosas valiosas en este trabajo.",
          "questionShort": "Creo que consigo muchas cosas ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 19,
             "subPosition": 1,
@@ -2367,7 +2420,7 @@
          "question": "En mi trabajo trato los problemas emocionalmente con mucha calma.",
          "questionShort": "En mi trabajo trato los proble",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 21,
             "subPosition": 1,
@@ -2420,26 +2473,16 @@
       },
       {
          "surveyShortName": "JSPE-HP-ON23003",
-         "description": "JSPE-HP-ON23003_OTROS",
-         "shortDescription": "JSPE-HP-ON23003_OTROS",
-         "fieldName": "JSPE-HP-ON23003_OTROS",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["JSPE-HP-ON23003_OTROS"],
-         "position": 91
-      },
-      {
-         "surveyShortName": "JSPE-HP-ON23003",
          "description": "JSPE-HP-ON23003_TOTAL_MAX140",
          "shortDescription": "JSPE-HP-ON23003_TOTAL_MAX140",
          "fieldName": "JSPE-HP-ON23003_TOTAL_MAX140",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": [
-            "JSPE-HP-ON23003_OTROS",
             "JSPE-HP-ON23003_INVOLUCRAMIENTO_EMOCIONAL",
             "JSPE-HP-ON23003_CUIDADO_COMPASIVO",
             "JSPE-HP-ON23003_TOMA_DE_PERSPECTIVA"
          ],
-         "position": 121
+         "position": 91
       },
       {
          "surveyShortName": "JSPE-HP-ON23003",
@@ -2452,29 +2495,29 @@
             "max": 140
          },
          "subScales": ["NA"],
+         "position": 121
+      },
+      {
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
+         "description": "JEFF_SATIC_ON23_COLAB_TOTAL_MAX_140",
+         "shortDescription": "JEFF_SATIC_ON23_COLAB_TOTAL_MAX_140",
+         "fieldName": "JEFF_SATIC_ON23_COLAB_TOTAL_MAX_140",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["JEFF_SATIC_ON23_V2"],
          "position": 151
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
-         "description": "JEFF_STATIC_ON23_COLAB_TOTAL_MAX_140",
-         "shortDescription": "JEFF_STATIC_ON23_COLAB_TOTAL_MAX_140",
-         "fieldName": "JEFF_STATIC_ON23_COLAB_TOTAL_MAX_140",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["JEFF_STATIC_ON23_V2"],
-         "position": 181
-      },
-      {
-         "surveyShortName": "JEFF_STATIC_ON23_V2",
-         "description": "JEFF_STATIC_ON23_COLAB_PERCENT_OF_MAX",
-         "shortDescription": "JEFF_STATIC_ON23_COLAB_PERCENT_OF_MAX",
-         "fieldName": "JEFF_STATIC_ON23_COLAB_PERCENT_OF_MAX",
+         "surveyShortName": "JEFF_SATIC_ON23_V2",
+         "description": "JEFF_SATIC_ON23_COLAB_PERCENT_OF_MAX",
+         "shortDescription": "JEFF_SATIC_ON23_COLAB_PERCENT_OF_MAX",
+         "fieldName": "JEFF_SATIC_ON23_COLAB_PERCENT_OF_MAX",
          "calculationType": "CAL_PERCENT_OF_NUMBER",
          "criteria": {
-            "fieldNameValue": "JEFF_STATIC_ON23_COLAB_TOTAL_MAX_140",
+            "fieldNameValue": "JEFF_SATIC_ON23_COLAB_TOTAL_MAX_140",
             "max": 140
          },
          "subScales": ["NA"],
-         "position": 211
+         "position": 181
       },
       {
          "surveyShortName": "HSNS_ON23_V2",
@@ -2483,7 +2526,7 @@
          "fieldName": "HSNS_ON23_V2_NARCISISMO_TOTAL_MAX_50",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["HSNS_ON23_V2"],
-         "position": 241
+         "position": 211
       },
       {
          "surveyShortName": "HSNS_ON23_V2",
@@ -2496,25 +2539,79 @@
             "max": 50
          },
          "subScales": ["NA"],
+         "position": 241
+      },
+      {
+         "surveyShortName": "CM_V2",
+         "description": "CM_V2_EMOCIONAL_MAX_54",
+         "shortDescription": "CM_V2_EMOCIONAL_MAX_54",
+         "fieldName": "CM_V2_EMOCIONAL_MAX_54",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["BURN_EMOCIONAL"],
          "position": 271
       },
       {
          "surveyShortName": "CM_V2",
-         "description": "CM_V2_EMOCIONAL_MAX_42",
-         "shortDescription": "CM_V2_EMOCIONAL_MAX_42",
-         "fieldName": "CM_V2_EMOCIONAL_MAX_42",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["BURN_EMOCIONAL"],
+         "description": "CM_V2_EMOCIONAL_MAX_54_RESULTADO",
+         "shortDescription": "CM_V2_EMOCIONAL_MAX_54_RESULTADO",
+         "fieldName": "CM_V2_EMOCIONAL_MAX_54_RESULTADO",
+         "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
+         "criteria": {
+            "fieldNameValue": "CM_V2_EMOCIONAL_MAX_54",
+            "ranges": [
+               { "min": 0, "max": 16, "resultIfTrue": "Bajo" },
+               { "min": 17, "max": 26, "resultIfTrue": "Moderado" },
+               { "min": 27, "max": 100, "resultIfTrue": "Alto" }
+            ]
+         },
+         "subScales": ["NA"],
          "position": 301
       },
       {
          "surveyShortName": "CM_V2",
-         "description": "CM_V2_DESPERS_MAX_36",
-         "shortDescription": "CM_V2_DESPERS_MAX_36",
-         "fieldName": "CM_V2_DESPERS_MAX_36",
+         "description": "CM_V2_EMOCIONAL_MAX_54_SEMAFORO",
+         "shortDescription": "CM_V2_EMOCIONAL_MAX_54_SEMAFORO",
+         "fieldName": "CM_V2_EMOCIONAL_MAX_54_SEMAFORO",
+         "calculationType": "CAL_COPY_VALUE",
+         "criteria": { "fieldNameValue": "CM_V2_EMOCIONAL_MAX_54" },
+         "subScales": ["NA"],
+         "position": 331
+      },
+      {
+         "surveyShortName": "CM_V2",
+         "description": "CM_V2_DESPERS_MAX_30",
+         "shortDescription": "CM_V2_DESPERS_MAX_30",
+         "fieldName": "CM_V2_DESPERS_MAX_30",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["BURN_DESPERS"],
-         "position": 331
+         "position": 361
+      },
+      {
+         "surveyShortName": "CM_V2",
+         "description": "CM_V2_DESPERS_MAX_30_RESULTADO",
+         "shortDescription": "CM_V2_DESPERS_MAX_30_RESULTADO",
+         "fieldName": "CM_V2_DESPERS_MAX_30_RESULTADO",
+         "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
+         "criteria": {
+            "fieldNameValue": "CM_V2_DESPERS_MAX_30",
+            "ranges": [
+               { "min": 0, "max": 6, "resultIfTrue": "Bajo" },
+               { "min": 7, "max": 12, "resultIfTrue": "Moderado" },
+               { "min": 13, "max": 100, "resultIfTrue": "Alto" }
+            ]
+         },
+         "subScales": ["NA"],
+         "position": 391
+      },
+      {
+         "surveyShortName": "CM_V2",
+         "description": "CM_V2_DESPERS_MAX_30_SEMAFORO",
+         "shortDescription": "CM_V2_DESPERS_MAX_30_SEMAFORO",
+         "fieldName": "CM_V2_DESPERS_MAX_30_SEMAFORO",
+         "calculationType": "CAL_COPY_VALUE",
+         "criteria": { "fieldNameValue": "CM_V2_DESPERS_MAX_30" },
+         "subScales": ["NA"],
+         "position": 421
       },
       {
          "surveyShortName": "CM_V2",
@@ -2523,44 +2620,34 @@
          "fieldName": "CM_V2_LOGROS_MAX_48",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["BURN_LOGROS"],
-         "position": 361
+         "position": 451
       },
       {
          "surveyShortName": "CM_V2",
-         "description": "CM_V2_TOTAL_MAX_126",
-         "shortDescription": "CM_V2_TOTAL_MAX_126",
-         "fieldName": "CM_V2_TOTAL_MAX_126",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["BURN_EMOCIONAL", "BURN_DESPERS", "BURN_LOGROS"],
-         "position": 391
-      },
-      {
-         "surveyShortName": "CM_V2",
-         "description": "CM_V2_RESULTADO",
-         "shortDescription": "CM_V2_RESULTADO",
-         "fieldName": "CM_V2_RESULTADO",
+         "description": "CM_V2_LOGROS_MAX_48_RESULTADO",
+         "shortDescription": "CM_V2_LOGROS_MAX_48_RESULTADO",
+         "fieldName": "CM_V2_LOGROS_MAX_48_RESULTADO",
          "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
          "criteria": {
-            "fieldNameValue": "CM_V2_TOTAL_MAX_126",
+            "fieldNameValue": "CM_V2_LOGROS_MAX_48",
             "ranges": [
-               { "min": 0, "max": 20, "resultIfTrue": "Nivel Bajo" },
-               { "min": 21, "max": 40, "resultIfTrue": "Moderado" },
-               { "min": 41, "max": 60, "resultIfTrue": "Alto" },
-               { "min": 61, "max": 127, "resultIfTrue": "Muy Alto" }
+               { "min": 0, "max": 20, "resultIfTrue": "Bajo" },
+               { "min": 21, "max": 36, "resultIfTrue": "Moderado" },
+               { "min": 37, "max": 100, "resultIfTrue": "Alto" }
             ]
          },
-         "subScales": ["CM_V2_TOTAL_MAX_126"],
-         "position": 421
+         "subScales": ["NA"],
+         "position": 481
       },
       {
          "surveyShortName": "CM_V2",
-         "description": "CM_V2_SEMAPHORE",
-         "shortDescription": "CM_V2_SEMAPHORE",
-         "fieldName": "CM_V2_SEMAPHORE",
+         "description": "CM_V2_LOGROS_MAX_48_SEMAFORO",
+         "shortDescription": "CM_V2_LOGROS_MAX_48_SEMAFORO",
+         "fieldName": "CM_V2_LOGROS_MAX_48_SEMAFORO",
          "calculationType": "CAL_COPY_VALUE",
-         "criteria": { "fieldNameValue": "CM_V2_TOTAL_MAX_126" },
-         "subScales": ["CM_V2_SEMAPHORE"],
-         "position": 451
+         "criteria": { "fieldNameValue": "CM_V2_LOGROS_MAX_48" },
+         "subScales": ["NA"],
+         "position": 511
       }
    ]
 }

@@ -731,8 +731,8 @@
             "position": 791
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_1Losprofesionalesdelasaluddebe",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_1Losprofesionalesdelasaluddebe",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -740,8 +740,8 @@
             "position": 801
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_2Durantesueducaciontodoslosest",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_2Durantesueducaciontodoslosest",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -749,8 +749,8 @@
             "position": 811
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_3Losprofesionalesdelasaludpued",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_3Losprofesionalesdelasaludpued",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -758,8 +758,8 @@
             "position": 821
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_4Losprofesionalesdelasaludnopu",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_4Losprofesionalesdelasaludnopu",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -767,8 +767,8 @@
             "position": 831
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_5Debidoaladiferenciacionderole",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_5Debidoaladiferenciacionderole",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -776,8 +776,8 @@
             "position": 841
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_6Todoslosprofesionalesdelasalu",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_6Todoslosprofesionalesdelasalu",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -785,8 +785,8 @@
             "position": 851
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_7Todoslosprofesionalesdelasalu",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_7Todoslosprofesionalesdelasalu",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -794,8 +794,8 @@
             "position": 861
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_8Lafuncionprimariadeotrosprofe",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_8Lafuncionprimariadeotrosprofe",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -803,8 +803,8 @@
             "position": 871
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_9Losprofesionalesdelasaluddebe",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_9Losprofesionalesdelasaluddebe",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -812,8 +812,8 @@
             "position": 881
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_10Todoslosprofesionalesdelasal",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_10Todoslosprofesionalesdelasal",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -821,8 +821,8 @@
             "position": 891
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_11Losprofesionalesdelasaludnod",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_11Losprofesionalesdelasaludnod",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -830,8 +830,8 @@
             "position": 901
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_12Loscentrosmedicosacademicosd",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_12Loscentrosmedicosacademicosd",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -839,8 +839,8 @@
             "position": 911
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_13Paracontribuiralmejorinteres",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_13Paracontribuiralmejorinteres",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -848,8 +848,8 @@
             "position": 921
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_14Losprofesionalesdelasaluddeb",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_14Losprofesionalesdelasaluddeb",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -857,8 +857,8 @@
             "position": 931
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_15Laeducacioninterprofesionaly",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_15Laeducacioninterprofesionaly",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -866,8 +866,8 @@
             "position": 941
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_16Eltrabajoenequipointegradoen",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_16Eltrabajoenequipointegradoen",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -875,8 +875,8 @@
             "position": 951
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_17Lapracticacolaborativafuncio",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_17Lapracticacolaborativafuncio",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -884,8 +884,8 @@
             "position": 961
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_18Loserroresmedicosseminimizar",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_18Loserroresmedicosseminimizar",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -893,8 +893,8 @@
             "position": 971
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_19Lacolaboracioninterprofesion",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_19Lacolaboracioninterprofesion",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -902,8 +902,8 @@
             "position": 981
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
-            "fieldName": "JEFF_STATIC_ON23_20Lasatisfaccionconeltrabajono",
+            "surveyShortName": "JEFF_SATIC_ON23",
+            "fieldName": "JEFF_SATIC_ON23_20Lasatisfaccionconeltrabajono",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": false,
@@ -2134,109 +2134,10 @@
             "displayType": { "type": "asIs" },
             "position": 2351
          },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_2-Suspreocupacioneslehanhecho",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2361
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_3-Hasentidoqueestadesempenand",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2371
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_4-Sehasentidocapazdetomardeci",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2381
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_5-Sehasentidoconstantementeag",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2391
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_6-Hasentidoquenopuedesuperars",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2401
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_7-Hasidocapazdedisfrutardesus",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2411
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_8-Hasidocapazdehacerfrenteade",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2421
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_9-Sehasentidopocofelizodeprim",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2431
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_10-Haperdidoconfianzaensimism",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2441
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_11-Hapensadoqueustedesunapers",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2451
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12_2_12-Sesienterazonablementefeli",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": false,
-            "displayType": { "type": "asIs" },
-            "position": 2461
-         },
 
          {
             "surveyShortName": "CM",
-            "fieldName": "BURN_EMOCIONAL_MAX_42",
+            "fieldName": "BURN_EMOCIONAL_MAX_54",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
@@ -2245,34 +2146,7 @@
          },
          {
             "surveyShortName": "CM",
-            "fieldName": "BURN_DESPERS_MAX_36",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 2371
-         },
-         {
-            "surveyShortName": "CM",
-            "fieldName": "BURN_LOGROS_MAX_48",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 2381
-         },
-         {
-            "surveyShortName": "CM",
-            "fieldName": "BURN_TOTAL_MAX_126",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 2391
-         },
-         {
-            "surveyShortName": "CM",
-            "fieldName": "BURN_RESULTADO",
+            "fieldName": "BURN_EMOCIONAL_MAX_54_RESULTADO",
             "dataType": "String",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
@@ -2281,10 +2155,55 @@
                "displayAsPieChart": {
                   "calculationType": "countSeries",
                   "seriesStyles": {
-                     "Nivel Bajo": "#0cc50c",
-                     "Moderado": "#008000",
-                     "Alto": "#ffa500",
-                     "Muy Alto": "#ff0000"
+                     "Bajo": "#0cc50c",
+                     "Moderado": "#ffa500",
+                     "Alto": "#ff0000"
+                  }
+               }
+            },
+            "position": 2371
+         },
+         {
+            "surveyShortName": "CM",
+            "fieldName": "BURN_EMOCIONAL_MAX_54_SEMAFORO",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
+               "header": "M_BURN_EMOCIONAL_SEMAFORO",
+               "type": "rangesSemaphore",
+               "styleCriterias": [
+                  { "min": 0, "max": 16, "style": "green" },
+                  { "min": 17, "max": 26, "style": "yellow" },
+                  { "min": 27, "max": 100, "style": "red" }
+               ]
+            },
+            "position": 2381
+         },
+         {
+            "surveyShortName": "CM",
+            "fieldName": "BURN_DESPERS_MAX_30",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2391
+         },
+         {
+            "surveyShortName": "CM",
+            "fieldName": "BURN_DESPERS_MAX_30_RESULTADO",
+            "dataType": "String",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "type": "asIs",
+               "displayAsPieChart": {
+                  "calculationType": "countSeries",
+                  "seriesStyles": {
+                     "Bajo": "#0cc50c",
+                     "Moderado": "#ffa500",
+                     "Alto": "#ff0000"
                   }
                }
             },
@@ -2292,22 +2211,67 @@
          },
          {
             "surveyShortName": "CM",
-            "fieldName": "BURN_SEMAPHORE",
+            "fieldName": "BURN_DESPERS_MAX_30_SEMAFORO",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": {
                "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
-               "header": "BURN",
+               "header": "M_BURN_DESPERSONALIZACION_SEMAFORO",
                "type": "rangesSemaphore",
                "styleCriterias": [
-                  { "min": 0, "max": 20, "style": "green" },
-                  { "min": 21, "max": 40, "style": "orange" },
-                  { "min": 41, "max": 60, "style": "yellow" },
-                  { "min": 61, "max": 127, "style": "red" }
+                  { "min": 0, "max": 6, "style": "green" },
+                  { "min": 7, "max": 12, "style": "yellow" },
+                  { "min": 13, "max": 100, "style": "red" }
                ]
             },
             "position": 2411
+         },
+         {
+            "surveyShortName": "CM",
+            "fieldName": "BURN_LOGROS_MAX_48",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2421
+         },
+         {
+            "surveyShortName": "CM",
+            "fieldName": "BURN_LOGROS_MAX_48_RESULTADO",
+            "dataType": "String",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "type": "asIs",
+               "displayAsPieChart": {
+                  "calculationType": "countSeries",
+                  "seriesStyles": {
+                     "Alto": "#0cc50c",
+                     "Moderado": "#ffa500",
+                     "Bajo": "#ff0000"
+                  }
+               }
+            },
+            "position": 2431
+         },
+         {
+            "surveyShortName": "CM",
+            "fieldName": "BURN_LOGROS_MAX_48_SEMAFORO",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": {
+               "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
+               "header": "M_BURN_REALIZACION_SEMAFORO",
+               "type": "rangesSemaphore",
+               "styleCriterias": [
+                  { "min": 0, "max": 20, "style": "green" },
+                  { "min": 21, "max": 36, "style": "yellow" },
+                  { "min": 37, "max": 100, "style": "red" }
+               ]
+            },
+            "position": 2441
          },
          {
             "surveyShortName": "JSPE-HP",
@@ -2316,7 +2280,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2421
+            "position": 2451
          },
          {
             "surveyShortName": "JSPE-HP",
@@ -2325,7 +2289,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2431
+            "position": 2461
          },
          {
             "surveyShortName": "JSPE-HP",
@@ -2334,16 +2298,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2441
-         },
-         {
-            "surveyShortName": "JSPE-HP",
-            "fieldName": "JSPE-HP_OTROS",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 2451
+            "position": 2471
          },
          {
             "surveyShortName": "JSPE-HP",
@@ -2352,7 +2307,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2461
+            "position": 2481
          },
          {
             "surveyShortName": "JSPE-HP",
@@ -2366,19 +2321,19 @@
                "type": "percentBarWithCriterias",
                "styleCriterias": [{ "min": 0, "max": 100, "style": "green" }]
             },
-            "position": 2471
+            "position": 2491
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
+            "surveyShortName": "JEFF_SATIC_ON23",
             "fieldName": "JEFF_COLABORACION_INTERPERSONAL_TOTAL_MAX_140",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2481
+            "position": 2501
          },
          {
-            "surveyShortName": "JEFF_STATIC_ON23",
+            "surveyShortName": "JEFF_SATIC_ON23",
             "fieldName": "JEFF_COLAB_INTERPERS_PERCENT_OF_MAX",
             "dataType": "Float",
             "outputAsReal": false,
@@ -2389,7 +2344,7 @@
                "type": "percentBarWithCriterias",
                "styleCriterias": [{ "min": 0, "max": 100, "style": "green" }]
             },
-            "position": 2491
+            "position": 2511
          },
          {
             "surveyShortName": "FIAD15_ON23",
@@ -2398,7 +2353,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2501
+            "position": 2521
          },
          {
             "surveyShortName": "FIAD15_ON23",
@@ -2411,14 +2366,14 @@
                "displayAsPieChart": {
                   "calculationType": "countSeries",
                   "seriesStyles": {
-                     "Alta Estabilidad Emocional": "#0cc50c",
-                     "Nivel Moderado de Impulsividad": "#008000",
-                     "Nivel Alto de Impulsividad": "#ffa500",
-                     "Muy Alta Agresividad": "#ff0000"
+                     "Nivel funcional": "#0cc50c",
+                     "Nivel alto": "#008000",
+                     "Nivel intermedio": "#ff0000",
+                     "Nivel limítrofe": "#ff0000"
                   }
                }
             },
-            "position": 2511
+            "position": 2531
          },
          {
             "surveyShortName": "FIAD15_ON23",
@@ -2431,13 +2386,13 @@
                "header": "FIAD15",
                "type": "rangesSemaphore",
                "styleCriterias": [
-                  { "min": 0, "max": 30, "style": "green" },
-                  { "min": 31, "max": 45, "style": "orange" },
-                  { "min": 46, "max": 60, "style": "yellow" },
-                  { "min": 61, "max": 1000, "style": "red" }
+                  { "min": 0, "max": 6, "style": "green" },
+                  { "min": 7, "max": 11, "style": "orange" },
+                  { "min": 12, "max": 26, "style": "yellow" },
+                  { "min": 27, "max": 100, "style": "red" }
                ]
             },
-            "position": 2521
+            "position": 2541
          },
          {
             "surveyShortName": "HSNS",
@@ -2446,7 +2401,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2531
+            "position": 2551
          },
          {
             "surveyShortName": "HSNS",
@@ -2460,16 +2415,61 @@
                "type": "percentBarWithCriterias",
                "styleCriterias": [{ "min": 0, "max": 100, "style": "green" }]
             },
-            "position": 2541
+            "position": 2561
          },
          {
             "surveyShortName": "ZKPQ",
-            "fieldName": "ZKPQ_TOTAL_MAX_100",
+            "fieldName": "ZKPQ_AH_MAX_18",
             "dataType": "Integer",
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2551
+            "position": 2571
+         },
+         {
+            "surveyShortName": "ZKPQ",
+            "fieldName": "ZKPQ_ACT_MAX_17",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2581
+         },
+         {
+            "surveyShortName": "ZKPQ",
+            "fieldName": "ZKPQ_SOC_MAX_17",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2591
+         },
+         {
+            "surveyShortName": "ZKPQ",
+            "fieldName": "ZKPQ_N-ANX_MAX_19",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2601
+         },
+         {
+            "surveyShortName": "ZKPQ",
+            "fieldName": "ZKPQ_SS_MAX_21",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2611
+         },
+         {
+            "surveyShortName": "ZKPQ",
+            "fieldName": "ZKPQ_TOTAL_MAX_92",
+            "dataType": "Integer",
+            "outputAsReal": false,
+            "showInSurveyOutputScreen": true,
+            "displayType": { "type": "asIs" },
+            "position": 2621
          },
          {
             "surveyShortName": "ZKPQ",
@@ -2490,7 +2490,7 @@
                   }
                }
             },
-            "position": 2561
+            "position": 2631
          },
          {
             "surveyShortName": "ZKPQ",
@@ -2510,7 +2510,7 @@
                   { "min": 81, "max": 101, "style": "red" }
                ]
             },
-            "position": 2571
+            "position": 2641
          },
          {
             "surveyShortName": "CGS12",
@@ -2519,7 +2519,7 @@
             "outputAsReal": false,
             "showInSurveyOutputScreen": true,
             "displayType": { "type": "asIs" },
-            "position": 2581
+            "position": 2651
          },
          {
             "surveyShortName": "CGS12",
@@ -2539,7 +2539,7 @@
                   }
                }
             },
-            "position": 2591
+            "position": 2661
          },
          {
             "surveyShortName": "CGS12",
@@ -2558,55 +2558,7 @@
                   { "min": 37, "max": 50, "style": "red" }
                ]
             },
-            "position": 2601
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12-2_TOTAL_MAX_60",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": { "type": "asIs" },
-            "position": 2611
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12-2_RESULTADO",
-            "dataType": "String",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": {
-               "type": "asIs",
-               "displayAsPieChart": {
-                  "calculationType": "countSeries",
-                  "seriesStyles": {
-                     "Buena salud mental": "#0cc50c",
-                     "Salud mental promedio": "#008000",
-                     "Salud mental en riesgo": "#ffa500",
-                     "Salud mental deficiente": "#ff0000"
-                  }
-               }
-            },
-            "position": 2621
-         },
-         {
-            "surveyShortName": "CGS12",
-            "fieldName": "CGS12-2_SEMAFORO",
-            "dataType": "Integer",
-            "outputAsReal": false,
-            "showInSurveyOutputScreen": true,
-            "displayType": {
-               "displayInScreens": ["OutputScreen", "SingleOutputScreen"],
-               "header": "CGS12-2",
-               "type": "rangesSemaphore",
-               "styleCriterias": [
-                  { "min": 0, "max": 12, "style": "green" },
-                  { "min": 13, "max": 24, "style": "orange" },
-                  { "min": 25, "max": 36, "style": "yellow" },
-                  { "min": 37, "max": 50, "style": "red" }
-               ]
-            },
-            "position": 2631
+            "position": 2671
          }
       ],
       "multiSurveys": [
@@ -2648,7 +2600,7 @@
          },
          {
             "superSurveyShortName": "v20deON230003_EMPATIAYTRABAJO",
-            "surveyShortName": "JEFF_STATIC_ON23",
+            "surveyShortName": "JEFF_SATIC_ON23",
             "position": 70,
             "monkeyPosition": 6
          },
@@ -2716,9 +2668,9 @@
          "instructions": ""
       },
       {
-         "surveyName": "JEFF_STATIC_ON23",
-         "surveyShortName": "JEFF_STATIC_ON23",
-         "description": "JeffSTATIC for V2.0 DE ON23-00003",
+         "surveyName": "JEFF_SATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
+         "description": "JeffSATIC for V2.0 DE ON23-00003",
          "instructions": ""
       },
       {
@@ -3430,7 +3382,7 @@
          "question": "4. Siento que puedo entender fácilmente a los pacientes.",
          "questionShort": "4. Siento que puedo entender fácilmente ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 4,
@@ -3475,7 +3427,7 @@
          "question": "7. Siento que trato con mucha eficacia los problemas de mis pacientes.",
          "questionShort": "7. Siento que trato con mucha eficacia l",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 7,
@@ -3505,7 +3457,7 @@
          "question": "9. Siento que estoy influyendo positivamente en la vida de otras personas a través de mi trabajo",
          "questionShort": "9. Siento que estoy influyendo positivam",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 9,
@@ -3550,7 +3502,7 @@
          "question": "12. Me siento con mucha energía en mi trabajo",
          "questionShort": "12. Me siento con mucha energía en mi tr",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 12,
@@ -3576,7 +3528,7 @@
          "surveyShortName": "CM",
          "position": 14,
          "fieldName": "CM_14_14Sientoqueestoydemasiadotiempoenmitraba",
-         "subScale": "BURN_DESPERS",
+         "subScale": "BURN_EMOCIONAL",
          "question": "14. Siento que estoy demasiado tiempo en mi trabajo",
          "questionShort": "14. Siento que estoy demasiado tiempo en",
          "weightType": "WEIGHTED_PAIRS",
@@ -3606,7 +3558,7 @@
          "surveyShortName": "CM",
          "position": 16,
          "fieldName": "CM_16_16Sientoquetrabajarencontactodirectoconl",
-         "subScale": "BURN_DESPERS",
+         "subScale": "BURN_EMOCIONAL",
          "question": "16. Siento que trabajar en contacto directo con la gente me cansa",
          "questionShort": "16. Siento que trabajar en contacto dire",
          "weightType": "WEIGHTED_PAIRS",
@@ -3625,7 +3577,7 @@
          "question": "17. Siento que puedo crear con facilidad un clima agradable con mis pacientes",
          "questionShort": "17. Siento que puedo crear con facilidad",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 17,
@@ -3640,7 +3592,7 @@
          "question": "18. Me siento estimado después de haber trabajado íntimamente con los pacientes",
          "questionShort": "18. Me siento estimado después de haber ",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 18,
@@ -3655,7 +3607,7 @@
          "question": "19. Creo que consigo muchas cosas valiosas en este trabajo",
          "questionShort": "19. Creo que consigo muchas cosas valios",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 19,
@@ -3685,7 +3637,7 @@
          "question": "21. Siento que en mi trabajo los problemas emocionales son tratados de forma adeuada",
          "questionShort": "21. Siento que en mi trabajo los problem",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "7": 0, "6": 1, "5": 2, "4": 3, "3": 4, "2": 5, "1": 6 },
+         "weights": { "1": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 21,
@@ -3711,7 +3663,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 1,
          "fieldName": "JSPE-HP_1_1Elentendimientodelmedicodelossentimient",
-         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "1. El entendimiento del médico de los sentimientos del paciente y sus familiares es un factor que no influye en el tratamiento médico o quirúrgico.",
          "questionShort": "1. El entendimiento del médico de los se",
          "weightType": "WEIGHTED_PAIRS",
@@ -3726,7 +3678,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 2,
          "fieldName": "JSPE-HP_2_2Lospacientessesientenmejorcuandosusmedi",
-         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "2. Los pacientes se sienten mejor cuando sus médicos comprenden sus sentimientos.",
          "questionShort": "2. Los pacientes se sienten mejor cuando",
          "weightType": "WEIGHTED_PAIRS",
@@ -3741,7 +3693,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 3,
          "fieldName": "JSPE-HP_3_3Esdificilparaunmedicoverlascosasdesdela",
-         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "3. Es difícil para un médico ver las cosas desde la perspectiva de los pacientes.",
          "questionShort": "3. Es difícil para un médico ver las cos",
          "weightType": "WEIGHTED_PAIRS",
@@ -3756,7 +3708,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 4,
          "fieldName": "JSPE-HP_4Entenderellenguajecorporalest",
-         "subScale": "JSPE-HP_OTROS",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "4. Entender el lenguaje corporal es tan importante como la comunicación verbal en la relación médico-paciente.",
          "questionShort": "4. Entender el lenguaje corpor",
          "weightType": "WEIGHTED_PAIRS",
@@ -3771,7 +3723,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 5,
          "fieldName": "JSPE-HP_5Elsentidodelhumordelmedicocon",
-         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "5. El sentido del humor del médico contribuye a un mejor resultado clínico.",
          "questionShort": "5. El sentido del humor del mé",
          "weightType": "WEIGHTED_PAIRS",
@@ -3786,7 +3738,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 6,
          "fieldName": "JSPE-HP_6Porquelagenteesdiferenteesdif",
-         "subScale": "JSPE-HP_OTROS",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "6. Porque la gente es diferente, es difícil ver las cosas desde la perspectiva del paciente.",
          "questionShort": "6. Porque la gente es diferent",
          "weightType": "WEIGHTED_PAIRS",
@@ -3801,7 +3753,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 7,
          "fieldName": "JSPE-HP_7Poneratencionalasemocionesdel",
-         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "7. Poner atención a las emociones del paciente no es importante al tomar su historia.",
          "questionShort": "7. Poner atención a las emocio",
          "weightType": "WEIGHTED_PAIRS",
@@ -3816,7 +3768,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 8,
          "fieldName": "JSPE-HP_8Atenderconcuidadolasexperienc",
-         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "8. Atender con cuidado las experiencias personales del paciente no influye en los resultados del tratamiento.",
          "questionShort": "8. Atender con cuidado las exp",
          "weightType": "WEIGHTED_PAIRS",
@@ -3846,7 +3798,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 10,
          "fieldName": "JSPE-HP_10Elpacientevaloraalmedicoquee",
-         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "10. El paciente valora al médico que entiende sus sentimientos lo cual es terapéutico por sí mismo.",
          "questionShort": "10. El paciente valora al médi",
          "weightType": "WEIGHTED_PAIRS",
@@ -3861,7 +3813,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 11,
          "fieldName": "JSPE-HP_11Laenfermedaddelpacientepuede",
-         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "11. La enfermedad del paciente puede ser curada solamente por el tratamiento médico o quirúrgico; por lo tanto, lazos emocionales del médico con su paciente no tienen influencia significativa en el tratamiento médico o quirúrgico",
          "questionShort": "11. La enfermedad del paciente",
          "weightType": "WEIGHTED_PAIRS",
@@ -3876,7 +3828,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 12,
          "fieldName": "JSPE-HP_12Preguntaralpacientequeesloqu",
-         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "12. Preguntar al paciente que es lo que está pasando en su vida personal no es útil en el entendimiento de sus quejas físicas.",
          "questionShort": "12. Preguntar al paciente que ",
          "weightType": "WEIGHTED_PAIRS",
@@ -3906,7 +3858,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 14,
          "fieldName": "JSPE-HP_14Yocreoquelasemocionesnotiene",
-         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
+         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
          "question": "14. Yo creo que las emociones no tienen lugar en el tratamiento de la enfermedad médica.",
          "questionShort": "14. Yo creo que las emociones ",
          "weightType": "WEIGHTED_PAIRS",
@@ -3921,7 +3873,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 15,
          "fieldName": "JSPE-HP_15Laempatiaesunahabilidadterap",
-         "subScale": "JSPE-HP_OTROS",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "15. La empatía es una habilidad terapéutica sin la cual el éxito como médico puede estar limitada.",
          "questionShort": "15. La empatía es una habilida",
          "weightType": "WEIGHTED_PAIRS",
@@ -3936,7 +3888,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 16,
          "fieldName": "JSPE-HP_16Elentendimientodelmedicodele",
-         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "16. El entendimiento del médico del estado emocional de los pacientes tanto como el de sus familias, es un importante componente de la relación médico-paciente.",
          "questionShort": "16. El entendimiento del médic",
          "weightType": "WEIGHTED_PAIRS",
@@ -3981,7 +3933,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 19,
          "fieldName": "JSPE-HP_19Nodisfrutoleerliteraturanome",
-         "subScale": "JSPE-HP_OTROS",
+         "subScale": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
          "question": "19. No disfruto leer literatura no médica o de arte.",
          "questionShort": "19. No disfruto leer literatur",
          "weightType": "WEIGHTED_PAIRS",
@@ -3996,7 +3948,7 @@
          "surveyShortName": "JSPE-HP",
          "position": 20,
          "fieldName": "JSPE-HP_20Creoquelaempatiaesunfactorte",
-         "subScale": "JSPE-HP_CUIDADO_COMPASIVO",
+         "subScale": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "question": "20. Creo que la empatía es un factor terapéutico importante en el tratamiento médico.",
          "questionShort": "20. Creo que la empatía es un ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4008,10 +3960,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 1,
-         "fieldName": "JEFF_STATIC_ON23_1Losprofesionalesdelasaluddebe",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_1Losprofesionalesdelasaluddebe",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "1. Los profesionales de la salud deben ser considerados como colegas y colaboradores en lugar de como superiores y subordinados.",
          "questionShort": "1. Los profesionales de la sal",
          "weightType": "WEIGHTED_PAIRS",
@@ -4023,10 +3975,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 2,
-         "fieldName": "JEFF_STATIC_ON23_2Durantesueducaciontodoslosest",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_2Durantesueducaciontodoslosest",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "2. Durante su educación, todos los estudiantes de profesiones de la salud deben estar involucrados en trabajo en equipo interprofesional con el fin de entender su papel respectivo.",
          "questionShort": "2. Durante su educación, todos",
          "weightType": "WEIGHTED_PAIRS",
@@ -4038,10 +3990,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 3,
-         "fieldName": "JEFF_STATIC_ON23_3Losprofesionalesdelasaludpued",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_3Losprofesionalesdelasaludpued",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "3. Los profesionales de la salud pueden contribuir a las decisiones respecto al bienestar de los pacientes.",
          "questionShort": "3. Los profesionales de la sal",
          "weightType": "WEIGHTED_PAIRS",
@@ -4053,10 +4005,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 4,
-         "fieldName": "JEFF_STATIC_ON23_4Losprofesionalesdelasaludnopu",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_4Losprofesionalesdelasaludnopu",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "4. Los profesionales de la salud no pueden ser responsables ante sus pacientes por el cuidado/servicio que proveen.",
          "questionShort": "4. Los profesionales de la sal",
          "weightType": "WEIGHTED_PAIRS",
@@ -4068,10 +4020,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 5,
-         "fieldName": "JEFF_STATIC_ON23_5Debidoaladiferenciacionderole",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_5Debidoaladiferenciacionderole",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "5. Debido a la diferenciación de roles, no existen muchas áreas comunes de responsabilidad entre los profesionales de la salud al proveer cuidados a sus pacientes.",
          "questionShort": "5. Debido a la diferenciación ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4083,10 +4035,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 6,
-         "fieldName": "JEFF_STATIC_ON23_6Todoslosprofesionalesdelasalu",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_6Todoslosprofesionalesdelasalu",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "6. Todos los profesionales de la salud tienen su propia experiencia y conocimientos especiales para proveer cuidados de calidad a sus pacientes.",
          "questionShort": "6. Todos los profesionales de ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4098,10 +4050,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 7,
-         "fieldName": "JEFF_STATIC_ON23_7Todoslosprofesionalesdelasalu",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_7Todoslosprofesionalesdelasalu",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "7. Todos los profesionales de la salud deben contribuir a las decisiones respecto a la mejora del cuidado de sus pacientes.",
          "questionShort": "7. Todos los profesionales de ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4113,10 +4065,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 8,
-         "fieldName": "JEFF_STATIC_ON23_8Lafuncionprimariadeotrosprofe",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_8Lafuncionprimariadeotrosprofe",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "8. La función primaria de otros profesionales de la salud es seguir, sin cuestionar, las órdenes del médico que está tratando a los pacientes.",
          "questionShort": "8. La función primaria de otro",
          "weightType": "WEIGHTED_PAIRS",
@@ -4128,10 +4080,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 9,
-         "fieldName": "JEFF_STATIC_ON23_9Losprofesionalesdelasaluddebe",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_9Losprofesionalesdelasaluddebe",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "9. Los profesionales de la salud deben estar involucrados en las decisiones sobre elaboración de políticas concernientes a su trabajo.",
          "questionShort": "9. Los profesionales de la sal",
          "weightType": "WEIGHTED_PAIRS",
@@ -4143,10 +4095,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 10,
-         "fieldName": "JEFF_STATIC_ON23_10Todoslosprofesionalesdelasal",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_10Todoslosprofesionalesdelasal",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "10. Todos los profesionales de la salud deben tener la responsabilidad de monitorear los efectos de las intervenciones en sus pacientes.",
          "questionShort": "10. Todos los profesionales de",
          "weightType": "WEIGHTED_PAIRS",
@@ -4158,10 +4110,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 11,
-         "fieldName": "JEFF_STATIC_ON23_11Losprofesionalesdelasaludnod",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_11Losprofesionalesdelasaludnod",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "11. Los profesionales de la salud no deben cuestionar las decisiones hechas por sus colegas interprofesionales cuando creen que pudieran tener efectos perjudiciales sobre el paciente.",
          "questionShort": "11. Los profesionales de la sa",
          "weightType": "WEIGHTED_PAIRS",
@@ -4173,10 +4125,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 12,
-         "fieldName": "JEFF_STATIC_ON23_12Loscentrosmedicosacademicosd",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_12Loscentrosmedicosacademicosd",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "12. Los centros médicos académicos deben desarrollar programas educativos interprofesionales para mejorar la práctica colaborativa.",
          "questionShort": "12. Los centros médicos académ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4188,10 +4140,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 13,
-         "fieldName": "JEFF_STATIC_ON23_13Paracontribuiralmejorinteres",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_13Paracontribuiralmejorinteres",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "13. Para contribuir al mejor interés del paciente, los profesionales de la salud deben usar su propio juicio en lugar de consultar con sus colegas interprofesionales.",
          "questionShort": "13. Para contribuir al mejor i",
          "weightType": "WEIGHTED_PAIRS",
@@ -4203,10 +4155,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 14,
-         "fieldName": "JEFF_STATIC_ON23_14Losprofesionalesdelasaluddeb",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_14Losprofesionalesdelasaluddeb",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "14. Los profesionales de la salud deben hacerse conscientes de que sus colegas interprofesionales puedes contribuir a una atención de alta calidad.",
          "questionShort": "14. Los profesionales de la sa",
          "weightType": "WEIGHTED_PAIRS",
@@ -4218,10 +4170,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 15,
-         "fieldName": "JEFF_STATIC_ON23_15Laeducacioninterprofesionaly",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_15Laeducacioninterprofesionaly",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "15. La educación interprofesional y la colaboración interprofesional en la práctica no están vinculadas entre sí.",
          "questionShort": "15. La educación interprofesio",
          "weightType": "WEIGHTED_PAIRS",
@@ -4233,10 +4185,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 16,
-         "fieldName": "JEFF_STATIC_ON23_16Eltrabajoenequipointegradoen",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_16Eltrabajoenequipointegradoen",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "16. El trabajo en equipo integrado en el cuidado a la salud no requiere educación interprofesional integrada.",
          "questionShort": "16. El trabajo en equipo integ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4248,10 +4200,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 17,
-         "fieldName": "JEFF_STATIC_ON23_17Lapracticacolaborativafuncio",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_17Lapracticacolaborativafuncio",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "17. La práctica colaborativa funciona mejor cuando los profesionales de la salud desarrollan relaciones funcionales para implementar metas mutuamente acordadas.",
          "questionShort": "17. La práctica colaborativa f",
          "weightType": "WEIGHTED_PAIRS",
@@ -4263,10 +4215,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 18,
-         "fieldName": "JEFF_STATIC_ON23_18Loserroresmedicosseminimizar",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_18Loserroresmedicosseminimizar",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "18. Los errores médicos se minimizarán cuando exista colaboración entre los profesionales de la salud.",
          "questionShort": "18. Los errores médicos se min",
          "weightType": "WEIGHTED_PAIRS",
@@ -4278,10 +4230,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 19,
-         "fieldName": "JEFF_STATIC_ON23_19Lacolaboracioninterprofesion",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_19Lacolaboracioninterprofesion",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "19. La colaboración interprofesional que incluye respeto mutuo y comunicación mejora el ambiente de trabajo.",
          "questionShort": "19. La colaboración interprofe",
          "weightType": "WEIGHTED_PAIRS",
@@ -4293,10 +4245,10 @@
          }
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "position": 20,
-         "fieldName": "JEFF_STATIC_ON23_20Lasatisfaccionconeltrabajono",
-         "subScale": "JEFF_STATIC_ON23",
+         "fieldName": "JEFF_SATIC_ON23_20Lasatisfaccionconeltrabajono",
+         "subScale": "JEFF_SATIC_ON23",
          "question": "20. La satisfacción con el trabajo no está relacionada con las prácticas colaborativas interprofesionales.",
          "questionShort": "20. La satisfacción con el tra",
          "weightType": "WEIGHTED_PAIRS",
@@ -4686,7 +4638,7 @@
          "surveyShortName": "ZKPQ",
          "position": 1,
          "fieldName": "ZKPQ_1_1Tiendoacomenzarunnuevotrabaj",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "1.Tiendo a comenzar un nuevo trabajo sin planificar mucho sobre cómo lo haré.",
          "questionShort": "1.Tiendo a comenzar un nuevo ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4701,7 +4653,7 @@
          "surveyShortName": "ZKPQ",
          "position": 2,
          "fieldName": "ZKPQ_2_2Nomepreocupoporlascosassinim",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "2.No me preocupo por las cosas sin importancia.",
          "questionShort": "2.No me preocupo por las cosa",
          "weightType": "WEIGHTED_PAIRS",
@@ -4716,11 +4668,11 @@
          "surveyShortName": "ZKPQ",
          "position": 3,
          "fieldName": "ZKPQ_3_3Disfrutoverhumilladoanteotra",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "3.Disfruto ver humillado ante otras personas a alguien que no me cae bien.",
          "questionShort": "3.Disfruto ver humillado ante",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 3,
@@ -4731,7 +4683,7 @@
          "surveyShortName": "ZKPQ",
          "position": 4,
          "fieldName": "ZKPQ_4_4Nuncaheconocidoaalguienqueno",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "4.Nunca he conocido a alguien que no me haya gustado.",
          "questionShort": "4.Nunca he conocido a alguien",
          "weightType": "WEIGHTED_PAIRS",
@@ -4746,7 +4698,7 @@
          "surveyShortName": "ZKPQ",
          "position": 5,
          "fieldName": "ZKPQ_5_5Nomegustaperdereltiemposenta",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "5.No me gusta perder el tiempo sentado y relajándome.",
          "questionShort": "5.No me gusta perder el tiemp",
          "weightType": "WEIGHTED_PAIRS",
@@ -4761,7 +4713,7 @@
          "surveyShortName": "ZKPQ",
          "position": 6,
          "fieldName": "ZKPQ_6_6Normalmentepiensosobreloquev",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "6.Normalmente pienso sobre lo que voy a hacer antes de hacerlo.",
          "questionShort": "6.Normalmente pienso sobre lo",
          "weightType": "WEIGHTED_PAIRS",
@@ -4776,11 +4728,11 @@
          "surveyShortName": "ZKPQ",
          "position": 7,
          "fieldName": "ZKPQ_7_7Notengoconfianzaenmimismooen",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "7.No tengo confianza en mí mismo o en mis habilidades.",
          "questionShort": "7.No tengo confianza en mí mi",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 7,
@@ -4791,11 +4743,11 @@
          "surveyShortName": "ZKPQ",
          "position": 8,
          "fieldName": "ZKPQ_8_8Cuandomeenfadodigocosasfeas",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "8.Cuándo me enfado, digo cosas feas.",
          "questionShort": "8.Cuándo me enfado, digo cosa",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 8,
@@ -4806,7 +4758,7 @@
          "surveyShortName": "ZKPQ",
          "position": 9,
          "fieldName": "ZKPQ_9_9Tiendoainiciarconversaciones",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "9.Tiendo a iniciar conversaciones en las fiestas.",
          "questionShort": "9.Tiendo a iniciar conversaci",
          "weightType": "WEIGHTED_PAIRS",
@@ -4821,7 +4773,7 @@
          "surveyShortName": "ZKPQ",
          "position": 10,
          "fieldName": "ZKPQ_10_10Hedichosiemprelaverdad",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "10.He dicho siempre la verdad.",
          "questionShort": "10.He dicho siempre la verdad",
          "weightType": "WEIGHTED_PAIRS",
@@ -4836,11 +4788,11 @@
          "surveyShortName": "ZKPQ",
          "position": 11,
          "fieldName": "ZKPQ_11_11Esnaturalparamimaldecircuan",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "11.Es natural para mí maldecir cuando estoy enfadado.",
          "questionShort": "11.Es natural para mí maldeci",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 11,
@@ -4851,7 +4803,7 @@
          "surveyShortName": "ZKPQ",
          "position": 12,
          "fieldName": "ZKPQ_12_12Nomeimportasalirsoloynormal",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "12.No me importa salir solo y normalmente lo prefiero a estar en un gran grupo.",
          "questionShort": "12.No me importa salir solo y",
          "weightType": "WEIGHTED_PAIRS",
@@ -4866,7 +4818,7 @@
          "surveyShortName": "ZKPQ",
          "position": 13,
          "fieldName": "ZKPQ_13_13Llevounavidamasatareadaquel",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "13.Llevo una vida más atareada que la mayoría de la gente.",
          "questionShort": "13.Llevo una vida más ataread",
          "weightType": "WEIGHTED_PAIRS",
@@ -4881,11 +4833,11 @@
          "surveyShortName": "ZKPQ",
          "position": 14,
          "fieldName": "ZKPQ_14Amenudohagocosasporimpulsos",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "14.A menudo hago cosas por impulsos.",
          "questionShort": "14.A menudo hago cosas por im",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 14,
@@ -4896,7 +4848,7 @@
          "surveyShortName": "ZKPQ",
          "position": 15,
          "fieldName": "ZKPQ_15Mesientoamenudoinquietosinn",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "15.Me siento a menudo inquieto sin ninguna razón aparente.",
          "questionShort": "15.Me siento a menudo inquiet",
          "weightType": "WEIGHTED_PAIRS",
@@ -4911,7 +4863,7 @@
          "surveyShortName": "ZKPQ",
          "position": 16,
          "fieldName": "ZKPQ_16Casinuncatirobasuraenlacall",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "16.Casi nunca tiro basura en la calle.",
          "questionShort": "16.Casi nunca tiro basura en ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4926,7 +4878,7 @@
          "surveyShortName": "ZKPQ",
          "position": 17,
          "fieldName": "ZKPQ_17Nomeimportariaestarsoloenun",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "17.No me importaría estar solo en un lugar algunos días sin ningún contacto humano.",
          "questionShort": "17.No me importaría estar sol",
          "weightType": "WEIGHTED_PAIRS",
@@ -4941,7 +4893,7 @@
          "surveyShortName": "ZKPQ",
          "position": 18,
          "fieldName": "ZKPQ_18Megustanlostrabajoscomplica",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "18.Me gustan los trabajos complicados que requieren mucho esfuerzo y concentración.",
          "questionShort": "18.Me gustan los trabajos com",
          "weightType": "WEIGHTED_PAIRS",
@@ -4956,7 +4908,7 @@
          "surveyShortName": "ZKPQ",
          "position": 19,
          "fieldName": "ZKPQ_19Muyraravezpierdomuchotiempo",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "19.Muy rara vez pierdo mucho tiempo en los detalles de planificación previa.",
          "questionShort": "19.Muy rara vez pierdo mucho ",
          "weightType": "WEIGHTED_PAIRS",
@@ -4971,11 +4923,11 @@
          "surveyShortName": "ZKPQ",
          "position": 20,
          "fieldName": "ZKPQ_20Algunasvecesmesientotensoyn",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "20.Algunas veces me siento tenso y nervioso.",
          "questionShort": "20.Algunas veces me siento te",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 20,
@@ -4986,11 +4938,11 @@
          "surveyShortName": "ZKPQ",
          "position": 21,
          "fieldName": "ZKPQ_21Casinuncasientoquemegustari",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "21.Casi nunca siento que me gustaría pegar a alguien.",
          "questionShort": "21.Casi nunca siento que me g",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 21,
@@ -5001,7 +4953,7 @@
          "surveyShortName": "ZKPQ",
          "position": 22,
          "fieldName": "ZKPQ_22Pasotantotiempoconmisamigos",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "22.Paso tanto tiempo con mis amigos como puedo.",
          "questionShort": "22.Paso tanto tiempo con mis ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5016,7 +4968,7 @@
          "surveyShortName": "ZKPQ",
          "position": 23,
          "fieldName": "ZKPQ_23Notengomuchaenergiaparalast",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "23.No tengo mucha energía para las tareas más exigentes de la vida.",
          "questionShort": "23.No tengo mucha energía par",
          "weightType": "WEIGHTED_PAIRS",
@@ -5031,7 +4983,7 @@
          "surveyShortName": "ZKPQ",
          "position": 24,
          "fieldName": "ZKPQ_24Megustatenerexperienciasyse",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "24.Me gusta tener experiencias y sensaciones nuevas y excitantes incluso aunque sean un poco atemorizantes.",
          "questionShort": "24.Me gusta tener experiencia",
          "weightType": "WEIGHTED_PAIRS",
@@ -5046,7 +4998,7 @@
          "surveyShortName": "ZKPQ",
          "position": 25,
          "fieldName": "ZKPQ_25Amenudosientomicuerpotensos",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "25.A menudo siento mi cuerpo tenso sin ninguna razón aparente.",
          "questionShort": "25.A menudo siento mi cuerpo ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5061,7 +5013,7 @@
          "surveyShortName": "ZKPQ",
          "position": 26,
          "fieldName": "ZKPQ_26Siempreganoenlosjuegos",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "26.Siempre gano en los juegos.",
          "questionShort": "26.Siempre gano en los juegos",
          "weightType": "WEIGHTED_PAIRS",
@@ -5076,7 +5028,7 @@
          "surveyShortName": "ZKPQ",
          "position": 27,
          "fieldName": "ZKPQ_27Amenudoencuentroquesoy“elal",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "27.A menudo encuentro que soy “el alma de la fiesta”.",
          "questionShort": "27.A menudo encuentro que soy",
          "weightType": "WEIGHTED_PAIRS",
@@ -5091,7 +5043,7 @@
          "surveyShortName": "ZKPQ",
          "position": 28,
          "fieldName": "ZKPQ_28Megustamuchomasunatareadesa",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "28.Me gusta mucho más una tarea desafiante que una rutinaria.",
          "questionShort": "28.Me gusta mucho más una tar",
          "weightType": "WEIGHTED_PAIRS",
@@ -5106,7 +5058,7 @@
          "surveyShortName": "ZKPQ",
          "position": 29,
          "fieldName": "ZKPQ_29Antesdeempezaruntrabajocomp",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "29.Antes de empezar un trabajo complicado, hago planes detallados.",
          "questionShort": "29.Antes de empezar un trabaj",
          "weightType": "WEIGHTED_PAIRS",
@@ -5121,7 +5073,7 @@
          "surveyShortName": "ZKPQ",
          "position": 30,
          "fieldName": "ZKPQ_30Mesueloalteraremocionalment",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "30.Me suelo alterar emocionalmente.",
          "questionShort": "30.Me suelo alterar emocional",
          "weightType": "WEIGHTED_PAIRS",
@@ -5136,7 +5088,7 @@
          "surveyShortName": "ZKPQ",
          "position": 31,
          "fieldName": "ZKPQ_31Sialguienmeofendeintentonop",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "31.Si alguien me ofende intento no pensar en ello.",
          "questionShort": "31.Si alguien me ofende inten",
          "weightType": "WEIGHTED_PAIRS",
@@ -5151,7 +5103,7 @@
          "surveyShortName": "ZKPQ",
          "position": 32,
          "fieldName": "ZKPQ_32Nuncaheestadoaburrido",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "32.Nunca he estado aburrido.",
          "questionShort": "32.Nunca he estado aburrido.",
          "weightType": "WEIGHTED_PAIRS",
@@ -5166,7 +5118,7 @@
          "surveyShortName": "ZKPQ",
          "position": 33,
          "fieldName": "ZKPQ_33Megustaestarhaciendocosasto",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "33.Me gusta estar haciendo cosas todo el tiempo.",
          "questionShort": "33.Me gusta estar haciendo co",
          "weightType": "WEIGHTED_PAIRS",
@@ -5181,7 +5133,7 @@
          "surveyShortName": "ZKPQ",
          "position": 34,
          "fieldName": "ZKPQ_34_34Megustariamarcharmeenunviaj",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "34.Me gustaría marcharme en un viaje sin ninguna ruta previamente planeada o definida ni horarios.",
          "questionShort": "34.Me gustaría marcharme en u",
          "weightType": "WEIGHTED_PAIRS",
@@ -5196,11 +5148,11 @@
          "surveyShortName": "ZKPQ",
          "position": 35,
          "fieldName": "ZKPQ_35_35Tiendoaserhipersensibleyfac",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "35.Tiendo a ser hipersensible y fácilmente alterable por comentarios y acciones desconsiderados de otros.",
          "questionShort": "35.Tiendo a ser hipersensible",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 35,
@@ -5211,7 +5163,7 @@
          "surveyShortName": "ZKPQ",
          "position": 36,
          "fieldName": "ZKPQ_36_36Enmuchastiendasenimposibleq",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "36.En muchas tiendas en imposible que me atiendan a menos de que tú te pongas delante de otras personas.",
          "questionShort": "36.En muchas tiendas en impos",
          "weightType": "WEIGHTED_PAIRS",
@@ -5226,7 +5178,7 @@
          "surveyShortName": "ZKPQ",
          "position": 37,
          "fieldName": "ZKPQ_37_37Nonecesitoungrannumerodeami",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "37.No necesito un gran número de amigos.",
          "questionShort": "37.No necesito un gran número",
          "weightType": "WEIGHTED_PAIRS",
@@ -5241,7 +5193,7 @@
          "surveyShortName": "ZKPQ",
          "position": 38,
          "fieldName": "ZKPQ_38_38Puedodisfrutarestartumbadoyosolo",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "38.Puedo disfrutar estar tumbado yo solo y no haciendo nada activo.",
          "questionShort": "38.Puedo disfrutar estar tumbado y",
          "weightType": "WEIGHTED_PAIRS",
@@ -5256,7 +5208,7 @@
          "surveyShortName": "ZKPQ",
          "position": 39,
          "fieldName": "ZKPQ_39_39Disfrutometiendomeensituaci",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "39.Disfruto metiéndome en situaciones nuevas donde no puedes predecir cómo acabarán las cosas.",
          "questionShort": "39.Disfruto metiéndome en sit",
          "weightType": "WEIGHTED_PAIRS",
@@ -5271,7 +5223,7 @@
          "surveyShortName": "ZKPQ",
          "position": 40,
          "fieldName": "ZKPQ_40_40Nuncamepierdoinclusoenlugar",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "40.Nunca me pierdo, incluso en lugares desconocidos.",
          "questionShort": "40.Nunca me pierdo, incluso e",
          "weightType": "WEIGHTED_PAIRS",
@@ -5286,11 +5238,11 @@
          "surveyShortName": "ZKPQ",
          "position": 41,
          "fieldName": "ZKPQ_41_41Measustoconfacilidad",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "41.Me asusto con facilidad.",
          "questionShort": "41.Me asusto con facilidad.",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 41,
@@ -5301,7 +5253,7 @@
          "surveyShortName": "ZKPQ",
          "position": 42,
          "fieldName": "ZKPQ_42_42Silagentememolestayovaciloc",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "42.Si la gente me molesta yo vacilo con decírselo.",
          "questionShort": "42.Si la gente me molesta yo ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5316,7 +5268,7 @@
          "surveyShortName": "ZKPQ",
          "position": 43,
          "fieldName": "ZKPQ_43_43Tiendoaestarincomodoenlasfi",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "43.Tiendo a estar incómodo en las fiestas grandes.",
          "questionShort": "43.Tiendo a estar incómodo en",
          "weightType": "WEIGHTED_PAIRS",
@@ -5331,7 +5283,7 @@
          "surveyShortName": "ZKPQ",
          "position": 44,
          "fieldName": "ZKPQ_44_44Nosientolanecesidaddeestarh",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "44.No siento la necesidad de estar haciendo cosas todo el tiempo.",
          "questionShort": "44.No siento la necesidad de ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5346,7 +5298,7 @@
          "surveyShortName": "ZKPQ",
          "position": 45,
          "fieldName": "ZKPQ_45_45Megustahacercosassoloporlae",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "45.Me gusta hacer cosas solo por la emoción de hacerlas.",
          "questionShort": "45.Me gusta hacer cosas solo ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5361,7 +5313,7 @@
          "surveyShortName": "ZKPQ",
          "position": 46,
          "fieldName": "ZKPQ_46_46Algunasvecesmeentraelpanico",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "46.Algunas veces me entra el pánico.",
          "questionShort": "46.Algunas veces me entra el ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5376,7 +5328,7 @@
          "surveyShortName": "ZKPQ",
          "position": 47,
          "fieldName": "ZKPQ_47_47Cuandoestoyenfadadoconlagen",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "47.Cuándo estoy enfadado con la gente no intento ocultárselo.",
          "questionShort": "47.Cuándo estoy enfadado con ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5391,7 +5343,7 @@
          "surveyShortName": "ZKPQ",
          "position": 48,
          "fieldName": "ZKPQ_48_48Enlasfiestasdisfrutomezclan",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "48.En las fiestas disfruto mezclándome con mucha gente tanto si ya los conozco como si no.",
          "questionShort": "48.En las fiestas disfruto me",
          "weightType": "WEIGHTED_PAIRS",
@@ -5406,7 +5358,7 @@
          "surveyShortName": "ZKPQ",
          "position": 49,
          "fieldName": "ZKPQ_49_49Megustariauntrabajoquepropo",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "49.Me gustaría un trabajo que proporcionara el máximo de tiempo libre.",
          "questionShort": "49.Me gustaría un trabajo que",
          "weightType": "WEIGHTED_PAIRS",
@@ -5421,7 +5373,7 @@
          "surveyShortName": "ZKPQ",
          "position": 50,
          "fieldName": "ZKPQ_50_50Tiendoacambiardeinteresesfr",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "50.Tiendo a cambiar de intereses frecuentemente.",
          "questionShort": "50.Tiendo a cambiar de intere",
          "weightType": "WEIGHTED_PAIRS",
@@ -5436,7 +5388,7 @@
          "surveyShortName": "ZKPQ",
          "position": 51,
          "fieldName": "ZKPQ_51_51Amenudopiensoquelagentequec",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "51.A menudo pienso que la gente que conozco son mejores que yo.",
          "questionShort": "51.A menudo pienso que la gen",
          "weightType": "WEIGHTED_PAIRS",
@@ -5451,7 +5403,7 @@
          "surveyShortName": "ZKPQ",
          "position": 52,
          "fieldName": "ZKPQ_52_52Nuncamemolestocuandolagente",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "52.Nunca me molesto cuando la gente se cuela delante de mi turno.",
          "questionShort": "52.Nunca me molesto cuando la",
          "weightType": "WEIGHTED_PAIRS",
@@ -5466,7 +5418,7 @@
          "surveyShortName": "ZKPQ",
          "position": 53,
          "fieldName": "ZKPQ_53_53Tiendoacomenzarmisfinesdese",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "53.Tiendo a comenzar mis fines de semana los jueves.",
          "questionShort": "53.Tiendo a comenzar mis fine",
          "weightType": "WEIGHTED_PAIRS",
@@ -5481,7 +5433,7 @@
          "surveyShortName": "ZKPQ",
          "position": 54,
          "fieldName": "ZKPQ_54_54Normalmenteparezcotenerpris",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "54.Normalmente parezco tener prisa.",
          "questionShort": "54.Normalmente parezco tener ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5496,7 +5448,7 @@
          "surveyShortName": "ZKPQ",
          "position": 55,
          "fieldName": "ZKPQ_55_55Algunasvecesmegustahacercos",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "55.Algunas veces me gusta hacer cosas que asustan un poco.",
          "questionShort": "55.Algunas veces me gusta hac",
          "weightType": "WEIGHTED_PAIRS",
@@ -5511,7 +5463,7 @@
          "surveyShortName": "ZKPQ",
          "position": 56,
          "fieldName": "ZKPQ_56_56Algunasvecescuandoestoyalte",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "56.Algunas veces, cuándo estoy alterado emocionalmente, de repente siento como si mis piernas temblasen.",
          "questionShort": "56.Algunas veces, cuándo esto",
          "weightType": "WEIGHTED_PAIRS",
@@ -5526,7 +5478,7 @@
          "surveyShortName": "ZKPQ",
          "position": 57,
          "fieldName": "ZKPQ_57_57Generalmentenousopalabrasfu",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "57.Generalmente no uso palabras fuertes mal sonantes incluso aunque este enfadado.",
          "questionShort": "57.Generalmente no uso palabr",
          "weightType": "WEIGHTED_PAIRS",
@@ -5541,7 +5493,7 @@
          "surveyShortName": "ZKPQ",
          "position": 58,
          "fieldName": "ZKPQ_58_58Prefeririaestarconlosamigos",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "58.Preferiría estar con los amigos antes que trabajando en algo solo.",
          "questionShort": "58.Preferiría estar con los a",
          "weightType": "WEIGHTED_PAIRS",
@@ -5556,7 +5508,7 @@
          "surveyShortName": "ZKPQ",
          "position": 59,
          "fieldName": "ZKPQ_59_59Envacacionesmegustaparticip",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "59.En vacaciones me gusta participar en deportes activos más que estar tumbado.",
          "questionShort": "59.En vacaciones me gusta par",
          "weightType": "WEIGHTED_PAIRS",
@@ -5571,7 +5523,7 @@
          "surveyShortName": "ZKPQ",
          "position": 60,
          "fieldName": "ZKPQ_60_60Intentareprobarlotodoalmeno",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "60.Intentaré probarlo todo al menos una vez en la vida.",
          "questionShort": "60.Intentaré probarlo todo al",
          "weightType": "WEIGHTED_PAIRS",
@@ -5586,11 +5538,11 @@
          "surveyShortName": "ZKPQ",
          "position": 61,
          "fieldName": "ZKPQ_61_61Amenudomesientoinsegurodemi",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "61.A menudo me siento inseguro de mí mismo.",
          "questionShort": "61.A menudo me siento insegur",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 61,
@@ -5601,7 +5553,7 @@
          "surveyShortName": "ZKPQ",
          "position": 62,
          "fieldName": "ZKPQ_62_62Puedoperdonarfacilmentealag",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "62.Puedo perdonar fácilmente a la gente que me ha insultado o herido mis sentimientos.",
          "questionShort": "62.Puedo perdonar fácilmente ",
          "weightType": "WEIGHTED_PAIRS",
@@ -5616,7 +5568,7 @@
          "surveyShortName": "ZKPQ",
          "position": 63,
          "fieldName": "ZKPQ_63_63Nomeimportariaestaraislados",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "63.No me importaría estar aislado socialmente en algún lugar por algún periodo de tiempo.",
          "questionShort": "63.No me importaría estar ais",
          "weightType": "WEIGHTED_PAIRS",
@@ -5631,7 +5583,7 @@
          "surveyShortName": "ZKPQ",
          "position": 64,
          "fieldName": "ZKPQ_64_64Megustaagotarmecontrabajodu",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "64.Me gusta agotarme con trabajo duro o ejercicio.",
          "questionShort": "64.Me gusta agotarme con trab",
          "weightType": "WEIGHTED_PAIRS",
@@ -5646,7 +5598,7 @@
          "surveyShortName": "ZKPQ",
          "position": 65,
          "fieldName": "ZKPQ_65_65Megustarialaclasedevidadond",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "65.Me gustaría la clase de vida donde uno está sin parar y viajando mucho con muchos cambios y aventuras.",
          "questionShort": "65.Me gustaría la clase de vi",
          "weightType": "WEIGHTED_PAIRS",
@@ -5661,7 +5613,7 @@
          "surveyShortName": "ZKPQ",
          "position": 66,
          "fieldName": "ZKPQ_66_66Amenudomepreocupoconcosasqu",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "66.A menudo me preocupo con cosas que otras personas piensan que no son importantes.",
          "questionShort": "66.A menudo me preocupo con c",
          "weightType": "WEIGHTED_PAIRS",
@@ -5676,7 +5628,7 @@
          "surveyShortName": "ZKPQ",
          "position": 67,
          "fieldName": "ZKPQ_67_67Cuandolagentenoestadeacuerd",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "67.Cuando la gente no está de acuerdo conmigo yo no puedo evitar discutir con ellos.",
          "questionShort": "67.Cuando la gente no está de",
          "weightType": "WEIGHTED_PAIRS",
@@ -5691,7 +5643,7 @@
          "surveyShortName": "ZKPQ",
          "position": 68,
          "fieldName": "ZKPQ_68_68Generalmentemegustaestarsol",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "68.Generalmente me gusta estar solo así yo puedo hacer las cosas que quiero hacer sin distracciones sociales.",
          "questionShort": "68.Generalmente me gusta esta",
          "weightType": "WEIGHTED_PAIRS",
@@ -5706,7 +5658,7 @@
          "surveyShortName": "ZKPQ",
          "position": 69,
          "fieldName": "ZKPQ_69_69Nuncatengoproblemasencompre",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "69.Nunca tengo problemas en comprender algo que leo la primera vez.",
          "questionShort": "69.Nunca tengo problemas en c",
          "weightType": "WEIGHTED_PAIRS",
@@ -5721,7 +5673,7 @@
          "surveyShortName": "ZKPQ",
          "position": 70,
          "fieldName": "ZKPQ_70_70Algunasveceshago“locuras”so",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "70.Algunas veces hago “locuras” solo por diversión.",
          "questionShort": "70.Algunas veces hago “locura",
          "weightType": "WEIGHTED_PAIRS",
@@ -5736,7 +5688,7 @@
          "surveyShortName": "ZKPQ",
          "position": 71,
          "fieldName": "ZKPQ_71_71Amenudotengoproblemascuando",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "71.A menudo tengo problemas cuando tengo que elegir.",
          "questionShort": "71.A menudo tengo problemas c",
          "weightType": "WEIGHTED_PAIRS",
@@ -5751,11 +5703,11 @@
          "surveyShortName": "ZKPQ",
          "position": 72,
          "fieldName": "ZKPQ_72_72Tengounfuertetemperamento",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "72.Tengo un fuerte temperamento.",
          "questionShort": "72.Tengo un fuerte temperamen",
          "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1 },
+         "weights": { "1": 1, "2": 0 },
          "monkeyInfo": {
             "position": 1,
             "subPosition": 72,
@@ -5766,7 +5718,7 @@
          "surveyShortName": "ZKPQ",
          "position": 73,
          "fieldName": "ZKPQ_73_73Nuncaheperdidonada",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "73.Nunca he perdido nada.",
          "questionShort": "73.Nunca he perdido nada.",
          "weightType": "WEIGHTED_PAIRS",
@@ -5781,7 +5733,7 @@
          "surveyShortName": "ZKPQ",
          "position": 74,
          "fieldName": "ZKPQ_74_74Megustaestaractivoencuantom",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "74.Me gusta estar activo en cuanto me levanto por la mañana.",
          "questionShort": "74.Me gusta estar activo en c",
          "weightType": "WEIGHTED_PAIRS",
@@ -5796,7 +5748,7 @@
          "surveyShortName": "ZKPQ",
          "position": 75,
          "fieldName": "ZKPQ_75_75Megustaexplorarunaciudaddes",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "75.Me gusta explorar una ciudad desconocida o un área de la ciudad por mí mismo, incluso anquen esto signifique perderse.",
          "questionShort": "75.Me gusta explorar una ciud",
          "weightType": "WEIGHTED_PAIRS",
@@ -5811,7 +5763,7 @@
          "surveyShortName": "ZKPQ",
          "position": 76,
          "fieldName": "ZKPQ_76_76Mismusculosestantantensosqu",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "76.Mis músculos están tan tensos que me siento cansado la mayor parte del tiempo.",
          "questionShort": "76.Mis músculos están tan ten",
          "weightType": "WEIGHTED_PAIRS",
@@ -5826,7 +5778,7 @@
          "surveyShortName": "ZKPQ",
          "position": 77,
          "fieldName": "ZKPQ_77_77Nopuedoevitarserunpocodesag",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "77.No puedo evitar ser un poco desagradable con la gente que no me cae bien.",
          "questionShort": "77.No puedo evitar ser un poc",
          "weightType": "WEIGHTED_PAIRS",
@@ -5841,7 +5793,7 @@
          "surveyShortName": "ZKPQ",
          "position": 78,
          "fieldName": "ZKPQ_78_78Soyunapersonamuysociable",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "78.Soy una persona muy sociable.",
          "questionShort": "78.Soy una persona muy sociab",
          "weightType": "WEIGHTED_PAIRS",
@@ -5856,7 +5808,7 @@
          "surveyShortName": "ZKPQ",
          "position": 79,
          "fieldName": "ZKPQ_79_79Prefieroamigosquesonexcitan",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "79.Prefiero amigos que son excitantes e impredecibles.",
          "questionShort": "79.Prefiero amigos que son ex",
          "weightType": "WEIGHTED_PAIRS",
@@ -5871,7 +5823,7 @@
          "surveyShortName": "ZKPQ",
          "position": 80,
          "fieldName": "ZKPQ_80_80Algunasvecesmesientocongana",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "80.Algunas veces me siento con ganas de llorar sin una razón.",
          "questionShort": "80.Algunas veces me siento co",
          "weightType": "WEIGHTED_PAIRS",
@@ -5886,7 +5838,7 @@
          "surveyShortName": "ZKPQ",
          "position": 81,
          "fieldName": "ZKPQ_81_81Noimportaelcaloroelfrioqueh",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "81.No importa el calor o el frio que haga, siempre estoy bastante cómodo.",
          "questionShort": "81.No importa el calor o el f",
          "weightType": "WEIGHTED_PAIRS",
@@ -5901,7 +5853,7 @@
          "surveyShortName": "ZKPQ",
          "position": 82,
          "fieldName": "ZKPQ_82_82Necesitosentirquesoypartevi",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "82.Necesito sentir que soy parte vital de un grupo.",
          "questionShort": "82.Necesito sentir que soy pa",
          "weightType": "WEIGHTED_PAIRS",
@@ -5916,7 +5868,7 @@
          "surveyShortName": "ZKPQ",
          "position": 83,
          "fieldName": "ZKPQ_83_83Megustapermanecerocupadotod",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "83.Me gusta permanecer ocupado todo el tiempo.",
          "questionShort": "83.Me gusta permanecer ocupad",
          "weightType": "WEIGHTED_PAIRS",
@@ -5931,7 +5883,7 @@
          "surveyShortName": "ZKPQ",
          "position": 84,
          "fieldName": "ZKPQ_84_84Amenudomeentusiasmotantocon",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "84.A menudo me entusiasmo tanto con cosas e ideas nuevas y emocionantes que nunca pienso en las posibles complicaciones.",
          "questionShort": "84.A menudo me entusiasmo tan",
          "weightType": "WEIGHTED_PAIRS",
@@ -5946,7 +5898,7 @@
          "surveyShortName": "ZKPQ",
          "position": 85,
          "fieldName": "ZKPQ_85_85Nodejoquemuchascosastrivial",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "85.No dejo que muchas cosas triviales me irriten.",
          "questionShort": "85.No dejo que muchas cosas t",
          "weightType": "WEIGHTED_PAIRS",
@@ -5961,7 +5913,7 @@
          "surveyShortName": "ZKPQ",
          "position": 86,
          "fieldName": "ZKPQ_86_86Soysiemprepacienteconotrosi",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "86.Soy siempre paciente con otros incluso cuando son irritantes.",
          "questionShort": "86.Soy siempre paciente con o",
          "weightType": "WEIGHTED_PAIRS",
@@ -5976,7 +5928,7 @@
          "surveyShortName": "ZKPQ",
          "position": 87,
          "fieldName": "ZKPQ_87_87Normalmenteprefierohacerlas",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "87.Normalmente prefiero hacer las cosas solo.",
          "questionShort": "87.Normalmente prefiero hacer",
          "weightType": "WEIGHTED_PAIRS",
@@ -5991,7 +5943,7 @@
          "surveyShortName": "ZKPQ",
          "position": 88,
          "fieldName": "ZKPQ_88Puedodisfrutardeactividades",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "88.Puedo disfrutar de actividades rutinarias que no requieren de mucha concentración o esfuerzo.",
          "questionShort": "88.Puedo disfrutar de activid",
          "weightType": "WEIGHTED_PAIRS",
@@ -6006,7 +5958,7 @@
          "surveyShortName": "ZKPQ",
          "position": 89,
          "fieldName": "ZKPQ_89Soyunapersonaimpulsiva",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "89.Soy una persona impulsiva.",
          "questionShort": "89.Soy una persona impulsiva.",
          "weightType": "WEIGHTED_PAIRS",
@@ -6021,7 +5973,7 @@
          "surveyShortName": "ZKPQ",
          "position": 90,
          "fieldName": "ZKPQ_90Amenudomesientoincomodoeinq",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "90.A menudo me siento incómodo e inquieto sin ninguna razón aparente.",
          "questionShort": "90.A menudo me siento incómod",
          "weightType": "WEIGHTED_PAIRS",
@@ -6036,7 +5988,7 @@
          "surveyShortName": "ZKPQ",
          "position": 91,
          "fieldName": "ZKPQ_91Amenudorinoconotros",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "91.A menudo riño con otros.",
          "questionShort": "91.A menudo riño con otros.",
          "weightType": "WEIGHTED_PAIRS",
@@ -6051,7 +6003,7 @@
          "surveyShortName": "ZKPQ",
          "position": 92,
          "fieldName": "ZKPQ_92Probablementepierdomastiemp",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "92.Probablemente pierdo más tiempo del que debería saliendo con amigos.",
          "questionShort": "92.Probablemente pierdo más t",
          "weightType": "WEIGHTED_PAIRS",
@@ -6066,7 +6018,7 @@
          "surveyShortName": "ZKPQ",
          "position": 93,
          "fieldName": "ZKPQ_93Nomemolestosialguienseaprov",
-         "subScale": "ZKPQ",
+         "subScale": "NA",
          "question": "93.No me molesto si alguien se aprovecha de mí.",
          "questionShort": "93.No me molesto si alguien s",
          "weightType": "WEIGHTED_PAIRS",
@@ -6081,7 +6033,7 @@
          "surveyShortName": "ZKPQ",
          "position": 94,
          "fieldName": "ZKPQ_94Cuandohagocosaslashagoconmu",
-         "subScale": "ZKPQ",
+         "subScale": "Act",
          "question": "94.Cuando hago cosas, las hago con mucha energía.",
          "questionShort": "94.Cuando hago cosas, las hag",
          "weightType": "WEIGHTED_PAIRS",
@@ -6096,7 +6048,7 @@
          "surveyShortName": "ZKPQ",
          "position": 95,
          "fieldName": "ZKPQ_95Megustanlasfiestas“salvajes",
-         "subScale": "ZKPQ",
+         "subScale": "SS",
          "question": "95.Me gustan las fiestas “salvajes” y desinhibidas.",
          "questionShort": "95.Me gustan las fiestas “sal",
          "weightType": "WEIGHTED_PAIRS",
@@ -6111,7 +6063,7 @@
          "surveyShortName": "ZKPQ",
          "position": 96,
          "fieldName": "ZKPQ_96Despuesdecompraralgoamenudo",
-         "subScale": "ZKPQ",
+         "subScale": "N-Anx",
          "question": "96.Después de comprar algo a menudo me preocupo de si hice lo correcto.",
          "questionShort": "96.Después de comprar algo a ",
          "weightType": "WEIGHTED_PAIRS",
@@ -6126,7 +6078,7 @@
          "surveyShortName": "ZKPQ",
          "position": 97,
          "fieldName": "ZKPQ_97Cuandolagentemegritayolesgr",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "97.Cuando la gente me grita, yo les grito también.",
          "questionShort": "97.Cuando la gente me grita, ",
          "weightType": "WEIGHTED_PAIRS",
@@ -6141,7 +6093,7 @@
          "surveyShortName": "ZKPQ",
          "position": 98,
          "fieldName": "ZKPQ_98Yotengomasamigosquelamayori",
-         "subScale": "ZKPQ",
+         "subScale": "Soc",
          "question": "98.Yo tengo más amigos que la mayoría de la gente.",
          "questionShort": "98.Yo tengo más amigos que la",
          "weightType": "WEIGHTED_PAIRS",
@@ -6156,7 +6108,7 @@
          "surveyShortName": "ZKPQ",
          "position": 99,
          "fieldName": "ZKPQ_99Amenudootraspersonasmeurgen",
-         "subScale": "ZKPQ",
+         "subScale": "AH",
          "question": "99.A menudo otras personas me urgen a tomarme las cosas con calma.",
          "questionShort": "99.A menudo otras personas me",
          "weightType": "WEIGHTED_PAIRS",
@@ -6346,191 +6298,80 @@
             "subPosition": 12,
             "answerType": "noother"
          }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 13,
-         "fieldName": "CGS12_2_2-Suspreocupacioneslehanhecho",
-         "subScale": "CGS12-2",
-         "question": "2.- ¿Sus preocupaciones le han hecho perder mucho el sueño? Responda:",
-         "questionShort": "2.- ¿Sus preocupaciones le han",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 2,
-            "subPosition": 1,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 14,
-         "fieldName": "CGS12_2_3-Hasentidoqueestadesempenand",
-         "subScale": "CGS12-2",
-         "question": "3.- ¿Ha sentido que está desempeñando un papel útil en la vida?",
-         "questionShort": "3.- ¿Ha sentido que está desem",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 3,
-            "subPosition": 1,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 15,
-         "fieldName": "CGS12_2_4-Sehasentidocapazdetomardeci",
-         "subScale": "CGS12-2",
-         "question": "4.- ¿Se ha sentido capaz de tomar decisiones?",
-         "questionShort": "4.- ¿Se ha sentido capaz de to",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 3,
-            "subPosition": 2,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 16,
-         "fieldName": "CGS12_2_5-Sehasentidoconstantementeag",
-         "subScale": "CGS12-2",
-         "question": "5.- ¿Se ha sentido constantemente agobiado y en tensión?",
-         "questionShort": "5.- ¿Se ha sentido constanteme",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 4,
-            "subPosition": 1,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 17,
-         "fieldName": "CGS12_2_6-Hasentidoquenopuedesuperars",
-         "subScale": "CGS12-2",
-         "question": "6.- ¿Ha sentido que no puede superar sus dificultades?",
-         "questionShort": "6.- ¿Ha sentido que no puede s",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 4,
-            "subPosition": 2,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 18,
-         "fieldName": "CGS12_2_7-Hasidocapazdedisfrutardesus",
-         "subScale": "CGS12-2",
-         "question": "7.- ¿Ha sido capaz de disfrutar de sus actividades normales de cada día?",
-         "questionShort": "7.- ¿Ha sido capaz de disfruta",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 5,
-            "subPosition": 1,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 19,
-         "fieldName": "CGS12_2_8-Hasidocapazdehacerfrenteade",
-         "subScale": "CGS12-2",
-         "question": "8.- ¿Ha sido capaz de hacer frente adecuadamente a sus problemas?",
-         "questionShort": "8.- ¿Ha sido capaz de hacer fr",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 5,
-            "subPosition": 2,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 20,
-         "fieldName": "CGS12_2_9-Sehasentidopocofelizodeprim",
-         "subScale": "CGS12-2",
-         "question": "9.- ¿Se ha sentido poco feliz o deprimido/a?",
-         "questionShort": "9.- ¿Se ha sentido poco feliz ",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 6,
-            "subPosition": 1,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 21,
-         "fieldName": "CGS12_2_10-Haperdidoconfianzaensimism",
-         "subScale": "CGS12-2",
-         "question": "10.- ¿Ha perdido confianza en sí mismo/a?",
-         "questionShort": "10.- ¿Ha perdido confianza en ",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 6,
-            "subPosition": 2,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 22,
-         "fieldName": "CGS12_2_11-Hapensadoqueustedesunapers",
-         "subScale": "CGS12-2",
-         "question": "11.- ¿Ha pensado que usted es una persona que no vale para nada?",
-         "questionShort": "11.- ¿Ha pensado que usted es ",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 6,
-            "subPosition": 3,
-            "answerType": "noother"
-         }
-      },
-      {
-         "surveyShortName": "CGS12",
-         "position": 23,
-         "fieldName": "CGS12_2_12-Sesienterazonablementefeli",
-         "subScale": "CGS12-2",
-         "question": "12.- ¿Se siente razonablemente feliz considerando todas las circunstancias? Responda:",
-         "questionShort": "12.- ¿Se siente razonablemente",
-         "weightType": "WEIGHTED_PAIRS",
-         "weights": { "1": 0, "2": 1, "3": 2, "4": 3 },
-         "monkeyInfo": {
-            "position": 7,
-            "subPosition": 1,
-            "answerType": "noother"
-         }
       }
    ],
    "calculatedFields": [
       {
          "surveyShortName": "CM",
-         "description": "BURN_EMOCIONAL_MAX_42",
-         "shortDescription": "BURN_EMOCIONAL_MAX_42",
-         "fieldName": "BURN_EMOCIONAL_MAX_42",
+         "description": "BURN_EMOCIONAL_MAX_54",
+         "shortDescription": "BURN_EMOCIONAL_MAX_54",
+         "fieldName": "BURN_EMOCIONAL_MAX_54",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["BURN_EMOCIONAL"],
          "position": 1
       },
       {
          "surveyShortName": "CM",
-         "description": "BURN_DESPERS_MAX_36",
-         "shortDescription": "BURN_DESPERS_MAX_36",
-         "fieldName": "BURN_DESPERS_MAX_36",
+         "description": "BURN_EMOCIONAL_MAX_54_RESULTADO",
+         "shortDescription": "BURN_EMOCIONAL_MAX_54_RESULTADO",
+         "fieldName": "BURN_EMOCIONAL_MAX_54_RESULTADO",
+         "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
+         "criteria": {
+            "fieldNameValue": "BURN_EMOCIONAL_MAX_54",
+            "ranges": [
+               { "min": 0, "max": 16, "resultIfTrue": "Bajo" },
+               { "min": 17, "max": 26, "resultIfTrue": "Moderado" },
+               { "min": 27, "max": 100, "resultIfTrue": "Alto" }
+            ]
+         },
+         "subScales": ["NA"],
+         "position": 31
+      },
+      {
+         "surveyShortName": "CM",
+         "description": "BURN_EMOCIONAL_MAX_54_SEMAFORO",
+         "shortDescription": "BURN_EMOCIONAL_MAX_54_SEMAFORO",
+         "fieldName": "BURN_EMOCIONAL_MAX_54_SEMAFORO",
+         "calculationType": "CAL_COPY_VALUE",
+         "criteria": { "fieldNameValue": "BURN_EMOCIONAL_MAX_54" },
+         "subScales": ["NA"],
+         "position": 61
+      },
+      {
+         "surveyShortName": "CM",
+         "description": "BURN_DESPERS_MAX_30",
+         "shortDescription": "BURN_DESPERS_MAX_30",
+         "fieldName": "BURN_DESPERS_MAX_30",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["BURN_DESPERS"],
-         "position": 31
+         "position": 91
+      },
+      {
+         "surveyShortName": "CM",
+         "description": "BURN_DESPERS_MAX_30_RESULTADO",
+         "shortDescription": "BURN_DESPERS_MAX_30_RESULTADO",
+         "fieldName": "BURN_DESPERS_MAX_30_RESULTADO",
+         "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
+         "criteria": {
+            "fieldNameValue": "BURN_DESPERS_MAX_30",
+            "ranges": [
+               { "min": 0, "max": 6, "resultIfTrue": "Bajo" },
+               { "min": 7, "max": 12, "resultIfTrue": "Moderado" },
+               { "min": 13, "max": 100, "resultIfTrue": "Alto" }
+            ]
+         },
+         "subScales": ["NA"],
+         "position": 121
+      },
+      {
+         "surveyShortName": "CM",
+         "description": "BURN_DESPERS_MAX_30_SEMAFORO",
+         "shortDescription": "BURN_DESPERS_MAX_30_SEMAFORO",
+         "fieldName": "BURN_DESPERS_MAX_30_SEMAFORO",
+         "calculationType": "CAL_COPY_VALUE",
+         "criteria": { "fieldNameValue": "BURN_DESPERS_MAX_30" },
+         "subScales": ["NA"],
+         "position": 151
       },
       {
          "surveyShortName": "CM",
@@ -6539,44 +6380,34 @@
          "fieldName": "BURN_LOGROS_MAX_48",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["BURN_LOGROS"],
-         "position": 61
+         "position": 181
       },
       {
          "surveyShortName": "CM",
-         "description": "BURN_TOTAL_MAX_126",
-         "shortDescription": "BURN_TOTAL_MAX_126",
-         "fieldName": "BURN_TOTAL_MAX_126",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["BURN_EMOCIONAL", "BURN_DESPERS", "BURN_LOGROS"],
-         "position": 91
-      },
-      {
-         "surveyShortName": "CM",
-         "description": "BURN_RESULTADO",
-         "shortDescription": "BURN_RESULTADO",
-         "fieldName": "BURN_RESULTADO",
+         "description": "BURN_LOGROS_MAX_48_RESULTADO",
+         "shortDescription": "BURN_LOGROS_MAX_48_RESULTADO",
+         "fieldName": "BURN_LOGROS_MAX_48_RESULTADO",
          "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
          "criteria": {
-            "fieldNameValue": "BURN_TOTAL_MAX_126",
+            "fieldNameValue": "BURN_LOGROS_MAX_48",
             "ranges": [
-               { "min": 0, "max": 20, "resultIfTrue": "Nivel Bajo" },
-               { "min": 21, "max": 40, "resultIfTrue": "Moderado" },
-               { "min": 41, "max": 60, "resultIfTrue": "Alto" },
-               { "min": 61, "max": 127, "resultIfTrue": "Muy Alto" }
+               { "min": 0, "max": 20, "resultIfTrue": "Bajo" },
+               { "min": 21, "max": 36, "resultIfTrue": "Moderado" },
+               { "min": 37, "max": 100, "resultIfTrue": "Alto" }
             ]
          },
-         "subScales": ["BURN_TOTAL_MAX_126"],
-         "position": 121
+         "subScales": ["NA"],
+         "position": 211
       },
       {
          "surveyShortName": "CM",
-         "description": "BURN_SEMAPHORE",
-         "shortDescription": "BURN_SEMAPHORE",
-         "fieldName": "BURN_SEMAPHORE",
+         "description": "BURN_LOGROS_MAX_48_SEMAFORO",
+         "shortDescription": "BURN_LOGROS_MAX_48_SEMAFORO",
+         "fieldName": "BURN_LOGROS_MAX_48_SEMAFORO",
          "calculationType": "CAL_COPY_VALUE",
-         "criteria": { "fieldNameValue": "BURN_TOTAL_MAX_126" },
-         "subScales": ["BURN_SEMAPHORE"],
-         "position": 151
+         "criteria": { "fieldNameValue": "BURN_LOGROS_MAX_48" },
+         "subScales": ["NA"],
+         "position": 241
       },
       {
          "surveyShortName": "JSPE-HP",
@@ -6585,7 +6416,7 @@
          "fieldName": "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL"],
-         "position": 181
+         "position": 271
       },
       {
          "surveyShortName": "JSPE-HP",
@@ -6594,7 +6425,7 @@
          "fieldName": "JSPE-HP_CUIDADO_COMPASIVO",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["JSPE-HP_CUIDADO_COMPASIVO"],
-         "position": 211
+         "position": 301
       },
       {
          "surveyShortName": "JSPE-HP",
@@ -6603,16 +6434,7 @@
          "fieldName": "JSPE-HP_TOMA_DE_PERSPECTIVA",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["JSPE-HP_TOMA_DE_PERSPECTIVA"],
-         "position": 241
-      },
-      {
-         "surveyShortName": "JSPE-HP",
-         "description": "JSPE-HP_OTROS",
-         "shortDescription": "JSPE-HP_OTROS",
-         "fieldName": "JSPE-HP_OTROS",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["JSPE-HP_OTROS"],
-         "position": 271
+         "position": 331
       },
       {
          "surveyShortName": "JSPE-HP",
@@ -6621,12 +6443,11 @@
          "fieldName": "JSPE-HP_TOTAL_MAX140",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": [
-            "JSPE-HP_OTROS",
             "JSPE-HP_INVOLUCRAMIENTO_EMOCIONAL",
             "JSPE-HP_CUIDADO_COMPASIVO",
             "JSPE-HP_TOMA_DE_PERSPECTIVA"
          ],
-         "position": 301
+         "position": 361
       },
       {
          "surveyShortName": "JSPE-HP",
@@ -6636,19 +6457,19 @@
          "calculationType": "CAL_PERCENT_OF_NUMBER",
          "criteria": { "fieldNameValue": "JSPE-HP_TOTAL_MAX140", "max": 140 },
          "subScales": ["NA"],
-         "position": 331
+         "position": 391
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "description": "JEFF_COLABORACION_INTERPERSONAL_TOTAL_MAX_140",
          "shortDescription": "JEFF_COLABORACION_INTERPERSONAL_TOTAL_MAX_140",
          "fieldName": "JEFF_COLABORACION_INTERPERSONAL_TOTAL_MAX_140",
          "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["JEFF_STATIC_ON23"],
-         "position": 361
+         "subScales": ["JEFF_SATIC_ON23"],
+         "position": 421
       },
       {
-         "surveyShortName": "JEFF_STATIC_ON23",
+         "surveyShortName": "JEFF_SATIC_ON23",
          "description": "JEFF_COLAB_INTERPERS_PERCENT_OF_MAX",
          "shortDescription": "JEFF_COLAB_INTERPERS_PERCENT_OF_MAX",
          "fieldName": "JEFF_COLAB_INTERPERS_PERCENT_OF_MAX",
@@ -6658,7 +6479,7 @@
             "max": 140
          },
          "subScales": ["NA"],
-         "position": 391
+         "position": 451
       },
       {
          "surveyShortName": "FIAD15_ON23",
@@ -6667,7 +6488,7 @@
          "fieldName": "FIAD15_ON23_TOTAL_MAX_75",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["FIAD15_ON23"],
-         "position": 421
+         "position": 481
       },
       {
          "surveyShortName": "FIAD15_ON23",
@@ -6678,30 +6499,14 @@
          "criteria": {
             "fieldNameValue": "FIAD15_ON23_TOTAL_MAX_75",
             "ranges": [
-               {
-                  "min": 15,
-                  "max": 30,
-                  "resultIfTrue": "Alta Estabilidad Emocional"
-               },
-               {
-                  "min": 31,
-                  "max": 45,
-                  "resultIfTrue": "Nivel Moderado de Impulsividad"
-               },
-               {
-                  "min": 46,
-                  "max": 60,
-                  "resultIfTrue": "Nivel Alto de Impulsividad"
-               },
-               {
-                  "min": 61,
-                  "max": 1000,
-                  "resultIfTrue": "Muy Alta Agresividad"
-               }
+               { "min": 0, "max": 6, "resultIfTrue": "Nivel funcional" },
+               { "min": 7, "max": 11, "resultIfTrue": "Nivel alto" },
+               { "min": 12, "max": 26, "resultIfTrue": "Nivel intermedio" },
+               { "min": 27, "max": 100, "resultIfTrue": "Nivel limítrofe" }
             ]
          },
          "subScales": ["NA"],
-         "position": 451
+         "position": 511
       },
       {
          "surveyShortName": "FIAD15_ON23",
@@ -6711,7 +6516,7 @@
          "calculationType": "CAL_COPY_VALUE",
          "criteria": { "fieldNameValue": "FIAD15_ON23_TOTAL_MAX_75" },
          "subScales": ["FIAD15_ON23_SEMAFORO"],
-         "position": 481
+         "position": 541
       },
       {
          "surveyShortName": "HSNS",
@@ -6720,7 +6525,7 @@
          "fieldName": "HSNS_NARCISISMO_TOTAL_MAX_50",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["HSNS"],
-         "position": 511
+         "position": 571
       },
       {
          "surveyShortName": "HSNS",
@@ -6733,16 +6538,61 @@
             "max": 50
          },
          "subScales": ["NA"],
-         "position": 541
+         "position": 601
       },
       {
          "surveyShortName": "ZKPQ",
-         "description": "ZKPQ_TOTAL_MAX_100",
-         "shortDescription": "ZKPQ_TOTAL_MAX_100",
-         "fieldName": "ZKPQ_TOTAL_MAX_100",
+         "description": "ZKPQ_AH_MAX_18",
+         "shortDescription": "ZKPQ_AH_MAX_18",
+         "fieldName": "ZKPQ_AH_MAX_18",
          "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["ZKPQ"],
-         "position": 571
+         "subScales": ["AH"],
+         "position": 631
+      },
+      {
+         "surveyShortName": "ZKPQ",
+         "description": "ZKPQ_ACT_MAX_17",
+         "shortDescription": "ZKPQ_ACT_MAX_17",
+         "fieldName": "ZKPQ_ACT_MAX_17",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["Act"],
+         "position": 661
+      },
+      {
+         "surveyShortName": "ZKPQ",
+         "description": "ZKPQ_SOC_MAX_17",
+         "shortDescription": "ZKPQ_SOC_MAX_17",
+         "fieldName": "ZKPQ_SOC_MAX_17",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["Soc"],
+         "position": 691
+      },
+      {
+         "surveyShortName": "ZKPQ",
+         "description": "ZKPQ_N-ANX_MAX_19",
+         "shortDescription": "ZKPQ_N-ANX_MAX_19",
+         "fieldName": "ZKPQ_N-ANX_MAX_19",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["N-Anx"],
+         "position": 721
+      },
+      {
+         "surveyShortName": "ZKPQ",
+         "description": "ZKPQ_SS_MAX_21",
+         "shortDescription": "ZKPQ_SS_MAX_21",
+         "fieldName": "ZKPQ_SS_MAX_21",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["SS"],
+         "position": 751
+      },
+      {
+         "surveyShortName": "ZKPQ",
+         "description": "ZKPQ_TOTAL_MAX_92",
+         "shortDescription": "ZKPQ_TOTAL_MAX_92",
+         "fieldName": "ZKPQ_TOTAL_MAX_92",
+         "calculationType": "CAL_SUM_THE_GROUP",
+         "subScales": ["AH", "Act", "Soc", "N-Anx", "SS"],
+         "position": 781
       },
       {
          "surveyShortName": "ZKPQ",
@@ -6751,7 +6601,7 @@
          "fieldName": "ZKPQ_RESULTADO",
          "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
          "criteria": {
-            "fieldNameValue": "ZKPQ_TOTAL_MAX_100",
+            "fieldNameValue": "ZKPQ_TOTAL_MAX_92",
             "ranges": [
                { "min": 0, "max": 20, "resultIfTrue": "Muy bajo" },
                { "min": 21, "max": 40, "resultIfTrue": "Bajo" },
@@ -6762,7 +6612,7 @@
             ]
          },
          "subScales": ["NA"],
-         "position": 601
+         "position": 811
       },
       {
          "surveyShortName": "ZKPQ",
@@ -6770,9 +6620,9 @@
          "shortDescription": "ZKPQ_SEMAFORO",
          "fieldName": "ZKPQ_SEMAFORO",
          "calculationType": "CAL_COPY_VALUE",
-         "criteria": { "fieldNameValue": "ZKPQ_TOTAL_MAX_100" },
+         "criteria": { "fieldNameValue": "ZKPQ_TOTAL_MAX_92" },
          "subScales": ["ZKPQ_SEMAFORO"],
-         "position": 631
+         "position": 841
       },
       {
          "surveyShortName": "CGS12",
@@ -6781,7 +6631,7 @@
          "fieldName": "CGS12_TOTAL_MAX_60",
          "calculationType": "CAL_SUM_THE_GROUP",
          "subScales": ["CGS12"],
-         "position": 661
+         "position": 871
       },
       {
          "surveyShortName": "CGS12",
@@ -6811,7 +6661,7 @@
             ]
          },
          "subScales": ["NA"],
-         "position": 691
+         "position": 901
       },
       {
          "surveyShortName": "CGS12",
@@ -6821,56 +6671,7 @@
          "calculationType": "CAL_COPY_VALUE",
          "criteria": { "fieldNameValue": "CGS12_TOTAL_MAX_60" },
          "subScales": ["CGS12_SEMAFORO"],
-         "position": 721
-      },
-      {
-         "surveyShortName": "CGS12",
-         "description": "CGS12-2_TOTAL_MAX_60",
-         "shortDescription": "CGS12-2_TOTAL_MAX_60",
-         "fieldName": "CGS12-2_TOTAL_MAX_60",
-         "calculationType": "CAL_SUM_THE_GROUP",
-         "subScales": ["CGS12-2"],
-         "position": 751
-      },
-      {
-         "surveyShortName": "CGS12",
-         "description": "CGS12-2_RESULTADO",
-         "shortDescription": "CGS12-2_RESULTADO",
-         "fieldName": "CGS12-2_RESULTADO",
-         "calculationType": "CAL_CRITERIA_ON_OTHER_FIELD_RANGES",
-         "criteria": {
-            "fieldNameValue": "CGS12-2_TOTAL_MAX_60",
-            "ranges": [
-               { "min": 0, "max": 12, "resultIfTrue": "Buena salud mental" },
-               {
-                  "min": 13,
-                  "max": 24,
-                  "resultIfTrue": "Salud mental promedio"
-               },
-               {
-                  "min": 25,
-                  "max": 36,
-                  "resultIfTrue": "Salud mental en riesgo"
-               },
-               {
-                  "min": 37,
-                  "max": 48,
-                  "resultIfTrue": "Salud mental deficiente"
-               }
-            ]
-         },
-         "subScales": ["NA"],
-         "position": 781
-      },
-      {
-         "surveyShortName": "CGS12",
-         "description": "CGS12-2_SEMAFORO",
-         "shortDescription": "CGS12-2_SEMAFORO",
-         "fieldName": "CGS12-2_SEMAFORO",
-         "calculationType": "CAL_COPY_VALUE",
-         "criteria": { "fieldNameValue": "CGS12-2_TOTAL_MAX_60" },
-         "subScales": ["CGS12-2_SEMAFORO"],
-         "position": 811
+         "position": 931
       }
    ]
 }
